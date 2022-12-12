@@ -98,8 +98,8 @@ button {
 }
 
 .search-icon {
-    width: 35px;
-    height: 35px;
+    width: 25px;
+    height: 25px;
 }
 
 .cart-icon {
@@ -137,7 +137,8 @@ button {
 }
 
 .nav__list-link:hover {
-    color: var(--color-primary-darken);
+    text-decoration: underline;
+    color: #000;
 }
 
 .nav--menu {
@@ -166,10 +167,16 @@ button {
     display: flex;
     align-items: center;
     width: 100%;
+    justify-content: center;
 }
 
-.sticky .menu--wrapper {
-    width: fit-content;
+.sticky .nav__list {
+    justify-content: center;
+}
+
+.sticky-logo {
+    position: absolute;
+    left: 15px;
 }
 
 .logo-text {
@@ -520,6 +527,14 @@ button {
     .nav-mobile__item {
         padding: 10px 0;
     }
+
+    .swiper-slide .card__image-link {
+        width: 100% !important;
+    }
+
+    .product__image {
+        height: 400px !important;
+    }
 }
 
 .breadcrumb {
@@ -736,6 +751,10 @@ button {
     margin-top: 10px;
     margin-bottom: 0;
     font-weight: bold;
+}
+
+.card__download:hover {
+    text-decoration: underline;
 }
 
 .card__name {
