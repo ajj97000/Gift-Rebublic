@@ -12,7 +12,7 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <!-- css file -->
-    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/main_style.css">
     <!-- font file  -->
     <link rel="stylesheet" href="src/fonts/Century Gothic.ttf">
     <link rel="stylesheet" href="src/fonts/CenturyGothic.ttf">
@@ -33,7 +33,7 @@
                     </a>
                 </div>
                 <div class="col-md-7">
-                    <div class="search-box search-box--collection">
+                    <div class="search-box search-box--custom">
                         <form action="/action_page.php" method="get" autocomplete="on">
                             <input type="text" id="the-filter" placeholder="Search for a product"
                                 class="search-box__field" autocomplete="on">
@@ -46,7 +46,10 @@
                 <div class="col-md-2">
                     <div class="header__buttons">
                         <button class="button header__button-item button--search">
-                            <img src="src/images/search.jpg" class="search-icon">
+                            <img src="src/images/user.png" class="search-icon">
+                        </button>
+                        <button class="button header__button-item button--search">
+                            <img src="src/images/heart.png" class="search-icon">
                         </button>
                         <button class="button header__button-item button--cart">
                             <img src="src/images/cart.jpg" alt="" class="cart-icon">
@@ -101,6 +104,16 @@
             <div class="d-flex">
                 <button class="button button--menu">
                     <span class="material-symbols-outlined">search</span>
+                </button>
+                <button class="button button--menu">
+                    <span class="material-symbols-outlined">
+                        account_circle
+                    </span>
+                </button>
+                <button class="button button--menu">
+                    <span class="material-symbols-outlined">
+                        favorite
+                    </span>
                 </button>
                 <button class="button button--menu">
                     <span class="material-symbols-outlined">shopping_cart</span>
@@ -275,7 +288,7 @@
                 </div>
                 <!-- product details  -->
                 <div class="product mt-30">
-                    <div class="row">
+                    <div class="row gy-md-0 gy-4 gx-md-4 gx-0">
                         <div class="col-md-6 col-12">
                             <div class="home-swiper">
                                 <div class="swiper mySwiper product-swiper">
@@ -298,6 +311,7 @@
                                     </div>
                                     <div class="swiper-button-next home-swiper-button-next"></div>
                                     <div class="swiper-button-prev home-swiper-button-prev"></div>
+                                    <div class="swiper-pagination"></div>
                                 </div>
                             </div>
                         </div>
@@ -306,12 +320,12 @@
                                 <h3 class="product__title">Catastrophe</h3>
                                 <p class="product__description">Have stacks of fun with this game.</p>
                                 <div class="d-flex align-items-center">
-                                    <div class="star-rating">
-                                        <span class="star" data-rating="1">&#9733;</span>
-                                        <span class="star" data-rating="2">&#9733;</span>
-                                        <span class="star" data-rating="3">&#9733;</span>
-                                        <span class="star" data-rating="4">&#9733;</span>
-                                        <span class="star" data-rating="5">&#9733;</span>
+                                    <div class="product__star-rating">
+                                        <span class="product__star" data-rating="1">&#9733;</span>
+                                        <span class="product__star" data-rating="2">&#9733;</span>
+                                        <span class="product__star" data-rating="3">&#9733;</span>
+                                        <span class="product__star" data-rating="4">&#9733;</span>
+                                        <span class="product__star" data-rating="5">&#9733;</span>
                                     </div>
                                     <p class="product__reviews">(55)</p>
                                 </div>
@@ -334,9 +348,9 @@
                                     </div>
                                     <p class="product__status">Out of Stock</p>
                                 </div>
-                                <div class="d-flex mb-30">
+                                <div class="d-flex mb-4">
                                     <button class="button product__button">Add to Basket</button>
-                                    <button class="product__button-icon">
+                                    <button class="product__button-icon" onclick="toggleAddWish(this)">
                                         <svg class="product__icon" xmlns="http://www.w3.org/2000/svg" height="24px"
                                             viewBox="0 0 24 24" width="24px">
                                             <path d="M0 0h24v24H0V0z" fill="none" />
@@ -344,12 +358,66 @@
                                                 d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
                                         </svg>
                                     </button>
+                                    <button class="product__button-icon">
+                                        <svg class="product__icon" xmlns="http://www.w3.org/2000/svg" height="24"
+                                            viewBox="0 -960 960 960" width="24">
+                                            <path
+                                                d="M720-80q-50 0-85-35t-35-85q0-7 1-14.5t3-13.5L322-392q-17 15-38 23.5t-44 8.5q-50 0-85-35t-35-85q0-50 35-85t85-35q23 0 44 8.5t38 23.5l282-164q-2-6-3-13.5t-1-14.5q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35q-23 0-44-8.5T638-672L356-508q2 6 3 13.5t1 14.5q0 7-1 14.5t-3 13.5l282 164q17-15 38-23.5t44-8.5q50 0 85 35t35 85q0 50-35 85t-85 35Zm0-640q17 0 28.5-11.5T760-760q0-17-11.5-28.5T720-800q-17 0-28.5 11.5T680-760q0 17 11.5 28.5T720-720ZM240-440q17 0 28.5-11.5T280-480q0-17-11.5-28.5T240-520q-17 0-28.5 11.5T200-480q0 17 11.5 28.5T240-440Zm480 280q17 0 28.5-11.5T760-200q0-17-11.5-28.5T720-240q-17 0-28.5 11.5T680-200q0 17 11.5 28.5T720-160Zm0-600ZM240-480Zm480 280Z" />
+                                        </svg>
+                                    </button>
                                 </div>
-                                <p class="product__description">Product Description</p>
-                                <p class="product__details">This box contains all you need to have stacks of fun with
-                                    purrrfect kitties to stack as high as you</p>
+                                <p class="product__sku">SKU: GRXXXXX</p>
+                                <p class="product__description">Key Features</p>
+                                <ul class="product__list">
+                                    <li>
+                                        insert text insert text insert text insert text
+                                    </li>
+                                    <li>
+                                        insert text insert text insert text insert text
+                                    </li>
+                                    <li>
+                                        insert text insert text insert text insert text
+                                    </li>
+                                    <li>
+                                        insert text insert text insert text insert text
+                                    </li>
+                                    <li>
+                                        insert text insert text insert text insert text
+                                    </li>
+                                </ul>
                             </div>
                         </div>
+                    </div>
+                    <div class="product__tab">
+                        <button class="product__tab-button" onclick="openTab(event, 'Tab1')" id="defaultOpen">Product
+                            Description</button>
+                        <button class="product__tab-button" onclick="openTab(event, 'Tab2')">Reviews</button>
+                        <button class="product__tab-button" onclick="openTab(event, 'Tab3')">Delivery</button>
+                        <button class="product__tab-button" onclick="openTab(event, 'Tab4')">FAQ</button>
+                    </div>
+
+                    <div id="Tab1" class="product__tab-content">
+                        <p>insert text insert text insert text insert text insert text insert text insert text insert
+                            text insert text insert text insert text insert text insert text insert text insert text
+                            insert text insert text insert text insert text insert text insert text insert text insert
+                            text insert text insert text insert text insert text insert text insert text insert text
+                            insert text insert text insert text insert text insert text insert text insert text insert
+                            text insert text insert text insert text insert text insert text insert text insert text
+                            insert text insert text insert text insert text insert text insert text insert text </p>
+                    </div>
+
+                    <div id="Tab2" class="product__tab-content">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, consequuntur. Odit
+                            tempore quia aliquid numquam enim, commodi excepturi tenetur provident facilis earum
+                            temporibus, consequatur molestias iste, qui fugiat sequi recusandae! </p>
+                    </div>
+
+                    <div id="Tab3" class="product__tab-content">
+                        <p>test</p>
+                    </div>
+
+                    <div id="Tab4" class="product__tab-content">
+                        <p>test test test</p>
                     </div>
                 </div>
             </section>
@@ -502,16 +570,16 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(document).ready(function () {
-            $('.star').mouseenter(function () {
+            $('.product__star').mouseenter(function () {
                 var rating = $(this).data('rating');
-                $('.star').removeClass('active');
-                $(this).prevAll('.star').addBack().addClass('active');
+                $('.product__star').removeClass('active');
+                $(this).prevAll('.product__star').addBack().addClass('active');
             });
 
-            $('.star').click(function () {
+            $('.product__star').click(function () {
                 var rating = $(this).data('rating');
-                $('.star').removeClass('active');
-                $(this).prevAll('.star').addBack().addClass('active');
+                $('.product__star').removeClass('active');
+                $(this).prevAll('.product__star').addBack().addClass('active');
             });
         });
     </script>
@@ -523,10 +591,65 @@
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
             loop: true,
             mousewheel: true,
             keyboard: true,
         });
+    </script>
+    <script>
+        // Wishlist function 
+        function toggleAddWish(button) {
+            var heartPath = button.querySelector('.product__icon');
+            heartPath.classList.toggle('red');
+        }
+
+        // Add to cart function 
+        const productNumber = document.querySelector('.product__number');
+        const productAddBtn = document.querySelector('.product__add');
+        const productRemoveBtn = document.querySelector('.product__remove');
+
+        let quantity = 1; // Initial quantity
+
+        // Increase quantity when add button is clicked
+        productAddBtn.addEventListener('click', () => {
+            quantity++;
+            productNumber.textContent = quantity;
+        });
+
+        // Decrease quantity when remove button is clicked
+        productRemoveBtn.addEventListener('click', () => {
+            if (quantity > 1) {
+                quantity--;
+                productNumber.textContent = quantity;
+            }
+        });
+
+        // Tabs function 
+        document.getElementById("defaultOpen").click();
+
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("product__tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+                tabcontent[i].classList.remove("active");
+            }
+            document.getElementById(tabName).style.display = "block";
+            document.getElementById(tabName).classList.add("active");
+
+            // Remove the "active" class from all tab links
+            tablinks = document.getElementsByClassName("product__tab-button");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+            }
+            // Add the "active" class to the clicked tab link
+            evt.currentTarget.classList.add("active");
+        }
+
     </script>
 </body>
 

@@ -12,7 +12,7 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <!-- css file -->
-    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/main_style.css">
     <!-- font file  -->
     <link rel="stylesheet" href="src/fonts/Century Gothic.ttf">
     <link rel="stylesheet" href="src/fonts/CenturyGothic.ttf">
@@ -32,7 +32,7 @@
                     </a>
                 </div>
                 <div class="col-md-7">
-                    <div class="search-box search-box--collection">
+                    <div class="search-box search-box--custom">
                         <form action="/action_page.php" method="get" autocomplete="on">
                             <input type="text" id="the-filter" placeholder="Search for a product"
                                 class="search-box__field" autocomplete="on">
@@ -45,7 +45,10 @@
                 <div class="col-md-2">
                     <div class="header__buttons">
                         <button class="button header__button-item button--search">
-                            <img src="src/images/search.jpg" class="search-icon">
+                            <img src="src/images/user.png" class="search-icon">
+                        </button>
+                        <button class="button header__button-item button--search">
+                            <img src="src/images/heart.png" class="search-icon">
                         </button>
                         <button class="button header__button-item button--cart">
                             <img src="src/images/cart.jpg" alt="" class="cart-icon">
@@ -100,6 +103,16 @@
             <div class="d-flex">
                 <button class="button button--menu">
                     <span class="material-symbols-outlined">search</span>
+                </button>
+                <button class="button button--menu">
+                    <span class="material-symbols-outlined">
+                        account_circle
+                    </span>
+                </button>
+                <button class="button button--menu">
+                    <span class="material-symbols-outlined">
+                        favorite
+                    </span>
                 </button>
                 <button class="button button--menu">
                     <span class="material-symbols-outlined">shopping_cart</span>
@@ -298,13 +311,13 @@
                 </div>
                 <div class="row gx-4">
                     <div class="col-lg-3 col-md-4 col-12">
-                        <div class="card card--collection">
+                        <div class="card card--custom">
                             <div class="card__image-link">
                                 <h3 class="card__title">Aura Reading Cards</h3>
                                 <div class="card__image-wrapper">
-                                    <button class="card__icon" onclick="toggleColor(this)">
-                                        <svg class="heartPath" xmlns="http://www.w3.org/2000/svg" height="24px"
-                                            viewBox="0 0 24 24" width="24px">
+                                    <button class="card__button-icon" onclick="toggleAddWish(this)">
+                                        <svg class="card__icon-absolute" xmlns="http://www.w3.org/2000/svg"
+                                            height="24px" viewBox="0 0 24 24" width="24px">
                                             <path d="M0 0h24v24H0V0z" fill="none" />
                                             <path
                                                 d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
@@ -318,13 +331,13 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-12">
-                        <div class="card card--collection">
+                        <div class="card card--custom">
                             <div class="card__image-link">
                                 <h3 class="card__title">D.I.Y Clay Earring Kit</h3>
                                 <div class="card__image-wrapper">
-                                    <button class="card__icon" onclick="toggleColor(this)">
-                                        <svg class="heartPath" xmlns="http://www.w3.org/2000/svg" height="24px"
-                                            viewBox="0 0 24 24" width="24px">
+                                    <button class="card__button-icon" onclick="toggleAddWish(this)">
+                                        <svg class="card__icon-absolute" xmlns="http://www.w3.org/2000/svg"
+                                            height="24px" viewBox="0 0 24 24" width="24px">
                                             <path d="M0 0h24v24H0V0z" fill="none" />
                                             <path
                                                 d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
@@ -338,13 +351,13 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-12">
-                        <div class="card card--collection">
+                        <div class="card card--custom">
                             <div class="card__image-link">
                                 <h3 class="card__title">Personalised Moon Phase</h3>
                                 <div class="card__image-wrapper">
-                                    <button class="card__icon" onclick="toggleColor(this)">
-                                        <svg class="heartPath" xmlns="http://www.w3.org/2000/svg" height="24px"
-                                            viewBox="0 0 24 24" width="24px">
+                                    <button class="card__button-icon" onclick="toggleAddWish(this)">
+                                        <svg class="card__icon-absolute" xmlns="http://www.w3.org/2000/svg"
+                                            height="24px" viewBox="0 0 24 24" width="24px">
                                             <path d="M0 0h24v24H0V0z" fill="none" />
                                             <path
                                                 d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
@@ -359,13 +372,13 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-12">
-                        <div class="card card--collection">
+                        <div class="card card--custom">
                             <div class="card__image-link">
                                 <h3 class="card__title">Alien Plant Markers</h3>
                                 <div class="card__image-wrapper">
-                                    <button class="card__icon" onclick="toggleColor(this)">
-                                        <svg class="heartPath" xmlns="http://www.w3.org/2000/svg" height="24px"
-                                            viewBox="0 0 24 24" width="24px">
+                                    <button class="card__button-icon" onclick="toggleAddWish(this)">
+                                        <svg class="card__icon-absolute" xmlns="http://www.w3.org/2000/svg"
+                                            height="24px" viewBox="0 0 24 24" width="24px">
                                             <path d="M0 0h24v24H0V0z" fill="none" />
                                             <path
                                                 d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
@@ -380,13 +393,13 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-12">
-                        <div class="card card--collection">
+                        <div class="card card--custom">
                             <div class="card__image-link">
                                 <h3 class="card__title">Aura Reading Cards</h3>
                                 <div class="card__image-wrapper">
-                                    <button class="card__icon" onclick="toggleColor(this)">
-                                        <svg class="heartPath" xmlns="http://www.w3.org/2000/svg" height="24px"
-                                            viewBox="0 0 24 24" width="24px">
+                                    <button class="card__button-icon" onclick="toggleAddWish(this)">
+                                        <svg class="card__icon-absolute" xmlns="http://www.w3.org/2000/svg"
+                                            height="24px" viewBox="0 0 24 24" width="24px">
                                             <path d="M0 0h24v24H0V0z" fill="none" />
                                             <path
                                                 d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
@@ -401,13 +414,13 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-12">
-                        <div class="card card--collection">
+                        <div class="card card--custom">
                             <div class="card__image-link">
                                 <h3 class="card__title">D.I.Y Clay Earring Kit</h3>
                                 <div class="card__image-wrapper">
-                                    <button class="card__icon" onclick="toggleColor(this)">
-                                        <svg class="heartPath" xmlns="http://www.w3.org/2000/svg" height="24px"
-                                            viewBox="0 0 24 24" width="24px">
+                                    <button class="card__button-icon" onclick="toggleAddWish(this)">
+                                        <svg class="card__icon-absolute" xmlns="http://www.w3.org/2000/svg"
+                                            height="24px" viewBox="0 0 24 24" width="24px">
                                             <path d="M0 0h24v24H0V0z" fill="none" />
                                             <path
                                                 d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
@@ -422,13 +435,13 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-12">
-                        <div class="card card--collection">
+                        <div class="card card--custom">
                             <div class="card__image-link">
                                 <h3 class="card__title">Personalised Moon Phase</h3>
                                 <div class="card__image-wrapper">
-                                    <button class="card__icon" onclick="toggleColor(this)">
-                                        <svg class="heartPath" xmlns="http://www.w3.org/2000/svg" height="24px"
-                                            viewBox="0 0 24 24" width="24px">
+                                    <button class="card__button-icon" onclick="toggleAddWish(this)">
+                                        <svg class="card__icon-absolute" xmlns="http://www.w3.org/2000/svg"
+                                            height="24px" viewBox="0 0 24 24" width="24px">
                                             <path d="M0 0h24v24H0V0z" fill="none" />
                                             <path
                                                 d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
@@ -443,13 +456,13 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-12">
-                        <div class="card card--collection">
+                        <div class="card card--custom">
                             <div class="card__image-link">
                                 <h3 class="card__title">Alien Plant Markers</h3>
                                 <div class="card__image-wrapper">
-                                    <button class="card__icon" onclick="toggleColor(this)">
-                                        <svg class="heartPath" xmlns="http://www.w3.org/2000/svg" height="24px"
-                                            viewBox="0 0 24 24" width="24px">
+                                    <button class="card__button-icon" onclick="toggleAddWish(this)">
+                                        <svg class="card__icon-absolute" xmlns="http://www.w3.org/2000/svg"
+                                            height="24px" viewBox="0 0 24 24" width="24px">
                                             <path d="M0 0h24v24H0V0z" fill="none" />
                                             <path
                                                 d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
@@ -464,13 +477,13 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-12">
-                        <div class="card card--collection">
+                        <div class="card card--custom">
                             <div class="card__image-link">
                                 <h3 class="card__title">Aura Reading Cards</h3>
                                 <div class="card__image-wrapper">
-                                    <button class="card__icon" onclick="toggleColor(this)">
-                                        <svg class="heartPath" xmlns="http://www.w3.org/2000/svg" height="24px"
-                                            viewBox="0 0 24 24" width="24px">
+                                    <button class="card__button-icon" onclick="toggleAddWish(this)">
+                                        <svg class="card__icon-absolute" xmlns="http://www.w3.org/2000/svg"
+                                            height="24px" viewBox="0 0 24 24" width="24px">
                                             <path d="M0 0h24v24H0V0z" fill="none" />
                                             <path
                                                 d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
@@ -485,13 +498,13 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-12">
-                        <div class="card card--collection">
+                        <div class="card card--custom">
                             <div class="card__image-link">
                                 <h3 class="card__title">D.I.Y Clay Earring Kit</h3>
                                 <div class="card__image-wrapper">
-                                    <button class="card__icon" onclick="toggleColor(this)">
-                                        <svg class="heartPath" xmlns="http://www.w3.org/2000/svg" height="24px"
-                                            viewBox="0 0 24 24" width="24px">
+                                    <button class="card__button-icon" onclick="toggleAddWish(this)">
+                                        <svg class="card__icon-absolute" xmlns="http://www.w3.org/2000/svg"
+                                            height="24px" viewBox="0 0 24 24" width="24px">
                                             <path d="M0 0h24v24H0V0z" fill="none" />
                                             <path
                                                 d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
@@ -506,13 +519,13 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-12">
-                        <div class="card card--collection">
+                        <div class="card card--custom">
                             <div class="card__image-link">
                                 <h3 class="card__title">Personalised Moon Phase</h3>
                                 <div class="card__image-wrapper">
-                                    <button class="card__icon" onclick="toggleColor(this)">
-                                        <svg class="heartPath" xmlns="http://www.w3.org/2000/svg" height="24px"
-                                            viewBox="0 0 24 24" width="24px">
+                                    <button class="card__button-icon" onclick="toggleAddWish(this)">
+                                        <svg class="card__icon-absolute" xmlns="http://www.w3.org/2000/svg"
+                                            height="24px" viewBox="0 0 24 24" width="24px">
                                             <path d="M0 0h24v24H0V0z" fill="none" />
                                             <path
                                                 d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
@@ -527,13 +540,13 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-12">
-                        <div class="card card--collection">
+                        <div class="card card--custom">
                             <div class="card__image-link">
                                 <h3 class="card__title">Alien Plant Markers</h3>
                                 <div class="card__image-wrapper">
-                                    <button class="card__icon" onclick="toggleColor(this)">
-                                        <svg class="heartPath" xmlns="http://www.w3.org/2000/svg" height="24px"
-                                            viewBox="0 0 24 24" width="24px">
+                                    <button class="card__button-icon" onclick="toggleAddWish(this)">
+                                        <svg class="card__icon-absolute" xmlns="http://www.w3.org/2000/svg"
+                                            height="24px" viewBox="0 0 24 24" width="24px">
                                             <path d="M0 0h24v24H0V0z" fill="none" />
                                             <path
                                                 d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
@@ -548,13 +561,13 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-12">
-                        <div class="card card--collection">
+                        <div class="card card--custom">
                             <div class="card__image-link">
                                 <h3 class="card__title">Aura Reading Cards</h3>
                                 <div class="card__image-wrapper">
-                                    <button class="card__icon" onclick="toggleColor(this)">
-                                        <svg class="heartPath" xmlns="http://www.w3.org/2000/svg" height="24px"
-                                            viewBox="0 0 24 24" width="24px">
+                                    <button class="card__button-icon" onclick="toggleAddWish(this)">
+                                        <svg class="card__icon-absolute" xmlns="http://www.w3.org/2000/svg"
+                                            height="24px" viewBox="0 0 24 24" width="24px">
                                             <path d="M0 0h24v24H0V0z" fill="none" />
                                             <path
                                                 d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
@@ -569,13 +582,13 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-12">
-                        <div class="card card--collection">
+                        <div class="card card--custom">
                             <div class="card__image-link">
                                 <h3 class="card__title">D.I.Y Clay Earring Kit</h3>
                                 <div class="card__image-wrapper">
-                                    <button class="card__icon" onclick="toggleColor(this)">
-                                        <svg class="heartPath" xmlns="http://www.w3.org/2000/svg" height="24px"
-                                            viewBox="0 0 24 24" width="24px">
+                                    <button class="card__button-icon" onclick="toggleAddWish(this)">
+                                        <svg class="card__icon-absolute" xmlns="http://www.w3.org/2000/svg"
+                                            height="24px" viewBox="0 0 24 24" width="24px">
                                             <path d="M0 0h24v24H0V0z" fill="none" />
                                             <path
                                                 d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
@@ -590,13 +603,13 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-12">
-                        <div class="card card--collection">
+                        <div class="card card--custom">
                             <div class="card__image-link">
                                 <h3 class="card__title">Personalised Moon Phase</h3>
                                 <div class="card__image-wrapper">
-                                    <button class="card__icon" onclick="toggleColor(this)">
-                                        <svg class="heartPath" xmlns="http://www.w3.org/2000/svg" height="24px"
-                                            viewBox="0 0 24 24" width="24px">
+                                    <button class="card__button-icon" onclick="toggleAddWish(this)">
+                                        <svg class="card__icon-absolute" xmlns="http://www.w3.org/2000/svg"
+                                            height="24px" viewBox="0 0 24 24" width="24px">
                                             <path d="M0 0h24v24H0V0z" fill="none" />
                                             <path
                                                 d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
@@ -611,13 +624,13 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-12">
-                        <div class="card card--collection">
+                        <div class="card card--custom">
                             <div class="card__image-link">
                                 <h3 class="card__title">Alien Plant Markers</h3>
                                 <div class="card__image-wrapper">
-                                    <button class="card__icon" onclick="toggleColor(this)">
-                                        <svg class="heartPath" xmlns="http://www.w3.org/2000/svg" height="24px"
-                                            viewBox="0 0 24 24" width="24px">
+                                    <button class="card__button-icon" onclick="toggleAddWish(this)">
+                                        <svg class="card__icon-absolute" xmlns="http://www.w3.org/2000/svg"
+                                            height="24px" viewBox="0 0 24 24" width="24px">
                                             <path d="M0 0h24v24H0V0z" fill="none" />
                                             <path
                                                 d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
@@ -739,8 +752,9 @@
     <script src="src/scripts/scripts.js"></script>
 
     <script>
-        function toggleColor(button) {
-            var heartPath = button.querySelector('.heartPath');
+
+        function toggleAddWish(button) {
+            var heartPath = button.querySelector('.card__icon-absolute');
             heartPath.classList.toggle('red');
         }
     </script>
