@@ -297,6 +297,23 @@ button {
     height: 380px;
 }
 
+.card--absoulte {
+    position: relative;
+}
+
+.card--absoulte .card__button {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    color: #000;
+    padding: 4px 20px;
+    border-radius: 20px;
+    width: fit-content;
+    margin: auto;
+}
+
 .mb-30 {
     margin-bottom: 30px;
 }

@@ -328,82 +328,240 @@
             </div>
         </div>
         <div class="container">
-            <!-- new arrivals section  -->
             <section class="section">
-                <h2 class="section__title">New Arrivals</h2>
+                <div class="row gx-5">
+                    <div class="col-md-6 col-12">
+                        <div class="card card--absoulte card--lg">
+                            <img src="src/images/card-1.jpg" id="imageChange" class="card__image">
+                            <button class="card__button button">Shop Best Seller</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="card card--absoulte card--lg">
+                            <img src="src/images/cats.png" id="imageChange2" class="card__image">
+                            <button class="card__button button">Shop Best Seller</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- top categories section  -->
+        <div class="container">
+            <section class="section">
+                <div class="d-flex justify-content-between">
+                    <div></div>
+                    <h2 class="section__title">Top Categories</h2>
+                    <a href="" class="button section__link mb-3">View All</a>
+                </div>
+                <div class="row gx-5">
+                    <div class="col-md-4 col-12">
+                        <div class="card card--absoulte card--lg">
+                            <img src="src/images/cats.png" id="imageChange2" class="card__image">
+                            <button class="card__button button">Shop Best Seller</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <div class="card card--absoulte card--lg">
+                            <img src="src/images/cats.png" id="imageChange2" class="card__image">
+                            <button class="card__button button">Shop Best Seller</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <div class="card card--absoulte card--lg">
+                            <img src="src/images/cats.png" id="imageChange2" class="card__image">
+                            <button class="card__button button">Shop Best Seller</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <div class="card card--absoulte card--lg">
+                            <img src="src/images/cats.png" id="imageChange2" class="card__image">
+                            <button class="card__button button">Shop Best Seller</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <div class="card card--absoulte card--lg">
+                            <img src="src/images/cats.png" id="imageChange2" class="card__image">
+                            <button class="card__button button">Shop Best Seller</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <div class="card card--absoulte card--lg">
+                            <img src="src/images/cats.png" id="imageChange2" class="card__image">
+                            <button class="card__button button">Shop Best Seller</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="container">
+            <!-- Featured Products section  -->
+            <section class="section">
+                <div class="d-flex justify-content-between">
+                    <div></div>
+                    <h2 class="section__title">Featured Products</h2>
+                    <a href="" class="button section__link mb-3">View All</a>
+                </div>
                 <div class="home-swiper">
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <div class="card">
-                                    <a href="" class="card__image-link">
+                                <div class="card card--custom">
+                                    <div class="card__image-link">
                                         <h3 class="card__title">Aura Reading Cards</h3>
-                                        <img src="src/images/card.jpg" alt="" class="card__image">
+                                        <div class="card__image-wrapper">
+                                            <button class="card__button-icon" onclick="toggleAddWish(this)">
+                                                <svg class="card__icon-absolute" xmlns="http://www.w3.org/2000/svg"
+                                                    height="24px" viewBox="0 0 24 24" width="24px">
+                                                    <path d="M0 0h24v24H0V0z" fill="none" />
+                                                    <path
+                                                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                                                </svg>
+                                            </button>
+                                            <img src="src/images/card-12.jpg" alt="" class="card__image">
+                                        </div>
                                         <p class="card__price">£4.99</p>
-                                    </a>
+                                        <button class="card__action">Add to Basket</button>
+                                    </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="card">
-                                    <a href="" class="card__image-link">
-                                        <h3 class="card__title">D.I.Y Clay Earring Kit</h3>
-                                        <img src="src/images/card-2.jpg" alt="" class="card__image">
+                                <div class="card card--custom">
+                                    <div class="card__image-link">
+                                        <h3 class="card__title">Aura Reading Cards</h3>
+                                        <div class="card__image-wrapper">
+                                            <button class="card__button-icon" onclick="toggleAddWish(this)">
+                                                <svg class="card__icon-absolute" xmlns="http://www.w3.org/2000/svg"
+                                                    height="24px" viewBox="0 0 24 24" width="24px">
+                                                    <path d="M0 0h24v24H0V0z" fill="none" />
+                                                    <path
+                                                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                                                </svg>
+                                            </button>
+                                            <img src="src/images/card-12.jpg" alt="" class="card__image">
+                                        </div>
                                         <p class="card__price">£4.99</p>
-                                    </a>
+                                        <button class="card__action">Add to Basket</button>
+                                    </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="card">
-                                    <a href="" class="card__image-link">
-                                        <h3 class="card__title">Personalised Moon Phase</h3>
-                                        <img src="src/images/card-3.jpg" alt="" class="card__image">
+                                <div class="card card--custom">
+                                    <div class="card__image-link">
+                                        <h3 class="card__title">Aura Reading Cards</h3>
+                                        <div class="card__image-wrapper">
+                                            <button class="card__button-icon" onclick="toggleAddWish(this)">
+                                                <svg class="card__icon-absolute" xmlns="http://www.w3.org/2000/svg"
+                                                    height="24px" viewBox="0 0 24 24" width="24px">
+                                                    <path d="M0 0h24v24H0V0z" fill="none" />
+                                                    <path
+                                                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                                                </svg>
+                                            </button>
+                                            <img src="src/images/card-12.jpg" alt="" class="card__image">
+                                        </div>
                                         <p class="card__price">£4.99</p>
-                                    </a>
+                                        <button class="card__action">Add to Basket</button>
+                                    </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="card">
-                                    <a href="" class="card__image-link">
-                                        <h3 class="card__title">D.I.Y Clay Earring Kit</h3>
-                                        <img src="src/images/card-2.jpg" alt="" class="card__image">
+                                <div class="card card--custom">
+                                    <div class="card__image-link">
+                                        <h3 class="card__title">Aura Reading Cards</h3>
+                                        <div class="card__image-wrapper">
+                                            <button class="card__button-icon" onclick="toggleAddWish(this)">
+                                                <svg class="card__icon-absolute" xmlns="http://www.w3.org/2000/svg"
+                                                    height="24px" viewBox="0 0 24 24" width="24px">
+                                                    <path d="M0 0h24v24H0V0z" fill="none" />
+                                                    <path
+                                                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                                                </svg>
+                                            </button>
+                                            <img src="src/images/card-12.jpg" alt="" class="card__image">
+                                        </div>
                                         <p class="card__price">£4.99</p>
-                                    </a>
+                                        <button class="card__action">Add to Basket</button>
+                                    </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="card">
-                                    <a href="" class="card__image-link">
-                                        <h3 class="card__title">Alien Plant Markers</h3>
-                                        <img src="src/images/card-4.jpg" alt="" class="card__image">
+                                <div class="card card--custom">
+                                    <div class="card__image-link">
+                                        <h3 class="card__title">Aura Reading Cards</h3>
+                                        <div class="card__image-wrapper">
+                                            <button class="card__button-icon" onclick="toggleAddWish(this)">
+                                                <svg class="card__icon-absolute" xmlns="http://www.w3.org/2000/svg"
+                                                    height="24px" viewBox="0 0 24 24" width="24px">
+                                                    <path d="M0 0h24v24H0V0z" fill="none" />
+                                                    <path
+                                                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                                                </svg>
+                                            </button>
+                                            <img src="src/images/card-12.jpg" alt="" class="card__image">
+                                        </div>
                                         <p class="card__price">£4.99</p>
-                                    </a>
+                                        <button class="card__action">Add to Basket</button>
+                                    </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="card">
-                                    <a href="" class="card__image-link">
-                                        <h3 class="card__title">Alien Plant Markers</h3>
-                                        <img src="src/images/card-4.jpg" alt="" class="card__image">
+                                <div class="card card--custom">
+                                    <div class="card__image-link">
+                                        <h3 class="card__title">Aura Reading Cards</h3>
+                                        <div class="card__image-wrapper">
+                                            <button class="card__button-icon" onclick="toggleAddWish(this)">
+                                                <svg class="card__icon-absolute" xmlns="http://www.w3.org/2000/svg"
+                                                    height="24px" viewBox="0 0 24 24" width="24px">
+                                                    <path d="M0 0h24v24H0V0z" fill="none" />
+                                                    <path
+                                                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                                                </svg>
+                                            </button>
+                                            <img src="src/images/card-12.jpg" alt="" class="card__image">
+                                        </div>
                                         <p class="card__price">£4.99</p>
-                                    </a>
+                                        <button class="card__action">Add to Basket</button>
+                                    </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="card">
-                                    <a href="" class="card__image-link">
-                                        <h3 class="card__title">Alien Plant Markers</h3>
-                                        <img src="src/images/card-4.jpg" alt="" class="card__image">
+                                <div class="card card--custom">
+                                    <div class="card__image-link">
+                                        <h3 class="card__title">Aura Reading Cards</h3>
+                                        <div class="card__image-wrapper">
+                                            <button class="card__button-icon" onclick="toggleAddWish(this)">
+                                                <svg class="card__icon-absolute" xmlns="http://www.w3.org/2000/svg"
+                                                    height="24px" viewBox="0 0 24 24" width="24px">
+                                                    <path d="M0 0h24v24H0V0z" fill="none" />
+                                                    <path
+                                                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                                                </svg>
+                                            </button>
+                                            <img src="src/images/card-12.jpg" alt="" class="card__image">
+                                        </div>
                                         <p class="card__price">£4.99</p>
-                                    </a>
+                                        <button class="card__action">Add to Basket</button>
+                                    </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="card">
-                                    <a href="" class="card__image-link">
-                                        <h3 class="card__title">Alien Plant Markers</h3>
-                                        <img src="src/images/card-4.jpg" alt="" class="card__image">
+                                <div class="card card--custom">
+                                    <div class="card__image-link">
+                                        <h3 class="card__title">Aura Reading Cards</h3>
+                                        <div class="card__image-wrapper">
+                                            <button class="card__button-icon" onclick="toggleAddWish(this)">
+                                                <svg class="card__icon-absolute" xmlns="http://www.w3.org/2000/svg"
+                                                    height="24px" viewBox="0 0 24 24" width="24px">
+                                                    <path d="M0 0h24v24H0V0z" fill="none" />
+                                                    <path
+                                                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                                                </svg>
+                                            </button>
+                                            <img src="src/images/card-12.jpg" alt="" class="card__image">
+                                        </div>
                                         <p class="card__price">£4.99</p>
-                                    </a>
+                                        <button class="card__action">Add to Basket</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -412,225 +570,30 @@
                     <div class="home-swiper-button-prev swiper-button-prev"></div>
                 </div>
             </section>
-            <!-- top 50 section  -->
+            <!-- latest from the blog section  -->
             <section class="section">
-                <h2 class="section__title">Top 50</h2>
-                <div class="home-swiper">
-                    <div class="swiper top-50-swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <a href="" class="card__image-link">
-                                        <h3 class="card__title">Grow It Bonsai Tree</h3>
-                                        <img src="src/images/card-5.jpg" alt="" class="card__image">
-                                        <p class="card__price">£4.99</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <a href="" class="card__image-link">
-                                        <h3 class="card__title">Palm Reading Cards</h3>
-                                        <img src="src/images/card-6.jpg" alt="" class="card__image">
-                                        <p class="card__price">£4.99</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <a href="" class="card__image-link">
-                                        <h3 class="card__title">Unicorn Poo - Bath Bombs</h3>
-                                        <img src="src/images/card-7.jpg" alt="" class="card__image">
-                                        <p class="card__price">£4.99</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <a href="" class="card__image-link">
-                                        <h3 class="card__title">Catastrophe</h3>
-                                        <img src="src/images/card-8.jpg" alt="" class="card__image">
-                                        <p class="card__price">£4.99</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <a href="" class="card__image-link">
-                                        <h3 class="card__title">Catastrophe</h3>
-                                        <img src="src/images/card-8.jpg" alt="" class="card__image">
-                                        <p class="card__price">£4.99</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <a href="" class="card__image-link">
-                                        <h3 class="card__title">Catastrophe</h3>
-                                        <img src="src/images/card-8.jpg" alt="" class="card__image">
-                                        <p class="card__price">£4.99</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <a href="" class="card__image-link">
-                                        <h3 class="card__title">Catastrophe</h3>
-                                        <img src="src/images/card-8.jpg" alt="" class="card__image">
-                                        <p class="card__price">£4.99</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <a href="" class="card__image-link">
-                                        <h3 class="card__title">Catastrophe</h3>
-                                        <img src="src/images/card-8.jpg" alt="" class="card__image">
-                                        <p class="card__price">£4.99</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-button-next top-swiper-button-next"></div>
-                    <div class="swiper-button-prev top-swiper-button-prev"></div>
+                <div class="d-flex justify-content-between">
+                    <div></div>
+                    <h2 class="section__title">Latest From The Blog</h2>
+                    <a href="" class="button section__link mb-3">View All</a>
                 </div>
-            </section>
-
-            <!-- Personalised section  -->
-            <section class="section">
-                <h2 class="section__title">Personalised Gifts</h2>
-                <div class="home-swiper">
-                    <div class="swiper person-swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <a href="" class="card__image-link">
-                                        <h3 class="card__title">Personalised Moon Phase</h3>
-                                        <img src="src/images/card-3.jpg" alt="" class="card__image">
-                                        <p class="card__price">£19.99</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <a href="" class="card__image-link">
-                                        <h3 class="card__title">Personalised Moon Phase</h3>
-                                        <img src="src/images/card-3.jpg" alt="" class="card__image">
-                                        <p class="card__price">£19.99</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <a href="" class="card__image-link">
-                                        <h3 class="card__title">Personalised Moon Phase</h3>
-                                        <img src="src/images/card-3.jpg" alt="" class="card__image">
-                                        <p class="card__price">£19.99</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <a href="" class="card__image-link">
-                                        <h3 class="card__title">Personalised Moon Phase</h3>
-                                        <img src="src/images/card-3.jpg" alt="" class="card__image">
-                                        <p class="card__price">£19.99</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <a href="" class="card__image-link">
-                                        <h3 class="card__title">Personalised Moon Phase</h3>
-                                        <img src="src/images/card-3.jpg" alt="" class="card__image">
-                                        <p class="card__price">£19.99</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <a href="" class="card__image-link">
-                                        <h3 class="card__title">Personalised Moon Phase</h3>
-                                        <img src="src/images/card-3.jpg" alt="" class="card__image">
-                                        <p class="card__price">£19.99</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <a href="" class="card__image-link">
-                                        <h3 class="card__title">Personalised Moon Phase</h3>
-                                        <img src="src/images/card-3.jpg" alt="" class="card__image">
-                                        <p class="card__price">£19.99</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <a href="" class="card__image-link">
-                                        <h3 class="card__title">Personalised Moon Phase</h3>
-                                        <img src="src/images/card-3.jpg" alt="" class="card__image">
-                                        <p class="card__price">£19.99</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-button-next person-swiper-button-next"></div>
-                    <div class="swiper-button-prev person-swiper-button-prev"></div>
-                </div>
-            </section>
-            <!-- popular collections section  -->
-            <section class="section">
-                <h2 class="section__title">Popular Collections</h2>
                 <div class="row gx-5">
                     <div class="col-md-4 col-12">
-                        <div class="card card--lg">
-                            <h3 class="card--lg__title">Card Packs</h3>
-                            <a href="" class="card__image-link">
-                                <img src="src/images/card-1.jpg" id="imageChange" class="card__image">
-                            </a>
+                        <div class="card card--absoulte card--lg">
+                            <img src="src/images/cats.png" id="imageChange2" class="card__image">
+                            <button class="card__button button">Shop Best Seller</button>
                         </div>
                     </div>
                     <div class="col-md-4 col-12">
-                        <div class="card card--lg">
-                            <h3 class="card--lg__title">Cosmic</h3>
-                            <a href="" class="card__image-link">
-                                <img src="src/images/cats.png" id="imageChange2" class="card__image">
-                            </a>
+                        <div class="card card--absoulte card--lg">
+                            <img src="src/images/cats.png" id="imageChange2" class="card__image">
+                            <button class="card__button button">Shop Best Seller</button>
                         </div>
                     </div>
                     <div class="col-md-4 col-12">
-                        <div class="card card--lg">
-                            <h3 class="card--lg__title">DIY Kits</h3>
-                            <a href="" class="card__image-link">
-                                <img src="src/images/card.jpg" id="imageChange3" class="card__image">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-12">
-                        <div class="card card--lg">
-                            <h3 class="card--lg__title">Bathroom</h3>
-                            <a href="" class="card__image-link">
-                                <img src="src/images/card-2.jpg" id="imageChange4" class="card__image">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-12">
-                        <div class="card card--lg">
-                            <h3 class="card--lg__title">Garden</h3>
-                            <a href="" class="card__image-link">
-                                <img src="src/images/card-14.jpg" id="imageChange5" class="card__image">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-12">
-                        <div class="card card--lg">
-                            <h3 class="card--lg__title">Gaming</h3>
-                            <a href="" class="card__image-link">
-                                <img src="src/images/card-15.jpg" id="imageChange6" class="card__image">
-                            </a>
+                        <div class="card card--absoulte card--lg">
+                            <img src="src/images/cats.png" id="imageChange2" class="card__image">
+                            <button class="card__button button">Shop Best Seller</button>
                         </div>
                     </div>
                 </div>
