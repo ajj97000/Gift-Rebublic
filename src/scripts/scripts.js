@@ -134,3 +134,10 @@ document.addEventListener("DOMContentLoaded", () => {
     target.src = `${array[random]}`;
     log(target);
 });
+
+// wishlist function 
+
+function toggleAddWish(button) {
+    var heartPath = button.querySelector('.card__icon-absolute');
+    heartPath.classList.toggle('red');
+}
