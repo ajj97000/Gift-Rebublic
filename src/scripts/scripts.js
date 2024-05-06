@@ -134,15 +134,3 @@ document.addEventListener("DOMContentLoaded", () => {
     target.src = `${array[random]}`;
     log(target);
 });
-
-
-// banner change refrsh 
-
-document.addEventListener("DOMContentLoaded", () => {
-    const log = console.log,
-        array = ["src/images/banner.jpg", "src/images/Home-page-top-banner-2.jpg", "src/images/Home-page-top-banner-3.jpg",],
-        random = Math.floor(Math.random() * array.length),
-        target = document.getElementById("bannerChange");
-    target.src = `${array[random]}`;
-    log(target);
-});

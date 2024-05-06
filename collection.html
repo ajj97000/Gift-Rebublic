@@ -24,23 +24,31 @@
     <!-- header start  -->
     <header class="header">
         <div class="container">
-            <div class="row justify-content-end">
-                <div class="col-md-4">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-md-2">
                     <a href="/index.html">
                         <img src="src/images/logo.svg" title="gift republic logo" alt="gift republic logo"
                             class="header__logo">
                     </a>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-7">
+                    <div class="search-box search-box--collection">
+                        <form action="/action_page.php" method="get" autocomplete="on">
+                            <input type="text" id="the-filter" placeholder="Search for a product"
+                                class="search-box__field" autocomplete="on">
+                            <button class="button search-box__button">
+                                <img src="src/images/search.jpg" class="search-icon">
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-2">
                     <div class="header__buttons">
                         <button class="button header__button-item button--search">
                             <img src="src/images/search.jpg" class="search-icon">
                         </button>
-                        <input type="text" placeholder="search" class="search-field">
                         <button class="button header__button-item button--cart">
                             <img src="src/images/cart.jpg" alt="" class="cart-icon">
-                            <span>Cart</span>
-                            <span>(?)</span>
                         </button>
                     </div>
                 </div>
@@ -100,15 +108,13 @@
         </header>
     </div>
     <main>
+        <!-- nav start  -->
         <div class="container">
-            <!-- nav start  -->
-            <nav class="nav nav--menu mb-30" id="menu">
+            <nav class="nav nav--menu" id="menu">
                 <div class="menu--wrapper">
-                    <div class="sticky-logo">
-                        <a href="index.html" class="d-block">
-                            <img src="src/images/GR-text-logo.svg" alt="" class="logo-text">
-                        </a>
-                    </div>
+                    <a href="index.html" class="d-block">
+                        <img src="src/images/GR-text-logo.svg" alt="" class="logo-text">
+                    </a>
                     <ul class="nav__list">
                         <li class="nav__list-item">
                             <a href="" class="nav__list-link font-bold">New</a>
@@ -250,8 +256,13 @@
                     </ul>
                 </div>
             </nav>
-            <!-- nav end  -->
-            <!-- collection section  -->
+        </div>
+        <div class="banner-sale">
+            Free delivery over £50
+        </div>
+        <!-- nav end  -->
+        <!-- collection section  -->
+        <div class="container">
             <section class="section">
                 <!-- section header  -->
                 <div class="row justify-content-between align-items-center mb-30 gy-3">
@@ -275,149 +286,349 @@
                         </div>
                     </div>
                 </div>
-                <div class="row gx-5">
-                    <div class="col-md-3 col-12">
-                        <div class="card">
-                            <a href="" class="card__image-link">
+                <div class="row justify-content-center mb-30">
+                    <div class="col-8">
+                        <p class="section__description">Insert text here, Insert text here, Insert text here, Insert
+                            text here,
+                            Insert text here, Insert text
+                            here,
+                            Insert text here, Insert text here, Insert text here, Insert text here, Insert text here.
+                        </p>
+                    </div>
+                </div>
+                <div class="row gx-4">
+                    <div class="col-lg-3 col-md-4 col-12">
+                        <div class="card card--collection">
+                            <div class="card__image-link">
                                 <h3 class="card__title">Aura Reading Cards</h3>
-                                <img src="src/images/card-12.jpg" alt="" class="card__image">
+                                <div class="card__image-wrapper">
+                                    <button class="card__icon" onclick="toggleColor(this)">
+                                        <svg class="heartPath" xmlns="http://www.w3.org/2000/svg" height="24px"
+                                            viewBox="0 0 24 24" width="24px">
+                                            <path d="M0 0h24v24H0V0z" fill="none" />
+                                            <path
+                                                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                                        </svg>
+                                    </button>
+                                    <img src="src/images/card-12.jpg" alt="" class="card__image">
+                                </div>
                                 <p class="card__price">£4.99</p>
-                            </a>
+                                <button class="card__action">Add to Basket</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-3 col-12">
-                        <div class="card">
-                            <a href="" class="card__image-link">
+                    <div class="col-lg-3 col-md-4 col-12">
+                        <div class="card card--collection">
+                            <div class="card__image-link">
                                 <h3 class="card__title">D.I.Y Clay Earring Kit</h3>
-                                <img src="src/images/card-13.jpg" alt="" class="card__image">
+                                <div class="card__image-wrapper">
+                                    <button class="card__icon" onclick="toggleColor(this)">
+                                        <svg class="heartPath" xmlns="http://www.w3.org/2000/svg" height="24px"
+                                            viewBox="0 0 24 24" width="24px">
+                                            <path d="M0 0h24v24H0V0z" fill="none" />
+                                            <path
+                                                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                                        </svg>
+                                    </button>
+                                    <img src="src/images/card-13.jpg" alt="" class="card__image">
+                                </div>
                                 <p class="card__price">£4.99</p>
-                            </a>
+                                <button class="card__action">Add to Basket</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-3 col-12">
-                        <div class="card">
-                            <a href="" class="card__image-link">
+                    <div class="col-lg-3 col-md-4 col-12">
+                        <div class="card card--collection">
+                            <div class="card__image-link">
                                 <h3 class="card__title">Personalised Moon Phase</h3>
-                                <img src="src/images/card-14.jpg" alt="" class="card__image">
+                                <div class="card__image-wrapper">
+                                    <button class="card__icon" onclick="toggleColor(this)">
+                                        <svg class="heartPath" xmlns="http://www.w3.org/2000/svg" height="24px"
+                                            viewBox="0 0 24 24" width="24px">
+                                            <path d="M0 0h24v24H0V0z" fill="none" />
+                                            <path
+                                                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                                        </svg>
+                                    </button>
+
+                                    <img src="src/images/card-14.jpg" alt="" class="card__image">
+                                </div>
                                 <p class="card__price">£4.99</p>
-                            </a>
+                                <button class="card__action">Add to Basket</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-3 col-12">
-                        <div class="card">
-                            <a href="" class="card__image-link">
+                    <div class="col-lg-3 col-md-4 col-12">
+                        <div class="card card--collection">
+                            <div class="card__image-link">
                                 <h3 class="card__title">Alien Plant Markers</h3>
-                                <img src="src/images/card-15.jpg" alt="" class="card__image">
+                                <div class="card__image-wrapper">
+                                    <button class="card__icon" onclick="toggleColor(this)">
+                                        <svg class="heartPath" xmlns="http://www.w3.org/2000/svg" height="24px"
+                                            viewBox="0 0 24 24" width="24px">
+                                            <path d="M0 0h24v24H0V0z" fill="none" />
+                                            <path
+                                                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                                        </svg>
+                                    </button>
+
+                                    <img src="src/images/card-15.jpg" alt="" class="card__image">
+                                </div>
                                 <p class="card__price">£4.99</p>
-                            </a>
+                                <button class="card__action">Add to Basket</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-3 col-12">
-                        <div class="card">
-                            <a href="" class="card__image-link">
+                    <div class="col-lg-3 col-md-4 col-12">
+                        <div class="card card--collection">
+                            <div class="card__image-link">
                                 <h3 class="card__title">Aura Reading Cards</h3>
-                                <img src="src/images/card-12.jpg" alt="" class="card__image">
+                                <div class="card__image-wrapper">
+                                    <button class="card__icon" onclick="toggleColor(this)">
+                                        <svg class="heartPath" xmlns="http://www.w3.org/2000/svg" height="24px"
+                                            viewBox="0 0 24 24" width="24px">
+                                            <path d="M0 0h24v24H0V0z" fill="none" />
+                                            <path
+                                                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                                        </svg>
+                                    </button>
+
+                                    <img src="src/images/card-12.jpg" alt="" class="card__image">
+                                </div>
                                 <p class="card__price">£4.99</p>
-                            </a>
+                                <button class="card__action">Add to Basket</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-3 col-12">
-                        <div class="card">
-                            <a href="" class="card__image-link">
+                    <div class="col-lg-3 col-md-4 col-12">
+                        <div class="card card--collection">
+                            <div class="card__image-link">
                                 <h3 class="card__title">D.I.Y Clay Earring Kit</h3>
-                                <img src="src/images/card-13.jpg" alt="" class="card__image">
+                                <div class="card__image-wrapper">
+                                    <button class="card__icon" onclick="toggleColor(this)">
+                                        <svg class="heartPath" xmlns="http://www.w3.org/2000/svg" height="24px"
+                                            viewBox="0 0 24 24" width="24px">
+                                            <path d="M0 0h24v24H0V0z" fill="none" />
+                                            <path
+                                                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                                        </svg>
+                                    </button>
+
+                                    <img src="src/images/card-13.jpg" alt="" class="card__image">
+                                </div>
                                 <p class="card__price">£4.99</p>
-                            </a>
+                                <button class="card__action">Add to Basket</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-3 col-12">
-                        <div class="card">
-                            <a href="" class="card__image-link">
+                    <div class="col-lg-3 col-md-4 col-12">
+                        <div class="card card--collection">
+                            <div class="card__image-link">
                                 <h3 class="card__title">Personalised Moon Phase</h3>
-                                <img src="src/images/card-14.jpg" alt="" class="card__image">
+                                <div class="card__image-wrapper">
+                                    <button class="card__icon" onclick="toggleColor(this)">
+                                        <svg class="heartPath" xmlns="http://www.w3.org/2000/svg" height="24px"
+                                            viewBox="0 0 24 24" width="24px">
+                                            <path d="M0 0h24v24H0V0z" fill="none" />
+                                            <path
+                                                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                                        </svg>
+                                    </button>
+
+                                    <img src="src/images/card-14.jpg" alt="" class="card__image">
+                                </div>
                                 <p class="card__price">£4.99</p>
-                            </a>
+                                <button class="card__action">Add to Basket</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-3 col-12">
-                        <div class="card">
-                            <a href="" class="card__image-link">
+                    <div class="col-lg-3 col-md-4 col-12">
+                        <div class="card card--collection">
+                            <div class="card__image-link">
                                 <h3 class="card__title">Alien Plant Markers</h3>
-                                <img src="src/images/card-15.jpg" alt="" class="card__image">
+                                <div class="card__image-wrapper">
+                                    <button class="card__icon" onclick="toggleColor(this)">
+                                        <svg class="heartPath" xmlns="http://www.w3.org/2000/svg" height="24px"
+                                            viewBox="0 0 24 24" width="24px">
+                                            <path d="M0 0h24v24H0V0z" fill="none" />
+                                            <path
+                                                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                                        </svg>
+                                    </button>
+
+                                    <img src="src/images/card-15.jpg" alt="" class="card__image">
+                                </div>
                                 <p class="card__price">£4.99</p>
-                            </a>
+                                <button class="card__action">Add to Basket</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-3 col-12">
-                        <div class="card">
-                            <a href="" class="card__image-link">
+                    <div class="col-lg-3 col-md-4 col-12">
+                        <div class="card card--collection">
+                            <div class="card__image-link">
                                 <h3 class="card__title">Aura Reading Cards</h3>
-                                <img src="src/images/card-12.jpg" alt="" class="card__image">
+                                <div class="card__image-wrapper">
+                                    <button class="card__icon" onclick="toggleColor(this)">
+                                        <svg class="heartPath" xmlns="http://www.w3.org/2000/svg" height="24px"
+                                            viewBox="0 0 24 24" width="24px">
+                                            <path d="M0 0h24v24H0V0z" fill="none" />
+                                            <path
+                                                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                                        </svg>
+                                    </button>
+
+                                    <img src="src/images/card-12.jpg" alt="" class="card__image">
+                                </div>
                                 <p class="card__price">£4.99</p>
-                            </a>
+                                <button class="card__action">Add to Basket</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-3 col-12">
-                        <div class="card">
-                            <a href="" class="card__image-link">
+                    <div class="col-lg-3 col-md-4 col-12">
+                        <div class="card card--collection">
+                            <div class="card__image-link">
                                 <h3 class="card__title">D.I.Y Clay Earring Kit</h3>
-                                <img src="src/images/card-13.jpg" alt="" class="card__image">
+                                <div class="card__image-wrapper">
+                                    <button class="card__icon" onclick="toggleColor(this)">
+                                        <svg class="heartPath" xmlns="http://www.w3.org/2000/svg" height="24px"
+                                            viewBox="0 0 24 24" width="24px">
+                                            <path d="M0 0h24v24H0V0z" fill="none" />
+                                            <path
+                                                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                                        </svg>
+                                    </button>
+
+                                    <img src="src/images/card-13.jpg" alt="" class="card__image">
+                                </div>
                                 <p class="card__price">£4.99</p>
-                            </a>
+                                <button class="card__action">Add to Basket</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-3 col-12">
-                        <div class="card">
-                            <a href="" class="card__image-link">
+                    <div class="col-lg-3 col-md-4 col-12">
+                        <div class="card card--collection">
+                            <div class="card__image-link">
                                 <h3 class="card__title">Personalised Moon Phase</h3>
-                                <img src="src/images/card-14.jpg" alt="" class="card__image">
+                                <div class="card__image-wrapper">
+                                    <button class="card__icon" onclick="toggleColor(this)">
+                                        <svg class="heartPath" xmlns="http://www.w3.org/2000/svg" height="24px"
+                                            viewBox="0 0 24 24" width="24px">
+                                            <path d="M0 0h24v24H0V0z" fill="none" />
+                                            <path
+                                                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                                        </svg>
+                                    </button>
+
+                                    <img src="src/images/card-14.jpg" alt="" class="card__image">
+                                </div>
                                 <p class="card__price">£4.99</p>
-                            </a>
+                                <button class="card__action">Add to Basket</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-3 col-12">
-                        <div class="card">
-                            <a href="" class="card__image-link">
+                    <div class="col-lg-3 col-md-4 col-12">
+                        <div class="card card--collection">
+                            <div class="card__image-link">
                                 <h3 class="card__title">Alien Plant Markers</h3>
-                                <img src="src/images/card-15.jpg" alt="" class="card__image">
+                                <div class="card__image-wrapper">
+                                    <button class="card__icon" onclick="toggleColor(this)">
+                                        <svg class="heartPath" xmlns="http://www.w3.org/2000/svg" height="24px"
+                                            viewBox="0 0 24 24" width="24px">
+                                            <path d="M0 0h24v24H0V0z" fill="none" />
+                                            <path
+                                                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                                        </svg>
+                                    </button>
+
+                                    <img src="src/images/card-15.jpg" alt="" class="card__image">
+                                </div>
                                 <p class="card__price">£4.99</p>
-                            </a>
+                                <button class="card__action">Add to Basket</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-3 col-12">
-                        <div class="card">
-                            <a href="" class="card__image-link">
+                    <div class="col-lg-3 col-md-4 col-12">
+                        <div class="card card--collection">
+                            <div class="card__image-link">
                                 <h3 class="card__title">Aura Reading Cards</h3>
-                                <img src="src/images/card-12.jpg" alt="" class="card__image">
+                                <div class="card__image-wrapper">
+                                    <button class="card__icon" onclick="toggleColor(this)">
+                                        <svg class="heartPath" xmlns="http://www.w3.org/2000/svg" height="24px"
+                                            viewBox="0 0 24 24" width="24px">
+                                            <path d="M0 0h24v24H0V0z" fill="none" />
+                                            <path
+                                                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                                        </svg>
+                                    </button>
+
+                                    <img src="src/images/card-12.jpg" alt="" class="card__image">
+                                </div>
                                 <p class="card__price">£4.99</p>
-                            </a>
+                                <button class="card__action">Add to Basket</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-3 col-12">
-                        <div class="card">
-                            <a href="" class="card__image-link">
+                    <div class="col-lg-3 col-md-4 col-12">
+                        <div class="card card--collection">
+                            <div class="card__image-link">
                                 <h3 class="card__title">D.I.Y Clay Earring Kit</h3>
-                                <img src="src/images/card-13.jpg" alt="" class="card__image">
+                                <div class="card__image-wrapper">
+                                    <button class="card__icon" onclick="toggleColor(this)">
+                                        <svg class="heartPath" xmlns="http://www.w3.org/2000/svg" height="24px"
+                                            viewBox="0 0 24 24" width="24px">
+                                            <path d="M0 0h24v24H0V0z" fill="none" />
+                                            <path
+                                                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                                        </svg>
+                                    </button>
+
+                                    <img src="src/images/card-13.jpg" alt="" class="card__image">
+                                </div>
                                 <p class="card__price">£4.99</p>
-                            </a>
+                                <button class="card__action">Add to Basket</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-3 col-12">
-                        <div class="card">
-                            <a href="" class="card__image-link">
+                    <div class="col-lg-3 col-md-4 col-12">
+                        <div class="card card--collection">
+                            <div class="card__image-link">
                                 <h3 class="card__title">Personalised Moon Phase</h3>
-                                <img src="src/images/card-14.jpg" alt="" class="card__image">
+                                <div class="card__image-wrapper">
+                                    <button class="card__icon" onclick="toggleColor(this)">
+                                        <svg class="heartPath" xmlns="http://www.w3.org/2000/svg" height="24px"
+                                            viewBox="0 0 24 24" width="24px">
+                                            <path d="M0 0h24v24H0V0z" fill="none" />
+                                            <path
+                                                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                                        </svg>
+                                    </button>
+
+                                    <img src="src/images/card-14.jpg" alt="" class="card__image">
+                                </div>
                                 <p class="card__price">£4.99</p>
-                            </a>
+                                <button class="card__action">Add to Basket</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-3 col-12">
-                        <div class="card">
-                            <a href="" class="card__image-link">
+                    <div class="col-lg-3 col-md-4 col-12">
+                        <div class="card card--collection">
+                            <div class="card__image-link">
                                 <h3 class="card__title">Alien Plant Markers</h3>
-                                <img src="src/images/card-15.jpg" alt="" class="card__image">
+                                <div class="card__image-wrapper">
+                                    <button class="card__icon" onclick="toggleColor(this)">
+                                        <svg class="heartPath" xmlns="http://www.w3.org/2000/svg" height="24px"
+                                            viewBox="0 0 24 24" width="24px">
+                                            <path d="M0 0h24v24H0V0z" fill="none" />
+                                            <path
+                                                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                                        </svg>
+                                    </button>
+
+                                    <img src="src/images/card-15.jpg" alt="" class="card__image">
+                                </div>
                                 <p class="card__price">£4.99</p>
-                            </a>
+                                <button class="card__action">Add to Basket</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -507,7 +718,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-3 col-12">
+                <div class="col-lg-3 col-md-4 col-12">
                     <div class="text-center footer__end">
                         <a href="index.html">
                             <img src="src/images/footer-logo.jpg" title="gift republic logo" alt="gift republic logo"
@@ -526,6 +737,13 @@
     </footer>
     <!-- footer end  -->
     <script src="src/scripts/scripts.js"></script>
+
+    <script>
+        function toggleColor(button) {
+            var heartPath = button.querySelector('.heartPath');
+            heartPath.classList.toggle('red');
+        }
+    </script>
 </body>
 
 </html>

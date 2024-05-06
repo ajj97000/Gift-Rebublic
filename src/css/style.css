@@ -53,7 +53,7 @@ a:hover {
 
 .header__logo {
     width: auto;
-    height: 150px;
+    height: 90px;
     margin: auto;
     display: flex;
 }
@@ -98,8 +98,8 @@ button {
 }
 
 .search-icon {
-    width: 25px;
-    height: 25px;
+    width: 35px;
+    height: 35px;
 }
 
 .cart-icon {
@@ -137,8 +137,7 @@ button {
 }
 
 .nav__list-link:hover {
-    text-decoration: underline;
-    color: #000;
+    color: var(--color-primary-darken);
 }
 
 .nav--menu {
@@ -167,16 +166,14 @@ button {
     display: flex;
     align-items: center;
     width: 100%;
-    justify-content: center;
+}
+
+.sticky .menu--wrapper {
+    width: 1140px;
 }
 
 .sticky .nav__list {
-    justify-content: center;
-}
-
-.sticky-logo {
-    position: absolute;
-    left: 15px;
+    justify-content: end;
 }
 
 .logo-text {
@@ -580,13 +577,13 @@ button {
 }
 
 .product__content {
-    padding: 60px 0 0 20px;
+    padding: 0 0 0 20px;
 }
 
 .product__title {
-    font-size: 25px;
+    font-size: 46px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 6px;
 }
 
 .product__price {
@@ -597,7 +594,8 @@ button {
 .product__status {
     font-size: 16px;
     color: #e10614;
-    margin-bottom: 30px;
+    margin-bottom: 0;
+    margin-inline-start: 16px;
 }
 
 .product__button {
@@ -607,7 +605,8 @@ button {
     padding: 5px 25px;
     border-radius: 25px;
     line-height: normal;
-    margin-bottom: 30px;
+    margin-bottom: 0;
+    margin-inline-end: 10px;
 }
 
 .product__description {
@@ -751,10 +750,6 @@ button {
     margin-top: 10px;
     margin-bottom: 0;
     font-weight: bold;
-}
-
-.card__download:hover {
-    text-decoration: underline;
 }
 
 .card__name {
@@ -908,4 +903,151 @@ button {
 
 .font-bold {
     font-weight: bold;
+}
+
+.banner-sale {
+    background-color: #a7e6d9;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.search-box--collection {
+    margin: 0;
+}
+
+.card__action {
+    background-color: #000;
+    color: #fff;
+    border-radius: 20px;
+    padding: 2px 20px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.card__icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    background-color: #fff;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__image-wrapper {
+    position: relative;
+}
+
+.heartPath {
+    fill: rgb(214, 214, 214);
+    /* Default color */
+}
+
+.heartPath.red {
+    fill: red;
+    /* Color when active */
+}
+
+.search-box--collection .search-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.search-box--collection .search-box__field::placeholder {
+    color: #000;
+    font-weight: bold;
+}
+
+.card--collection {
+    margin-bottom: 40px;
+}
+
+.card--collection .card__image-link:hover {
+    opacity: 1;
+}
+
+.star-rating {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.star {
+    color: rgb(214, 214, 214);
+    transition: color 0.3s;
+}
+
+.star:hover,
+.star.active {
+    color: #a7e6d9;
+    /* Change this color to your desired active/star color */
+}
+
+.product__reviews {
+    font-size: 20px;
+    margin-bottom: 0;
+    margin-inline-start: 10px;
+}
+
+.product__count {
+    display: flex;
+    padding: 6px;
+    border: 1px solid #ebebeb;
+    border-radius: 20px;
+    width: fit-content;
+}
+
+.product__remove {
+    padding: 6px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ebebeb92;
+}
+
+.product__remove svg {
+    fill: #858585;
+}
+
+.product__number {
+    font-size: 18px;
+    margin: 0 20px;
+}
+
+.product__add {
+    padding: 6px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    color: #fff;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product__add svg {
+    fill: #fff;
+}
+
+.product__button-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 100px;
+    border: 1px solid #858585;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product__icon {
+    fill: #858585;
 }
