@@ -965,6 +965,10 @@ body .swiper-pagination-bullet-active {
     font-size: 30px;
 }
 
+.font-size-xl {
+    font-size: 36px;
+}
+
 .banner-sale {
     background-color: #a7e6d9;
     text-align: center;
@@ -982,7 +986,7 @@ body .swiper-pagination-bullet-active {
     background-color: #000;
     color: #fff;
     border-radius: 20px;
-    padding: 2px 20px;
+    padding: 2px 26px;
     margin-top: 10px;
     font-size: 14px;
 }
