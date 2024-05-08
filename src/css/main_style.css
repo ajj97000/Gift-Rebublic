@@ -614,7 +614,7 @@ body .swiper-pagination-bullet-active {
 }
 
 .product {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 .product__image {
@@ -1159,6 +1159,10 @@ body .swiper-pagination-bullet-active {
     display: none;
     padding: 10px 0;
     border-top: none;
+}
+
+.product__tab-content p {
+    margin-bottom: 0;
 }
 
 .product__tab-content.active {
