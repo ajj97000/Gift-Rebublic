@@ -31,7 +31,7 @@
                             class="header__logo">
                     </a>
                 </div>
-                <div class="col-md-7">
+                <div class="col-md-6">
                     <div class="search-box search-box--custom">
                         <form action="/action_page.php" method="get" autocomplete="on">
                             <input type="text" id="the-filter" placeholder="Search for a product"
@@ -78,6 +78,9 @@
                         <div>
                             <ul class="nav-mobile">
                                 <li class="nav-mobile__item">
+                                    <a href="" class="nav-mobile__link nav__list-link--red">Sale</a>
+                                </li>
+                                <li class="nav-mobile__item">
                                     <a href="" class="nav-mobile__link">New</a>
                                 </li>
                                 <li class="nav-mobile__item">
@@ -91,6 +94,9 @@
                                 </li>
                                 <li class="nav-mobile__item">
                                     <a href="" class="nav-mobile__link">Gift Registration</a>
+                                </li>
+                                <li class="nav-mobile__item">
+                                    <a href="" class="nav-mobile__link">Trade</a>
                                 </li>
                             </ul>
                         </div>
@@ -129,6 +135,9 @@
                         <img src="src/images/GR-text-logo.svg" alt="" class="logo-text">
                     </a>
                     <ul class="nav__list">
+                        <li class="nav__list-item">
+                            <a href="" class="nav__list-link nav__list-link--red font-bold">Sale</a>
+                        </li>
                         <li class="nav__list-item">
                             <a href="" class="nav__list-link font-bold">New</a>
                         </li>
@@ -265,6 +274,9 @@
                         </li>
                         <li class="nav__list-item">
                             <a href="" class="nav__list-link">Gift Registration</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a href="" class="nav__list-link">Trade</a>
                         </li>
                     </ul>
                 </div>
@@ -652,8 +664,8 @@
     <!-- footer start -->
     <footer class="footer">
         <div class="container">
-            <div class="row">
-                <div class="col-md-9 col-12 footer__links">
+            <div class="row gx-5">
+                <div class="col-lg-9 col-12 footer__links">
                     <ul class="footer__list">
                         <li class="footer__item">
                             <a href="" class="footer__link">
@@ -731,21 +743,94 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-4 col-12">
-                    <div class="text-center footer__end">
-                        <a href="index.html">
-                            <img src="src/images/logo.png" title="gift republic logo" alt="gift republic logo"
-                                class="footer__logo">
-                        </a>
-                        <h3 class="footer__info">
-                            <a href="mailto:info@giftrepublic.com">info@giftrepublic.com</a>
-                        </h3>
-                        <h3 class="footer__info">
-                            <a href="tel:4402085424836">+44 (0) 208 542 4836</a>
-                        </h3>
+                <div class="col-lg-3 col-12">
+                    <div class="footer__end">
+                        <form class="footer__form">
+                            <h3 class="footer__form-title">Sing up to our newsletter</h3>
+                            <p class="footer__form-description">subscribe to be the first tohear about our latest
+                                collection and exclusive offers.</p>
+                            <div class="row gx-1">
+                                <div class="col-6">
+                                    <input type="text" class="footer__form-input" placeholder="First Name">
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" class="footer__form-input" placeholder="Last Name">
+                                </div>
+                            </div>
+                            <input type="email" class="footer__form-input" placeholder="Email">
+                            <button class="footer__form-button button">Sign me up!</button>
+                            <p class="footer__form-text">By signing up to hear form us. you accept our privacy policy.
+                            </p>
+                        </form>
                     </div>
                 </div>
             </div>
+            <div class="footer__bottom">
+                <div class="d-flex">
+                    <p class="footer__bottom-text">we accept:</p>
+                    <div class="row">
+                        <div class="col">
+                            <img src="./src/images/visa.svg" alt="">
+                        </div>
+                        <div class="col">
+                            <img src="./src/images/visa.svg" alt="">
+                        </div>
+                        <div class="col">
+                            <img src="./src/images/visa.svg" alt="">
+                        </div>
+                        <div class="col">
+                            <img src="./src/images/visa.svg" alt="">
+                        </div>
+                        <div class="col">
+                            <img src="./src/images/visa.svg" alt="">
+                        </div>
+                        <div class="col">
+                            <img src="./src/images/visa.svg" alt="">
+                        </div>
+                        <div class="col">
+                            <img src="./src/images/visa.svg" alt="">
+                        </div>
+                        <div class="col">
+                            <img src="./src/images/visa.svg" alt="">
+                        </div>
+                        <div class="col">
+                            <img src="./src/images/visa.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                    <p class="footer__bottom-text">Follow us on social media</p>
+                    <div class="d-flex">
+                        <a href="" class="Footer__social-link">
+                            <svg class="Footer__social-icon" viewBox="0 0 16 28" class="main-footer__icon">
+                                <path
+                                    d="M14.984 0.187v4.125h-2.453c-1.922 0-2.281 0.922-2.281 2.25v2.953h4.578l-0.609 4.625h-3.969v11.859h-4.781v-11.859h-3.984v-4.625h3.984v-3.406c0-3.953 2.422-6.109 5.953-6.109 1.687 0 3.141 0.125 3.563 0.187z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="" class="Footer__social-link">
+                            <svg class="Footer__social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                            </svg>
+                        </a>
+                        <a href="" class="Footer__social-link">
+                            <svg class="Footer__social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" />
+                            </svg>
+                        </a>
+                        <a href="" class="Footer__social-link">
+                            <svg viewBox="0 0 24 28" class="Footer__social-icon">
+                                <path
+                                    d="M5.453 9.766v15.484h-5.156v-15.484h5.156zM5.781 4.984c0.016 1.484-1.109 2.672-2.906 2.672v0h-0.031c-1.734 0-2.844-1.188-2.844-2.672 0-1.516 1.156-2.672 2.906-2.672 1.766 0 2.859 1.156 2.875 2.672zM24 16.375v8.875h-5.141v-8.281c0-2.078-0.75-3.5-2.609-3.5-1.422 0-2.266 0.953-2.641 1.875-0.125 0.344-0.172 0.797-0.172 1.266v8.641h-5.141c0.063-14.031 0-15.484 0-15.484h5.141v2.25h-0.031c0.672-1.062 1.891-2.609 4.672-2.609 3.391 0 5.922 2.219 5.922 6.969z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <p class="footer__copyright">@copyright 2024gift republic ltd.</p>
         </div>
     </footer>
     <!-- footer end  -->
