@@ -1349,3 +1349,38 @@ body .swiper-pagination-bullet-active {
     color: #a7e6d9;
     transition: color 0.3s;
 }
+
+.sidebar__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.sidebar {
+    padding-right: 20px;
+    width: 100%;
+    border-right: 1px solid #cbcbcb;
+    padding-top: 30px;
+}
+
+.sidebar__list {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar__list-link {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid #cbcbcb;
+}
+
+.sidebar__list-link:hover {
+    color: #6d9e94;
+}
+
+.page-content {
+    padding: 30px;
+}
+
+.page-content__title {
+    font-size: 30px;
+}
