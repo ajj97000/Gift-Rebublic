@@ -1498,15 +1498,30 @@ body .swiper-pagination-bullet-active {
 }
 
 .card--account .card__description {
-    font-size: 16px;
+    font-size: 14px;
+}
+
+.card--account .card__description a {
+    text-decoration: underline;
 }
 
 .card--account .card__link {
     text-decoration: underline;
+    font-size: 14px;
 }
 
 .card--account .card__icon {
     width: 40px;
     height: 40px;
     margin-right: 10px;
+}
+
+.card--faq {
+    background: none;
+    border: 1px solid #000;
+}
+
+.card--account .card__subtitle {
+    font-size: 18px;
+    font-weight: bold;
 }
