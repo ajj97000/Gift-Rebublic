@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+	<link xmlns="" type="text/css" rel="stylesheet" id="dark-mode-custom-link" />
+	<link xmlns="" type="text/css" rel="stylesheet" id="dark-mode-general-link" />
+	<style xmlns="" lang="en" type="text/css" id="dark-mode-custom-style" />
+	<style xmlns="" lang="en" type="text/css" id="dark-mode-native-style" />
+	<style xmlns="" lang="en" type="text/css" id="dark-mode-native-sheet" />
+	<path fill-rule="evenodd" clip-rule="evenodd"
+		d="M8.46426 16.0244L11.9961 19.0277L15.5 16.0244L17.5 17.7387V4.5H6.5V17.7216L8.46426 16.0244ZM5 21V3H19V21L15.5 18L12 21L8.47205 18L5 21ZM14.625 9.00012H9.375V7.50012H14.625V9.00012ZM9.375 12.3165H14.625V10.8165H9.375V12.3165Z"
+		fill="#141414" />
+</svg>

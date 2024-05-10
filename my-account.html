@@ -291,7 +291,7 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-3">
+                <div class="col-lg-3 col-12">
                     <div class="sidebar">
                         <h2 class="sidebar__title">My Account</h2>
                         <ul class="sidebar__list">
@@ -325,19 +325,23 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-9">
+                <div class="col-lg-9 col-12">
                     <div class="page-content">
-                        <div class="d-flex align-items-center justify-content-between mb-3">
-                            <div class="d-flex">
-                                <img src="src/images/cart.jpg" alt="" class="cart-icon">
-                                <h2 class="page-content__title">Online Orders</h2>
+                        <div class="row align-items-center justify-content-between gy-2 gy-md-0 mb-5">
+                            <div class="col-md-6 col-12">
+                                <div class="d-flex align-items-center">
+                                    <img src="src/images/cart.jpg" alt="" class="cart-icon">
+                                    <h2 class="page-content__title">Online Orders</h2>
+                                </div>
                             </div>
-                            <div class="d-flex">
-                                <a href="" class="button button--link">View All orders</a>
-                                <a href="" class="button button--link"> View products to buy agian</a>
+                            <div class="col-md-6 col-12">
+                                <div class="d-flex justify-content-end">
+                                    <a href="" class="button button--link">View All orders</a>
+                                    <a href="" class="button button--link"> View products to buy agian</a>
+                                </div>
                             </div>
                         </div>
-                        <div class="swiper swiper--account">
+                        <div class="swiper swiper--account mb-5">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <img src="src/images/cats.png" alt="" class="swiper__image">
@@ -370,6 +374,51 @@
                             </div>
                             <div class="swiper-button-next"></div>
                             <div class="swiper-button-prev"></div>
+                        </div>
+                        <div class="row gy-4">
+                            <div class="col-md-6 col-12">
+                                <div class="card card--account">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img src="./src/images/recepits.svg" alt="" class="card__icon">
+                                        <h3 class="card__title">In Store Recepits</h3>
+                                    </div>
+                                    <p class="card__description">My John Lewis members can view in-store receipts.</p>
+                                    <a href="" class="card__link">View in-store receipts</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <div class="card card--account">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img src="./src/images/user.svg" alt="" class="card__icon">
+                                        <h3 class="card__title">My details</h3>
+                                    </div>
+                                    <p class="card__description">Update your personal details, password & manage payment
+                                        cards.</p>
+                                    <a href="" class="card__link">View my details</a>
+                                    <a href="" class="card__link">View address book</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <div class="card card--account">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img src="./src/images/envelop.svg" alt="" class="card__icon">
+                                        <h3 class="card__title">Contact preferences</h3>
+                                    </div>
+                                    <p class="card__description">Manage your John Lewis experience</p>
+                                    <a href="" class="card__link">Update marketing preferences</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <div class="card card--account">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img src="./src/images/headphones.svg" alt="" class="card__icon">
+                                        <h3 class="card__title">My cases</h3>
+                                    </div>
+                                    <p class="card__description">See the status of any queries you‘ve raised with our
+                                        customer service team.</p>
+                                    <a href="" class="card__link">View cases</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
