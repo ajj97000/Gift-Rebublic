@@ -1525,3 +1525,44 @@ body .swiper-pagination-bullet-active {
     font-size: 18px;
     font-weight: bold;
 }
+
+.page-content__bar {
+    background-color: #ebebeb92;
+    padding: 10px;
+    color: #000;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+.color-primary {
+    color: #6d9e94;
+}
+
+.card--checkout {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.card--checkout .card__image {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.card--checkout .card__title {
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.card--checkout .card__price {
+    margin-top: 0;
+    font-weight: bold;
+}
+
+.card--bill {
+    text-align: left;
+    border: 1px solid #eee;
+    padding: 10px;
+}
