@@ -74,6 +74,21 @@ button {
     border: none;
 }
 
+.button--lg {
+    font-size: 22px;
+    padding: 6px 40px;
+}
+
+.button--block {
+    width: 100%;
+    display: block;
+}
+
+.button--outline {
+    border: 1px solid #000;
+    color: #000;
+}
+
 .button--search {
     position: relative;
     font-size: 13px;
@@ -1565,4 +1580,102 @@ body .swiper-pagination-bullet-active {
     text-align: left;
     border: 1px solid #eee;
     padding: 10px;
+}
+
+.side-popup {
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 100%;
+    width: 50%;
+    /* Initially off-screen */
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: left 0.3s ease;
+    /* Transition for left property */
+    overflow: auto;
+    /* Allow scrolling within the popup */
+}
+
+.side-popup--show {
+    left: 50%;
+    /* Slide in from the right */
+}
+
+
+.side-popup__content {
+    padding: 50px;
+    padding-top: 80px;
+    text-align: center;
+    overflow: auto;
+    height: 90vh;
+}
+
+
+.side-popup__title {
+    margin: 20px 0;
+    font-weight: bold;
+    font-size: 46px;
+}
+
+.side-popup__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.product__button.clicked {
+    background-color: #6d9e94;
+}
+
+.side-popup__icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    padding: 6px;
+    background-color: #a7e6d9;
+}
+
+.side-popup__description {
+    font-size: 18px;
+}
+
+@media (max-width: 991.98px) {
+    body .side-popup--show {
+        width: 100%;
+        left: 0;
+        right: 0;
+    }
+}
+
+@media (max-width: 767.98px) {
+    body .side-popup__content {
+        padding: 20px;
+        padding-top: 40px;
+    }
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+}
+
+.overlay--show {
+    display: block;
 }
