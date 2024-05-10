@@ -327,7 +327,50 @@
                 </div>
                 <div class="col-9">
                     <div class="page-content">
-                        <h2 class="page-content__title">Hello Ibrahim</h2>
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <div class="d-flex">
+                                <img src="src/images/cart.jpg" alt="" class="cart-icon">
+                                <h2 class="page-content__title">Online Orders</h2>
+                            </div>
+                            <div class="d-flex">
+                                <a href="" class="button button--link">View All orders</a>
+                                <a href="" class="button button--link"> View products to buy agian</a>
+                            </div>
+                        </div>
+                        <div class="swiper swiper--account">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="src/images/cats.png" alt="" class="swiper__image">
+                                    <a href="" class="button button--black button--rounded">View Order</a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="src/images/card-6.jpg" alt="" class="swiper__image">
+                                    <a href="" class="button button--black button--rounded">View Order</a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="src/images/card-10.jpg" alt="" class="swiper__image">
+                                    <a href="" class="button button--black button--rounded">View Order</a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="src/images/card-11.jpg" alt="" class="swiper__image">
+                                    <a href="" class="button button--black button--rounded">View Order</a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="src/images/card-13.jpg" alt="" class="swiper__image">
+                                    <a href="" class="button button--black button--rounded">View Order</a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="src/images/card-15.jpg" alt="" class="swiper__image">
+                                    <a href="" class="button button--black button--rounded">View Order</a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="src/images/card-9.jpg" alt="" class="swiper__image">
+                                    <a href="" class="button button--black button--rounded">View Order</a>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -511,24 +554,9 @@
     <script src="src/scripts/scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.product__star').mouseenter(function () {
-                var rating = $(this).data('rating');
-                $('.product__star').removeClass('active');
-                $(this).prevAll('.product__star').addBack().addClass('active');
-            });
-
-            $('.product__star').click(function () {
-                var rating = $(this).data('rating');
-                $('.product__star').removeClass('active');
-                $(this).prevAll('.product__star').addBack().addClass('active');
-            });
-        });
-    </script>
 
     <script>
-        var swiper = new Swiper(".mySwiper", {
+        var swiper = new Swiper(".swiper--account", {
             cssMode: true,
             navigation: {
                 nextEl: ".swiper-button-next",
@@ -538,61 +566,31 @@
                 el: ".swiper-pagination",
                 clickable: true,
             },
+            breakpoints: {
+                "@0.00": {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+
+                },
+                "@0.75": {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+
+                },
+                "@1.00": {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+
+                },
+                "@1.50": {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                }
+            },
             loop: true,
             mousewheel: true,
             keyboard: true,
         });
-    </script>
-    <script>
-        // Wishlist function 
-        function toggleAddWish(button) {
-            var heartPath = button.querySelector('.product__icon');
-            heartPath.classList.toggle('red');
-        }
-
-        // Add to cart function 
-        const productNumber = document.querySelector('.product__number');
-        const productAddBtn = document.querySelector('.product__add');
-        const productRemoveBtn = document.querySelector('.product__remove');
-
-        let quantity = 1; // Initial quantity
-
-        // Increase quantity when add button is clicked
-        productAddBtn.addEventListener('click', () => {
-            quantity++;
-            productNumber.textContent = quantity;
-        });
-
-        // Decrease quantity when remove button is clicked
-        productRemoveBtn.addEventListener('click', () => {
-            if (quantity > 1) {
-                quantity--;
-                productNumber.textContent = quantity;
-            }
-        });
-
-        // Tabs function 
-        document.getElementById("defaultOpen").click();
-
-        function openTab(evt, tabName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("product__tab-content");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-                tabcontent[i].classList.remove("active");
-            }
-            document.getElementById(tabName).style.display = "block";
-            document.getElementById(tabName).classList.add("active");
-
-            // Remove the "active" class from all tab links
-            tablinks = document.getElementsByClassName("product__tab-button");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].classList.remove("active");
-            }
-            // Add the "active" class to the clicked tab link
-            evt.currentTarget.classList.add("active");
-        }
-
     </script>
 </body>
 

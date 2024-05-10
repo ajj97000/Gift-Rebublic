@@ -1334,6 +1334,13 @@ body .swiper-pagination-bullet-active {
     height: 40px !important;
 }
 
+.swiper-button-next,
+.swiper-button-prev {
+    padding: 10px;
+    width: 40px !important;
+    height: 40px !important;
+}
+
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {
     color: #000;
@@ -1383,4 +1390,63 @@ body .swiper-pagination-bullet-active {
 
 .page-content__title {
     font-size: 30px;
+}
+
+.button--link+.button--link {
+    margin-left: 10px;
+}
+
+.button--link {
+    padding: 6px 10px;
+    background-color: #ededed;
+}
+
+.button--black {
+    background-color: #000;
+    color: #fff;
+}
+
+.button--black:hover {
+    background-color: #000;
+    color: #fff;
+    opacity: .8;
+}
+
+.button--rounded {
+    border-radius: 20px;
+    padding: 4px 10px;
+    font-size: 14px;
+}
+
+.button--link:hover {
+    background-color: #a7e6d9;
+    transition: .3s all;
+}
+
+.swiper__image {
+    width: 100%;
+}
+
+.swiper--account .swiper-slide {
+    text-align: center;
+}
+
+.swiper--account .swiper__image {
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.swiper--account .swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+    color: #000;
+    font-size: 14px !important;
+    font-weight: 400;
+}
+
+.swiper--account .swiper-button-next:after,
+.swiper-button-prev:after {
+    color: #000;
+    font-size: 14px !important;
+    font-weight: 400;
 }
