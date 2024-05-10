@@ -1403,9 +1403,17 @@ body .swiper-pagination-bullet-active {
     }
 }
 
+.page-content__icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
 
 .page-content__title {
     font-size: 30px;
+    margin-bottom: 0;
+    font-weight: 600;
 }
 
 .button--link+.button--link {
@@ -1415,6 +1423,7 @@ body .swiper-pagination-bullet-active {
 .button--link {
     padding: 6px 10px;
     background-color: #ededed;
+    line-height: 2;
 }
 
 .button--black {
