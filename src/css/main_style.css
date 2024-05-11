@@ -45,6 +45,10 @@ a {
     color: #000;
 }
 
+.text-left {
+    text-align: left !important;
+}
+
 button:hover {
     opacity: .8;
 }
@@ -83,6 +87,10 @@ button {
 .button--lg {
     font-size: 22px;
     padding: 6px 40px;
+}
+
+.button--center {
+    text-align: center;
 }
 
 .button--block {
@@ -993,6 +1001,10 @@ body .swiper-pagination-bullet-active {
     margin-left: 10px;
 }
 
+.font-size-m {
+    font-size: 24px !important;
+}
+
 .font-size-l {
     font-size: 30px !important;
 }
@@ -1745,4 +1757,142 @@ body .swiper-pagination-bullet-active {
 
 .product--basket .product__number {
     font-size: 16px;
+}
+
+.stepper {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin: 30px 0;
+}
+
+.stepper__content {
+    margin: auto;
+    display: block;
+    width: 350px;
+    text-align: center;
+}
+
+.stepper__circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: #858585;
+    margin: auto;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.stepper__circle.active {
+    background-color: #a7e6d9;
+}
+
+.stepper__title {
+    font-size: 14px;
+}
+
+.stepper__line {
+    width: 100%;
+}
+
+/* Hide all content except the first step */
+.content {
+    display: none;
+}
+
+.content.active {
+    display: block;
+}
+
+.form__title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.form__group {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form__Label {
+    display: none;
+}
+
+.form__field {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #858585;
+}
+
+.form__group--checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.form__checkbox-wrapper {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #858585;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.form__button {
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+}
+
+/* Style the checkbox when it's checked */
+input[type="checkbox"]:checked {
+    background-color: #6d9e94;
+    border-color: #6d9e94;
+    margin: 0;
+}
+
+.card__product {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__product .card__image {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    border: 1px solid #cbcbcb;
+    border-radius: 6px;
+}
+
+.card__product .card__title {
+    font-size: 16px;
+    margin-bottom: 6px;
+    text-align: left;
+}
+
+.card__product .card__details {
+    font-size: 12px;
+}
+
+.card__product .card__details {
+    padding-right: 20px;
+    margin-bottom: 0;
+}
+
+.card__product .card__price {
+    margin-top: 0;
+    width: 30%;
 }
