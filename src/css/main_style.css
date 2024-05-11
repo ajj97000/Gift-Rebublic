@@ -1793,6 +1793,9 @@ body .swiper-pagination-bullet-active {
 
 .stepper__line {
     width: 100%;
+    background-color: #858585;
+    height: 2px;
+    margin-top: 10px;
 }
 
 /* Hide all content except the first step */
@@ -1872,9 +1875,13 @@ input[type="checkbox"]:checked {
 .card__product .card__image {
     width: 60px;
     height: 60px;
-    margin-right: 20px;
     border: 1px solid #cbcbcb;
     border-radius: 6px;
+}
+
+.card__image-wrapper {
+    position: relative;
+    margin-right: 20px;
 }
 
 .card__product .card__title {
@@ -1895,4 +1902,44 @@ input[type="checkbox"]:checked {
 .card__product .card__price {
     margin-top: 0;
     width: 30%;
+    text-align: right;
+}
+
+.card__count {
+    background-color: #bebebe;
+    color: #fff;
+    position: absolute;
+    right: -8px;
+    top: -8px;
+    border-radius: 100%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content__title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.content__link {
+    display: block;
+    text-decoration: underline;
+}
+
+.content__link:hover {
+    color: #6d9e94;
+}
+
+.card--radio-button {
+    border: 1px solid #bebebe;
+    text-align: left;
+    padding: 10px;
+}
+
+.card--radio-button input {
+    margin-right: 10px;
 }
