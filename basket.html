@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basket Page</title>
+    <!-- bootstrap file css -->
+    <link rel="stylesheet" href="src/css/bootstrap.css">
+    <!-- Material link -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!-- css file -->
+    <link rel="stylesheet" href="src/css/main_style.css">
+    <!-- font file  -->
+    <link rel="stylesheet" href="src/fonts/Century Gothic.ttf">
+    <link rel="stylesheet" href="src/fonts/CenturyGothic.ttf">
+    <link rel="icon" type="image/x-icon" href="favicon.ico?v=2">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!-- header start  -->
+    <header class="header">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-md-2">
+                    <h1 class="mb-0">
+                        <a href="./">
+                            <img src="src/images/logo.svg" title="gift republic logo" alt="gift republic logo"
+                                class="header__logo">
+                        </a>
+                    </h1>
+                </div>
+                <div class="col-md-6">
+                    <div class="search-box search-box--custom">
+                        <form action="/action_page.php" method="get" autocomplete="on">
+                            <input type="text" id="the-filter" placeholder="Search for a product"
+                                class="search-box__field" autocomplete="on">
+                            <button class="button search-box__button">
+                                <img src="src/images/search.jpg" class="search-icon">
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="header__buttons">
+                        <button class="button header__button-item button--search">
+                            <img src="src/images/user.png" class="search-icon">
+                        </button>
+                        <button class="button header__button-item button--search">
+                            <img src="src/images/heart.png" class="search-icon">
+                        </button>
+                        <button class="button header__button-item button--cart">
+                            <img src="src/images/cart.jpg" alt="" class="cart-icon">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end  -->
+    <div class="container">
+        <header class="header-mobile">
+            <div class="d-flex align-items-center">
+                <button class="button button--menu toggle-menu">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+                <div class="mobile-menu">
+                    <div class="container">
+                        <div class="d-flex align-items-center">
+                            <a href="index.html">
+                                <img src="src/images/GR-text-logo.svg" alt="" class="header-mobile__logo">
+                            </a>
+                            <button class="button button--menu toggle-menu">
+                                <span class="material-symbols-outlined">close</span>
+                            </button>
+                        </div>
+                        <div>
+                            <ul class="nav-mobile">
+                                <li class="nav-mobile__item">
+                                    <a href="" class="nav-mobile__link nav__list-link--red">Sale</a>
+                                </li>
+                                <li class="nav-mobile__item">
+                                    <a href="" class="nav-mobile__link">New</a>
+                                </li>
+                                <li class="nav-mobile__item">
+                                    <a href="" class="nav-mobile__link">Top 50</a>
+                                </li>
+                                <li class="nav-mobile__item">
+                                    <a href="" class="nav-mobile__link">Gifts</a>
+                                </li>
+                                <li class="nav-mobile__item">
+                                    <a href="" class="nav-mobile__link">Personalised Gifts</a>
+                                </li>
+                                <li class="nav-mobile__item">
+                                    <a href="" class="nav-mobile__link">Gift Registration</a>
+                                </li>
+                                <li class="nav-mobile__item">
+                                    <a href="" class="nav-mobile__link">Trade</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <a href="index.html">
+                    <img src="src/images/GR-text-logo.svg" alt="" class="header-mobile__logo">
+                </a>
+            </div>
+            <div class="d-flex">
+                <button class="button button--menu">
+                    <span class="material-symbols-outlined">search</span>
+                </button>
+                <button class="button button--menu">
+                    <span class="material-symbols-outlined">
+                        account_circle
+                    </span>
+                </button>
+                <button class="button button--menu">
+                    <span class="material-symbols-outlined">
+                        favorite
+                    </span>
+                </button>
+                <button class="button button--menu">
+                    <span class="material-symbols-outlined">shopping_cart</span>
+                </button>
+            </div>
+        </header>
+    </div>
+    <main>
+        <!-- nav start  -->
+        <div class="container">
+            <nav class="nav nav--menu" id="menu">
+                <div class="menu--wrapper">
+                    <a href="index.html" class="d-block">
+                        <img src="src/images/GR-text-logo.svg" alt="" class="logo-text">
+                    </a>
+                    <ul class="nav__list">
+                        <li class="nav__list-item">
+                            <a href="" class="nav__list-link nav__list-link--red font-bold">Sale</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a href="" class="nav__list-link font-bold">New</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a href="" class="nav__list-link">Top 50</a>
+                        </li>
+                        <li class="nav__list-item menu-toggle">
+                            <a href="" class="nav__list-link">Gifts</a>
+                            <div class="mega-menu">
+                                <div class="mega-menu__wrapper">
+                                    <ul class="mega-menu__list">
+                                        <li class="mega-menu__item">
+                                            <a href="" class="mega-menu__link">
+                                                <h3 class="mega-menu__title">Gifts</h3>
+                                            </a>
+                                        </li>
+                                        <li class="mega-menu__item">
+                                            <a href="" class="mega-menu__link">Gaming</a>
+                                        </li>
+                                        <li class="mega-menu__item">
+                                            <a href="" class="mega-menu__link">Card Packs</a>
+                                        </li>
+                                        <li class="mega-menu__item">
+                                            <a href="" class="mega-menu__link">Lifestyle</a>
+                                        </li>
+                                        <li class="mega-menu__item">
+                                            <a href="" class="mega-menu__link">Bathroom</a>
+                                        </li>
+                                        <li class="mega-menu__item">
+                                            <a href="" class="mega-menu__link">Kitchen</a>
+                                        </li>
+                                        <li class="mega-menu__item">
+                                            <a href="" class="mega-menu__link">Homeware</a>
+                                        </li>
+                                        <li class="mega-menu__item">
+                                            <a href="" class="mega-menu__link">Tech</a>
+                                        </li>
+                                        <li class="mega-menu__item">
+                                            <a href="" class="mega-menu__link">Gift tins</a>
+                                        </li>
+                                        <li class="mega-menu__item">
+                                            <a href="" class="mega-menu__link">Garden</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="mega-menu__list">
+                                        <li class="mega-menu__item">
+                                            <a href="" class="mega-menu__link">
+                                                <h3 class="mega-menu__title">Collections</h3>
+                                            </a>
+                                        </li>
+                                        <li class="mega-menu__item">
+                                            <a href="" class="mega-menu__link">Cosmic</a>
+                                        </li>
+                                        <li class="mega-menu__item">
+                                            <a href="" class="mega-menu__link">D.I.Y. Kits</a>
+                                        </li>
+                                        <li class="mega-menu__item">
+                                            <a href="" class="mega-menu__link">Scratch off</a>
+                                        </li>
+                                        <li class="mega-menu__item">
+                                            <a href="" class="mega-menu__link">Llama</a>
+                                        </li>
+                                        <li class="mega-menu__item">
+                                            <a href="" class="mega-menu__link">Lovely jubbly</a>
+                                        </li>
+                                        <li class="mega-menu__item">
+                                            <a href="" class="mega-menu__link">Vinyl</a>
+                                        </li>
+                                        <li class="mega-menu__item">
+                                            <a href="" class="mega-menu__link">Dress up</a>
+                                        </li>
+                                        <li class="mega-menu__item">
+                                            <a href="" class="mega-menu__link">Beach please</a>
+                                        </li>
+                                        <li class="mega-menu__item">
+                                            <a href="" class="mega-menu__link">Festive</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="mega-menu__list">
+                                        <li class="mega-menu__item">
+                                            <a href="" class="mega-menu__link">
+                                                <h3 class="mega-menu__title">Recipient</h3>
+                                            </a>
+                                        </li>
+                                        <li class="mega-menu__item">
+                                            <a href="" class="mega-menu__link">Gifts for Kids</a>
+                                        </li>
+                                        <li class="mega-menu__item">
+                                            <a href="" class="mega-menu__link">Gifts for Teenagers</a>
+                                        </li>
+                                        <li class="mega-menu__item">
+                                            <a href="" class="mega-menu__link">Gifts for Her</a>
+                                        </li>
+                                        <li class="mega-menu__item">
+                                            <a href="" class="mega-menu__link">Gifts for Him</a>
+                                        </li>
+                                        <li class="mega-menu__item">
+                                            <a href="" class="mega-menu__link">Gifts for Mum</a>
+                                        </li>
+                                        <li class="mega-menu__item">
+                                            <a href="" class="mega-menu__link">Gifts for Dad</a>
+                                        </li>
+                                        <li class="mega-menu__item">
+                                            <a href="" class="mega-menu__link">Gifts for Couples</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="mega-menu__list">
+                                        <li class="mega-menu__item">
+                                            <a href="" class="mega-menu__link">
+                                                <h3 class="mega-menu__title">Ocassion</h3>
+                                            </a>
+                                        </li>
+                                        <li class="mega-menu__item">
+                                            <a href="" class="mega-menu__link">Birthday gifts</a>
+                                        </li>
+                                        <li class="mega-menu__item">
+                                            <a href="" class="mega-menu__link">Father’s day gifts</a>
+                                        </li>
+                                        <li class="mega-menu__item">
+                                            <a href="" class="mega-menu__link">Mother’s day gifts</a>
+                                        </li>
+                                        <li class="mega-menu__item">
+                                            <a href="" class="mega-menu__link">Valentines day gifts</a>
+                                        </li>
+                                        <li class="mega-menu__item">
+                                            <a href="" class="mega-menu__link">Christmas gifts</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav__list-item">
+                            <a href="" class="nav__list-link">Personalised Gifts</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a href="" class="nav__list-link">Gift Registration</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a href="" class="nav__list-link">Trade</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- nav end  -->
+        <div class="banner-sale">
+            Free delivery over £50
+        </div>
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html" class="breadcrumb__link">Home</a>
+                <span class="slash-seperator">/</span>
+                <a href="" class="breadcrumb__link">Shopping Basket</a>
+            </div>
+            <div class="page-content px-0">
+                <div class="row">
+                    <div class="col-lg-8 col-12">
+                        <h2 class="page-content__title font-size-xxl">Your Shopping Basket</h2>
+                        <div class="page-content__bar">
+                            Spend XXXX for free delivery!
+                        </div>
+                        <div class="product product--basket">
+                            <div class="card card--checkout">
+                                <div class="d-flex">
+                                    <img src="./src/images/card-10.jpg" alt="" class="card__image">
+                                    <div>
+                                        <h3 class="card__title">Product Name</h3>
+                                        <p class="card__price">£9.99</p>
+                                        <div class="d-flex align-items-center">
+                                            <div class="product__count">
+                                                <button class="product__remove">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="24"
+                                                        viewBox="0 -960 960 960" width="24">
+                                                        <path d="M200-440v-80h560v80H200Z"></path>
+                                                    </svg>
+                                                </button>
+                                                <div class="product__number">1</div>
+                                                <button class="product__add">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="24"
+                                                        viewBox="0 -960 960 960" width="24">
+                                                        <path
+                                                            d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z">
+                                                        </path>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <p class="product__status">Low Stock</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="" class="card__link">Remove</a>
+                            </div>
+                            <div class="card card--checkout">
+                                <div class="d-flex">
+                                    <img src="./src/images/card-10.jpg" alt="" class="card__image">
+                                    <div>
+                                        <h3 class="card__title">Product Name</h3>
+                                        <p class="card__price">£9.99</p>
+                                        <div class="d-flex align-items-center">
+                                            <div class="product__count">
+                                                <button class="product__remove">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="24"
+                                                        viewBox="0 -960 960 960" width="24">
+                                                        <path d="M200-440v-80h560v80H200Z"></path>
+                                                    </svg>
+                                                </button>
+                                                <div class="product__number">1</div>
+                                                <button class="product__add">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="24"
+                                                        viewBox="0 -960 960 960" width="24">
+                                                        <path
+                                                            d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z">
+                                                        </path>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <p class="product__status">Low Stock</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="" class="card__link">Remove</a>
+                            </div>
+                            <div class="card card--checkout">
+                                <div class="d-flex">
+                                    <img src="./src/images/card-10.jpg" alt="" class="card__image">
+                                    <div>
+                                        <h3 class="card__title">Product Name</h3>
+                                        <p class="card__price">£9.99</p>
+                                        <div class="d-flex align-items-center">
+                                            <div class="product__count">
+                                                <button class="product__remove">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="24"
+                                                        viewBox="0 -960 960 960" width="24">
+                                                        <path d="M200-440v-80h560v80H200Z"></path>
+                                                    </svg>
+                                                </button>
+                                                <div class="product__number">1</div>
+                                                <button class="product__add">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="24"
+                                                        viewBox="0 -960 960 960" width="24">
+                                                        <path
+                                                            d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z">
+                                                        </path>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <p class="product__status">Low Stock</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="" class="card__link">Remove</a>
+                            </div>
+                            <div class="card card--checkout">
+                                <div class="d-flex">
+                                    <img src="./src/images/card-10.jpg" alt="" class="card__image">
+                                    <div>
+                                        <h3 class="card__title">Product Name</h3>
+                                        <p class="card__price">£9.99</p>
+                                        <div class="d-flex align-items-center">
+                                            <div class="product__count">
+                                                <button class="product__remove">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="24"
+                                                        viewBox="0 -960 960 960" width="24">
+                                                        <path d="M200-440v-80h560v80H200Z"></path>
+                                                    </svg>
+                                                </button>
+                                                <div class="product__number">1</div>
+                                                <button class="product__add">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="24"
+                                                        viewBox="0 -960 960 960" width="24">
+                                                        <path
+                                                            d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z">
+                                                        </path>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <p class="product__status">Low Stock</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="" class="card__link">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <div class="card card--bill">
+                            <h3 class="card__title">
+                                Summary
+                            </h3>
+                            <div class="d-flex justify-content-between">
+                                <p class="card__text">Subtotal:</p>
+                                <p class="card__text">XXXXX</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p class="card__text">Shipping:</p>
+                                <p class="card__text">XXXXX</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p class="card__text">Total:</p>
+                                <p class="card__text">XXXXX</p>
+                            </div>
+                            <hr>
+                            <div class="d-flex justify-content-between">
+                                <p class="card__text mb-0">Discount code and vouchers</p>
+                                <p class="card__text mb-0">v</p>
+                            </div>
+                            <hr>
+                            <div class="card__info mb-3">
+                                <span class="font-bold"> Expected delivery:</span>
+                                <p class="mb-0"> Mon, 13.05 - Tue, 14.05</p>
+                            </div>
+                            <button class="button button--black button--lg">Proceed to Checkout</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-content__bar page-content__bar--lg">
+                    Spend XXXX more for free delivery!
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- footer start -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-lg-9 col-12 footer__links">
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="" class="footer__link">
+                                <h2 class="footer__title">Need help?</h2>
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Contact Us</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Gift Registration</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Track your order</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">FAQs</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="" class="footer__link">
+                                <h2 class="footer__title">Information</h2>
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">About Us</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Shipping</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Download Catalogue</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Sitemap</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="" class="footer__link">
+                                <h2 class="footer__title">Shop</h2>
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">New</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Top 50</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Gifts</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Personalised Gifts</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="" class="footer__link">
+                                <h2 class="footer__title">Legal</h2>
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Ethical Statement</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Cookie Policy</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Privacy Policy</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Terms and Conditions</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-12">
+                    <div class="footer__end">
+                        <form class="footer__form">
+                            <h2 class="footer__form-title">Sing up to our newsletter</h2>
+                            <p class="footer__form-description">subscribe to be the first tohear about our latest
+                                collection and exclusive offers.</p>
+                            <div class="row gx-1">
+                                <div class="col-6">
+                                    <input type="text" class="footer__form-input" placeholder="First Name">
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" class="footer__form-input" placeholder="Last Name">
+                                </div>
+                            </div>
+                            <input type="email" class="footer__form-input" placeholder="Email">
+                            <button class="footer__form-button button">Sign me up!</button>
+                            <p class="footer__form-text">By signing up to hear form us. you accept our privacy policy.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="d-flex">
+                    <p class="footer__bottom-text">we accept:</p>
+                    <div class="row">
+                        <div class="col">
+                            <img src="./src/images/visa.svg" alt="">
+                        </div>
+                        <div class="col">
+                            <img src="./src/images/visa.svg" alt="">
+                        </div>
+                        <div class="col">
+                            <img src="./src/images/visa.svg" alt="">
+                        </div>
+                        <div class="col">
+                            <img src="./src/images/visa.svg" alt="">
+                        </div>
+                        <div class="col">
+                            <img src="./src/images/visa.svg" alt="">
+                        </div>
+                        <div class="col">
+                            <img src="./src/images/visa.svg" alt="">
+                        </div>
+                        <div class="col">
+                            <img src="./src/images/visa.svg" alt="">
+                        </div>
+                        <div class="col">
+                            <img src="./src/images/visa.svg" alt="">
+                        </div>
+                        <div class="col">
+                            <img src="./src/images/visa.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                    <p class="footer__bottom-text">Follow us on social media</p>
+                    <div class="d-flex">
+                        <a href="" class="Footer__social-link">
+                            <svg class="Footer__social-icon" viewBox="0 0 16 28" class="main-footer__icon">
+                                <path
+                                    d="M14.984 0.187v4.125h-2.453c-1.922 0-2.281 0.922-2.281 2.25v2.953h4.578l-0.609 4.625h-3.969v11.859h-4.781v-11.859h-3.984v-4.625h3.984v-3.406c0-3.953 2.422-6.109 5.953-6.109 1.687 0 3.141 0.125 3.563 0.187z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="" class="Footer__social-link">
+                            <svg class="Footer__social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                            </svg>
+                        </a>
+                        <a href="" class="Footer__social-link">
+                            <svg class="Footer__social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" />
+                            </svg>
+                        </a>
+                        <a href="" class="Footer__social-link">
+                            <svg viewBox="0 0 24 28" class="Footer__social-icon">
+                                <path
+                                    d="M5.453 9.766v15.484h-5.156v-15.484h5.156zM5.781 4.984c0.016 1.484-1.109 2.672-2.906 2.672v0h-0.031c-1.734 0-2.844-1.188-2.844-2.672 0-1.516 1.156-2.672 2.906-2.672 1.766 0 2.859 1.156 2.875 2.672zM24 16.375v8.875h-5.141v-8.281c0-2.078-0.75-3.5-2.609-3.5-1.422 0-2.266 0.953-2.641 1.875-0.125 0.344-0.172 0.797-0.172 1.266v8.641h-5.141c0.063-14.031 0-15.484 0-15.484h5.141v2.25h-0.031c0.672-1.062 1.891-2.609 4.672-2.609 3.391 0 5.922 2.219 5.922 6.969z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <p class="footer__copyright">@copyright 2024gift republic ltd.</p>
+        </div>
+    </footer>
+    <!-- footer end  -->
+    <script src="src/scripts/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".swiper--account", {
+            cssMode: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                "@0.00": {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+
+                },
+                "@0.75": {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+
+                },
+                "@1.00": {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+
+                },
+                "@1.50": {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                }
+            },
+            loop: true,
+            mousewheel: true,
+            keyboard: true,
+        });
+
+        // Add to cart function 
+        document.querySelectorAll('.card').forEach(card => {
+            const productNumber = card.querySelector('.product__number');
+            const productAddBtn = card.querySelector('.product__add');
+            const productRemoveBtn = card.querySelector('.product__remove');
+
+            let quantity = 1; // Initial quantity for each product
+
+            // Increase quantity when add button is clicked
+            productAddBtn.addEventListener('click', () => {
+                quantity++;
+                productNumber.textContent = quantity;
+            });
+
+            // Decrease quantity when remove button is clicked
+            productRemoveBtn.addEventListener('click', () => {
+                if (quantity > 1) {
+                    quantity--;
+                    productNumber.textContent = quantity;
+                }
+            });
+
+            // Remove product from basket
+            const removeLink = card.querySelector('.card__link');
+            removeLink.addEventListener('click', (e) => {
+                e.preventDefault(); // Prevent default link behavior
+                card.remove(); // Remove the product card from the DOM
+            });
+        });
+    </script>
+</body>
+
+</html>
