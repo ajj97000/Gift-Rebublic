@@ -30,6 +30,12 @@
     font-weight: bolder;
 }
 
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('/src/fonts/CenturyGothic.ttf') format('truetype');
+    /* Add other font properties like font-weight, font-style if needed */
+}
+
 body {
     font-family: 'Gothic-regular';
 }
