@@ -1940,6 +1940,41 @@ input[type="checkbox"]:checked {
     padding: 10px;
 }
 
-.card--radio-button input {
+.card--radio-button input[type="radio"] {
     margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.card--radio-button input[type="checkbox"] {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    fill: #858585;
+}
+
+.content__link:hover .icon {
+    fill: #6d9e94;
+}
+
+.payment-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin-bottom: 0;
+}
+
+.payment-list__item {
+    margin-right: 5px;
+}
+
+.form--payment {
+    margin-top: 20px;
 }

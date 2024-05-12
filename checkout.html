@@ -403,34 +403,95 @@
                     <div class="content" id="step2">
                         <!-- Shipping Address -->
                         <h3 class="content__title">Shipping Address</h3>
-                        <p>Egypt</p>
-                        <a href="" class="content__link mb-3">Edit</a>
+                        <p>Usa</p>
+                        <button onclick="returnToPreviousStep()" class="content__link mb-3">Edit</button>
                         <h3 class="content__title">Duties and Taxes</h3>
                         <p><strong>Duties and Taxes Paid:</strong> You will pay duties and taxes with your order, if
                             applicable. </p>
                         <button class="mb-3">Edit Duties and Taxes Preferences</button>
                         <h3 class="content__title">Shipping Method</h3>
                         <div class="card card--radio-button">
-                            <div class="d-flex">
+                            <div class="d-flex align-items-center">
                                 <input class="" type="radio" id="age1" name="age" value="30">
                                 <div>
                                     <label for="age1" class="font-bold">Express (1-3 Business Days)</label>
-                                    <p>Estimated Delivery: 05/23/24 - 05/27/24</p>
+                                    <p class="mb-0">Estimated Delivery: 05/23/24 - 05/27/24</p>
                                 </div>
                             </div>
+                        </div>
+                        <div class="align-items-center d-flex justify-content-between">
+                            <button onclick="returnToPreviousStep()" class="content__link">
+                                <svg class="icon" viewBox="0 0 8 16">
+                                    <g stroke="none" stroke-width="1" fill-rule="evenodd">
+                                        <polygon points="5.5 3 7 4.5 3.25 8 7 11.5 5.5 13 0.5 8"></polygon>
+                                    </g>
+                                </svg>
+                                Return to Customer Information</button>
+                            <button class="button button--black button--lg mt-3" type="button"
+                                onclick="nextStep()">Continue</button>
                         </div>
                     </div>
 
                     <div class="content" id="step3">
-                        <!-- Payment Info Form -->
-                        <h3>Payment Info</h3>
-                        <form action="#" method="post">
-                            <label for="card">Card Number:</label>
-                            <input type="text" id="card" name="card" required><br>
-                            <label for="exp">Expiration Date:</label>
-                            <input type="text" id="exp" name="exp" placeholder="MM/YYYY" required><br>
-                            <button type="submit">Submit</button>
-                        </form>
+                        <!-- Payment Method Form -->
+                        <h3>Payment Method</h3>
+                        <div class="card card--radio-button p-3">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <input class="radio-input" type="radio" id="creditCard" name="paymentMethod"
+                                        value="creditCard" checked>
+                                    <label for="creditCard" class="font-bold">Credit Card</label>
+                                </div>
+                                <ul class="payment-list">
+                                    <li class="payment-list__item">
+                                        <img class="payment-list__icon" src="/src/images/visa.svg" alt="VISA">
+                                    </li>
+                                    <li class="payment-list__item">
+                                        <img class="payment-list__icon" src="/src/images/visa.svg" alt="VISA">
+                                    </li>
+                                    <li class="payment-list__item">
+                                        <img class="payment-list__icon" src="/src/images/visa.svg" alt="VISA">
+                                    </li>
+                                    <li class="payment-list__item">
+                                        <img class="payment-list__icon" src="/src/images/visa.svg" alt="VISA">
+                                    </li>
+                                </ul>
+                            </div>
+                            <form action="" class="form form--payment form--creditCard">
+                                <div class="form__group">
+                                    <label class="form__Label" for="cardNumber">Card Number:</label>
+                                    <input class="form__field" type="number" id="cardNumber" name="cardNumber"
+                                        placeholder="Card Number" required>
+                                </div>
+                                <div class="form__group">
+                                    <label class="form__Label" for="cardName">Card Holder Name:</label>
+                                    <input class="form__field" type="text" id="cardName" name="cardName"
+                                        placeholder="Card Holder Name" required>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="card card--radio-button p-3">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <input class="radio-input" type="radio" id="paypal" name="paymentMethod"
+                                        value="paypal">
+                                    <label for="paypal" class="font-bold">PayPal</label>
+                                </div>
+                                <ul class="payment-list">
+                                    <li class="payment-list__item">
+                                        <img class="payment-list__icon" src="/src/images/paypal.svg" alt="PayPal">
+                                    </li>
+                                </ul>
+                            </div>
+                            <form action="" class="form form--payment form--paypal" style="display: none;">
+                                <div class="form__group">
+                                    <label class="form__Label" for="paypalEmail">PayPal Email:</label>
+                                    <input class="form__field" type="email" id="paypalEmail" name="paypalEmail"
+                                        placeholder="PayPal Email" required>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-5 col-12">
@@ -668,7 +729,7 @@
             });
         });
 
-        // stepper function 
+        // Stepper functionality
         const stepperContent = document.querySelectorAll('.stepper__content');
         const stepperCircles = document.querySelectorAll('.stepper__circle');
         const contents = document.querySelectorAll('.content');
@@ -687,12 +748,49 @@
             // Add active classes to selected circle and content
             stepperCircles[index].classList.add('active');
             contents[index].classList.add('active');
+
+            // Save active step index to local storage
+            localStorage.setItem('activeStep', index);
         }
 
         function nextStep() {
             const activeIndex = Array.from(contents).findIndex(content => content.classList.contains('active'));
             updateStepper(activeIndex + 1);
         }
+
+        function returnToPreviousStep() {
+            const activeIndex = Array.from(contents).findIndex(content => content.classList.contains('active'));
+            updateStepper(activeIndex - 1); // Decrease the index by 1 to go back to the previous step
+        }
+
+        function initializeStepper() {
+            const activeStepIndex = localStorage.getItem('activeStep');
+            if (activeStepIndex !== null) {
+                updateStepper(parseInt(activeStepIndex));
+            }
+        }
+
+        window.addEventListener('load', initializeStepper);
+
+
+        // payment radio button function 
+        document.addEventListener('DOMContentLoaded', function () {
+            const radioInputs = document.querySelectorAll('.radio-input');
+            const formPayments = document.querySelectorAll('.form--payment');
+
+            radioInputs.forEach(function (input) {
+                input.addEventListener('change', function () {
+                    formPayments.forEach(function (form) {
+                        form.style.display = 'none';
+                    });
+
+                    const selectedForm = document.querySelector('.form--' + this.value);
+                    if (selectedForm) {
+                        selectedForm.style.display = 'block';
+                    }
+                });
+            });
+        });
     </script>
 </body>
 
