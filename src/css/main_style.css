@@ -1977,4 +1977,40 @@ input[type="checkbox"]:checked {
 
 .form--payment {
     margin-top: 20px;
+    text-align: center;
+}
+
+.card__image--radio-button {
+    height: 30px;
+    width: auto;
+}
+
+.form__image-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form--paypal svg {
+    width: 100px;
+    height: 100px;
+}
+
+.form__image {
+    position: absolute;
+    width: 80px;
+    height: 20px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.card--radio__image {
+    width: 100px;
 }
