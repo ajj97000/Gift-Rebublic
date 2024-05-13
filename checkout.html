@@ -921,6 +921,24 @@
                 differentAddressForm.style.display = 'none';
             }
         });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const radioInputs = document.querySelectorAll('.radio-input');
+            const differentAddressForm = document.getElementById('differentAddressForm');
+
+            radioInputs.forEach(function (input) {
+                input.addEventListener('change', function () {
+                    const isDifferentAddress = this.value === 'differentAddress';
+
+                    if (isDifferentAddress) {
+                        differentAddressForm.style.display = 'block';
+                    } else {
+                        differentAddressForm.style.display = 'none';
+                    }
+                });
+            });
+        });
+
     </script>
 </body>
 
