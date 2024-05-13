@@ -89,9 +89,18 @@ button {
     color: #fff;
 }
 
+.button--yellow {
+    background-color: #FAEA28;
+}
+
 .button--lg {
     font-size: 22px;
     padding: 6px 40px;
+}
+
+.button--md {
+    font-size: 16px;
+    padding: 6px 20px;
 }
 
 .button--center {
