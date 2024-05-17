@@ -323,8 +323,8 @@
         </div>
         <!-- info section  -->
         <div class="container">
-            <div class="row justify-content-between align-items-center info">
-                <div class="col-md-3 col-6">
+            <div class="row gy-lg-0 gy-4 justify-content-between align-items-center info">
+                <div class="col-lg-3 col-6">
                     <div class="info__item">
                         <img src="./src/images/heart.png" alt="" class="info__icon">
                         <div>
@@ -333,7 +333,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-6">
+                <div class="col-lg-3 col-6">
                     <div class="info__item">
                         <img src="./src/images/heart.png" alt="" class="info__icon">
                         <div>
@@ -342,7 +342,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-6">
+                <div class="col-lg-3 col-6">
                     <div class="info__item">
                         <img src="./src/images/heart.png" alt="" class="info__icon">
                         <div>
@@ -351,7 +351,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-6">
+                <div class="col-lg-3 col-6">
                     <div class="info__item">
                         <img src="./src/images/heart.png" alt="" class="info__icon">
                         <div>
@@ -360,6 +360,47 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="swiper swiper--info">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="info__item">
+                            <img src="./src/images/heart.png" alt="" class="info__icon">
+                            <div>
+                                <h2 class="info__title">Sign up to email</h2>
+                                <p class="info__description">Be the first to know!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="info__item">
+                            <img src="./src/images/heart.png" alt="" class="info__icon">
+                            <div>
+                                <h2 class="info__title">Same Day Dispatch</h2>
+                                <p class="info__description">Order before XXXXX</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="info__item">
+                            <img src="./src/images/heart.png" alt="" class="info__icon">
+                            <div>
+                                <h2 class="info__title">Telephone: XXXXXX</h2>
+                                <p class="info__description">Mon-Fri: XXXXXX</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="info__item">
+                            <img src="./src/images/heart.png" alt="" class="info__icon">
+                            <div>
+                                <h2 class="info__title">Free UK Delivery</h2>
+                                <p class="info__description">On orders over £50</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
         <div class="container">
@@ -442,7 +483,6 @@
                             <div class="swiper-slide">
                                 <div class="card card--custom">
                                     <div class="card__image-link">
-                                        <h3 class="card__title">April - Birth Flower</h3>
                                         <div class="card__image-wrapper">
                                             <button class="card__button-icon" onclick="toggleAddWish(this)">
                                                 <svg class="card__icon-absolute" xmlns="http://www.w3.org/2000/svg"
@@ -454,22 +494,27 @@
                                             </button>
                                             <img src="src/images/card-12.jpg" alt="" class="card__image">
                                         </div>
-                                        <div class="card__star-rating">
-                                            <span class="card__star" data-rating="1">&#9733;</span>
-                                            <span class="card__star" data-rating="2">&#9733;</span>
-                                            <span class="card__star" data-rating="3">&#9733;</span>
-                                            <span class="card__star" data-rating="4">&#9733;</span>
-                                            <span class="card__star" data-rating="5">&#9733;</span>
+                                        <div class="card__content">
+                                            <div>
+                                                <div class="card__star-rating">
+                                                    <span class="card__star" data-rating="1">&#9733;</span>
+                                                    <span class="card__star" data-rating="2">&#9733;</span>
+                                                    <span class="card__star" data-rating="3">&#9733;</span>
+                                                    <span class="card__star" data-rating="4">&#9733;</span>
+                                                    <span class="card__star" data-rating="5">&#9733;</span>
+                                                </div>
+                                                <h3 class="card__title">April - Birth Flower</h3>
+                                                <p class="card__price mt-2">£4.99</p>
+                                                <button class="card__action">Add to Basket</button>
+                                            </div>
+                                            <p class="card__sale-text">Sale</p>
                                         </div>
-                                        <p class="card__price mt-2">£4.99</p>
-                                        <button class="card__action">Add to Basket</button>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="card card--custom">
                                     <div class="card__image-link">
-                                        <h3 class="card__title">Cocktail Garden - Grow It</h3>
                                         <div class="card__image-wrapper">
                                             <button class="card__button-icon" onclick="toggleAddWish(this)">
                                                 <svg class="card__icon-absolute" xmlns="http://www.w3.org/2000/svg"
@@ -481,22 +526,27 @@
                                             </button>
                                             <img src="src/images/card-13.jpg" alt="" class="card__image">
                                         </div>
-                                        <div class="card__star-rating">
-                                            <span class="card__star" data-rating="1">&#9733;</span>
-                                            <span class="card__star" data-rating="2">&#9733;</span>
-                                            <span class="card__star" data-rating="3">&#9733;</span>
-                                            <span class="card__star" data-rating="4">&#9733;</span>
-                                            <span class="card__star" data-rating="5">&#9733;</span>
+                                        <div class="card__content">
+                                            <div>
+                                                <div class="card__star-rating">
+                                                    <span class="card__star" data-rating="1">&#9733;</span>
+                                                    <span class="card__star" data-rating="2">&#9733;</span>
+                                                    <span class="card__star" data-rating="3">&#9733;</span>
+                                                    <span class="card__star" data-rating="4">&#9733;</span>
+                                                    <span class="card__star" data-rating="5">&#9733;</span>
+                                                </div>
+                                                <h3 class="card__title">Cocktail Garden - Grow It</h3>
+                                                <p class="card__price mt-2">£4.99</p>
+                                                <button class="card__action">Add to Basket</button>
+                                            </div>
+                                            <p class="card__sale-text">Sale</p>
                                         </div>
-                                        <p class="card__price mt-2">£4.99</p>
-                                        <button class="card__action">Add to Basket</button>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="card card--custom">
                                     <div class="card__image-link">
-                                        <h3 class="card__title">Hungry Bug Eating Plants</h3>
                                         <div class="card__image-wrapper">
                                             <button class="card__button-icon" onclick="toggleAddWish(this)">
                                                 <svg class="card__icon-absolute" xmlns="http://www.w3.org/2000/svg"
@@ -508,22 +558,26 @@
                                             </button>
                                             <img src="src/images/card-14.jpg" alt="" class="card__image">
                                         </div>
-                                        <div class="card__star-rating">
-                                            <span class="card__star" data-rating="1">&#9733;</span>
-                                            <span class="card__star" data-rating="2">&#9733;</span>
-                                            <span class="card__star" data-rating="3">&#9733;</span>
-                                            <span class="card__star" data-rating="4">&#9733;</span>
-                                            <span class="card__star" data-rating="5">&#9733;</span>
+                                        <div class="card__content">
+                                            <div>
+                                                <div class="card__star-rating">
+                                                    <span class="card__star" data-rating="1">&#9733;</span>
+                                                    <span class="card__star" data-rating="2">&#9733;</span>
+                                                    <span class="card__star" data-rating="3">&#9733;</span>
+                                                    <span class="card__star" data-rating="4">&#9733;</span>
+                                                    <span class="card__star" data-rating="5">&#9733;</span>
+                                                </div>
+                                                <h3 class="card__title">Hungry Bug Eating Plants</h3>
+                                                <p class="card__price mt-2">£4.99</p>
+                                                <button class="card__action">Add to Basket</button>
+                                            </div>
                                         </div>
-                                        <p class="card__price mt-2">£4.99</p>
-                                        <button class="card__action">Add to Basket</button>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="card card--custom">
                                     <div class="card__image-link">
-                                        <h3 class="card__title">Bee Happy - Grow Me</h3>
                                         <div class="card__image-wrapper">
                                             <button class="card__button-icon" onclick="toggleAddWish(this)">
                                                 <svg class="card__icon-absolute" xmlns="http://www.w3.org/2000/svg"
@@ -535,22 +589,26 @@
                                             </button>
                                             <img src="src/images/card-15.jpg" alt="" class="card__image">
                                         </div>
-                                        <div class="card__star-rating">
-                                            <span class="card__star" data-rating="1">&#9733;</span>
-                                            <span class="card__star" data-rating="2">&#9733;</span>
-                                            <span class="card__star" data-rating="3">&#9733;</span>
-                                            <span class="card__star" data-rating="4">&#9733;</span>
-                                            <span class="card__star" data-rating="5">&#9733;</span>
+                                        <div class="card__content">
+                                            <div>
+                                                <div class="card__star-rating">
+                                                    <span class="card__star" data-rating="1">&#9733;</span>
+                                                    <span class="card__star" data-rating="2">&#9733;</span>
+                                                    <span class="card__star" data-rating="3">&#9733;</span>
+                                                    <span class="card__star" data-rating="4">&#9733;</span>
+                                                    <span class="card__star" data-rating="5">&#9733;</span>
+                                                </div>
+                                                <h3 class="card__title">Bee Happy - Grow Me</h3>
+                                                <p class="card__price mt-2">£4.99</p>
+                                                <button class="card__action">Add to Basket</button>
+                                            </div>
                                         </div>
-                                        <p class="card__price mt-2">£4.99</p>
-                                        <button class="card__action">Add to Basket</button>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="card card--custom">
                                     <div class="card__image-link">
-                                        <h3 class="card__title">Aura Reading Cards</h3>
                                         <div class="card__image-wrapper">
                                             <button class="card__button-icon" onclick="toggleAddWish(this)">
                                                 <svg class="card__icon-absolute" xmlns="http://www.w3.org/2000/svg"
@@ -562,22 +620,27 @@
                                             </button>
                                             <img src="src/images/card-12.jpg" alt="" class="card__image">
                                         </div>
-                                        <div class="card__star-rating">
-                                            <span class="card__star" data-rating="1">&#9733;</span>
-                                            <span class="card__star" data-rating="2">&#9733;</span>
-                                            <span class="card__star" data-rating="3">&#9733;</span>
-                                            <span class="card__star" data-rating="4">&#9733;</span>
-                                            <span class="card__star" data-rating="5">&#9733;</span>
+                                        <div class="card__content">
+                                            <div>
+                                                <div class="card__star-rating">
+                                                    <span class="card__star" data-rating="1">&#9733;</span>
+                                                    <span class="card__star" data-rating="2">&#9733;</span>
+                                                    <span class="card__star" data-rating="3">&#9733;</span>
+                                                    <span class="card__star" data-rating="4">&#9733;</span>
+                                                    <span class="card__star" data-rating="5">&#9733;</span>
+                                                </div>
+                                                <h3 class="card__title">Aura Reading Cards</h3>
+                                                <p class="card__price mt-2">£4.99</p>
+                                                <button class="card__action">Add to Basket</button>
+                                            </div>
+                                            <p class="card__sale-text">Sale</p>
                                         </div>
-                                        <p class="card__price mt-2">£4.99</p>
-                                        <button class="card__action">Add to Basket</button>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="card card--custom">
                                     <div class="card__image-link">
-                                        <h3 class="card__title">Aura Reading Cards</h3>
                                         <div class="card__image-wrapper">
                                             <button class="card__button-icon" onclick="toggleAddWish(this)">
                                                 <svg class="card__icon-absolute" xmlns="http://www.w3.org/2000/svg"
@@ -589,22 +652,27 @@
                                             </button>
                                             <img src="src/images/card-12.jpg" alt="" class="card__image">
                                         </div>
-                                        <div class="card__star-rating">
-                                            <span class="card__star" data-rating="1">&#9733;</span>
-                                            <span class="card__star" data-rating="2">&#9733;</span>
-                                            <span class="card__star" data-rating="3">&#9733;</span>
-                                            <span class="card__star" data-rating="4">&#9733;</span>
-                                            <span class="card__star" data-rating="5">&#9733;</span>
+                                        <div class="card__content">
+                                            <div>
+                                                <div class="card__star-rating">
+                                                    <span class="card__star" data-rating="1">&#9733;</span>
+                                                    <span class="card__star" data-rating="2">&#9733;</span>
+                                                    <span class="card__star" data-rating="3">&#9733;</span>
+                                                    <span class="card__star" data-rating="4">&#9733;</span>
+                                                    <span class="card__star" data-rating="5">&#9733;</span>
+                                                </div>
+                                                <h3 class="card__title">Aura Reading Cards</h3>
+                                                <p class="card__price mt-2">£4.99</p>
+                                                <button class="card__action">Add to Basket</button>
+                                            </div>
+                                            <p class="card__sale-text">Sale</p>
                                         </div>
-                                        <p class="card__price mt-2">£4.99</p>
-                                        <button class="card__action">Add to Basket</button>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="card card--custom">
                                     <div class="card__image-link">
-                                        <h3 class="card__title">Aura Reading Cards</h3>
                                         <div class="card__image-wrapper">
                                             <button class="card__button-icon" onclick="toggleAddWish(this)">
                                                 <svg class="card__icon-absolute" xmlns="http://www.w3.org/2000/svg"
@@ -616,22 +684,26 @@
                                             </button>
                                             <img src="src/images/card-12.jpg" alt="" class="card__image">
                                         </div>
-                                        <div class="card__star-rating">
-                                            <span class="card__star" data-rating="1">&#9733;</span>
-                                            <span class="card__star" data-rating="2">&#9733;</span>
-                                            <span class="card__star" data-rating="3">&#9733;</span>
-                                            <span class="card__star" data-rating="4">&#9733;</span>
-                                            <span class="card__star" data-rating="5">&#9733;</span>
+                                        <div class="card__content">
+                                            <div>
+                                                <div class="card__star-rating">
+                                                    <span class="card__star" data-rating="1">&#9733;</span>
+                                                    <span class="card__star" data-rating="2">&#9733;</span>
+                                                    <span class="card__star" data-rating="3">&#9733;</span>
+                                                    <span class="card__star" data-rating="4">&#9733;</span>
+                                                    <span class="card__star" data-rating="5">&#9733;</span>
+                                                </div>
+                                                <h3 class="card__title">Aura Reading Cards</h3>
+                                                <p class="card__price mt-2">£4.99</p>
+                                                <button class="card__action">Add to Basket</button>
+                                            </div>
                                         </div>
-                                        <p class="card__price mt-2">£4.99</p>
-                                        <button class="card__action">Add to Basket</button>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="card card--custom">
                                     <div class="card__image-link">
-                                        <h3 class="card__title">Aura Reading Cards</h3>
                                         <div class="card__image-wrapper">
                                             <button class="card__button-icon" onclick="toggleAddWish(this)">
                                                 <svg class="card__icon-absolute" xmlns="http://www.w3.org/2000/svg"
@@ -643,15 +715,21 @@
                                             </button>
                                             <img src="src/images/card-12.jpg" alt="" class="card__image">
                                         </div>
-                                        <div class="card__star-rating">
-                                            <span class="card__star" data-rating="1">&#9733;</span>
-                                            <span class="card__star" data-rating="2">&#9733;</span>
-                                            <span class="card__star" data-rating="3">&#9733;</span>
-                                            <span class="card__star" data-rating="4">&#9733;</span>
-                                            <span class="card__star" data-rating="5">&#9733;</span>
+                                        <div class="card__content">
+                                            <div>
+                                                <div class="card__star-rating">
+                                                    <span class="card__star" data-rating="1">&#9733;</span>
+                                                    <span class="card__star" data-rating="2">&#9733;</span>
+                                                    <span class="card__star" data-rating="3">&#9733;</span>
+                                                    <span class="card__star" data-rating="4">&#9733;</span>
+                                                    <span class="card__star" data-rating="5">&#9733;</span>
+                                                </div>
+                                                <h3 class="card__title">Aura Reading Cards</h3>
+                                                <p class="card__price mt-2">£4.99</p>
+                                                <button class="card__action">Add to Basket</button>
+                                            </div>
+                                            <p class="card__sale-text">Sale</p>
                                         </div>
-                                        <p class="card__price mt-2">£4.99</p>
-                                        <button class="card__action">Add to Basket</button>
                                     </div>
                                 </div>
                             </div>
@@ -997,6 +1075,13 @@
             navigation: {
                 nextEl: ".product-swiper-button-next",
                 prevEl: ".product-swiper-button-prev",
+            },
+        });
+
+        // info swiper function 
+        var swiper = new Swiper(".swiper--info", {
+            pagination: {
+                el: ".swiper-pagination",
             },
         });
     </script>

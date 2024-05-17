@@ -1098,6 +1098,30 @@ body .swiper-pagination-bullet-active {
 
 .card--custom {
     margin-bottom: 40px;
+    text-align: left;
+}
+
+.card--custom .card__title {
+    margin-bottom: 16px;
+}
+
+.card--custom .card__star-rating {
+    margin-top: 0;
+}
+
+.card--custom .card__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-top: 10px;
+}
+
+.card__sale-text {
+    color: white;
+    height: 100%;
+    background: red;
+    padding: 6px 14px;
+    margin-bottom: 0;
 }
 
 .card--custom .card__image-link:hover {
@@ -1303,7 +1327,7 @@ body .swiper-pagination-bullet-active {
 }
 
 .footer__bottom-text {
-    font-size: 20px;
+    font-size: 14px;
     margin-right: 20px;
     margin-bottom: 0;
 }
@@ -2036,4 +2060,25 @@ input[type="checkbox"]:checked {
 
 .card__link--underlink:hover {
     text-decoration: none;
+}
+
+body .swiper--info {
+    display: none;
+}
+
+body .swiper--info .info__item {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 767.98px) {
+    body .swiper--info {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .info {
+        display: none;
+    }
 }
