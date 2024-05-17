@@ -289,27 +289,21 @@
         <div class="container">
             <section class="section">
                 <!-- section header  -->
-                <div class="row justify-content-between align-items-center mb-30 gy-3">
-                    <div class="col-md-4 col-12">
-                        <div class="breadcrumb">
-                            <a href="index.html" class="breadcrumb__link">Home</a>
-                            <span class="slash-seperator">/</span>
-                            <a href="" class="breadcrumb__link">Collection</a>
-                        </div>
+                <div class="d-flex justify-content-between align-items-center mb-30 gy-3">
+                    <div class="breadcrumb">
+                        <a href="index.html" class="breadcrumb__link">Home</a>
+                        <span class="slash-seperator">/</span>
+                        <a href="" class="breadcrumb__link">Collection</a>
                     </div>
-                    <div class="col-md-4 col-6">
-                        <h2 class="section__title font-size-xl mb-0">Garden</h2>
-                    </div>
-                    <div class="col-md-4 col-6">
-                        <div class="d-flex justify-content-end align-items-center">
-                            <button class="button button-sort">
-                                <span class="button-sort__icon">&#8593;</span>
-                                <span class="button-sort__icon">&#8595;</span>
-                                <span class="section__text-end">Sort by</span>
-                            </button>
-                        </div>
+                    <div class="d-flex justify-content-end align-items-center">
+                        <button class="button button-sort">
+                            <span class="button-sort__icon">&#8593;</span>
+                            <span class="button-sort__icon">&#8595;</span>
+                            <span class="section__text-end">Sort by</span>
+                        </button>
                     </div>
                 </div>
+                <h2 class="section__title font-size-xl">Garden</h2>
                 <div class="row justify-content-center mb-30">
                     <div class="col-8">
                         <p class="section__description">Insert text here, Insert text here, Insert text here, Insert
@@ -324,7 +318,6 @@
                     <div class="col-lg-3 col-md-4 col-12">
                         <div class="card card--custom">
                             <div class="card__image-link">
-                                <h3 class="card__title">Aura Reading Cards</h3>
                                 <div class="card__image-wrapper">
                                     <button class="card__button-icon" onclick="toggleAddWish(this)">
                                         <svg class="card__icon-absolute" xmlns="http://www.w3.org/2000/svg"
@@ -336,15 +329,23 @@
                                     </button>
                                     <img src="src/images/card-12.jpg" alt="" class="card__image">
                                 </div>
-                                <p class="card__price">£4.99</p>
-                                <button class="card__action">Add to Basket</button>
+                                <div class="card__content">
+                                    <div class="d-flex mb-2">
+                                        <p class="card__tag card__tag--sale">Sale</p>
+                                        <p class="card__tag card__tag--hot">Bestseller</p>
+                                    </div>
+                                    <div>
+                                        <h3 class="card__title">Aura Reading Cards</h3>
+                                        <p class="card__price mt-2">£4.99</p>
+                                        <button class="card__action">Add to Basket</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-12">
                         <div class="card card--custom">
                             <div class="card__image-link">
-                                <h3 class="card__title">D.I.Y Clay Earring Kit</h3>
                                 <div class="card__image-wrapper">
                                     <button class="card__button-icon" onclick="toggleAddWish(this)">
                                         <svg class="card__icon-absolute" xmlns="http://www.w3.org/2000/svg"
@@ -356,15 +357,23 @@
                                     </button>
                                     <img src="src/images/card-13.jpg" alt="" class="card__image">
                                 </div>
-                                <p class="card__price">£4.99</p>
-                                <button class="card__action">Add to Basket</button>
+                                <div class="card__content">
+                                    <div class="d-flex mb-2">
+                                        <p class="card__tag card__tag--sale">Sale</p>
+                                        <p class="card__tag card__tag--hot">Bestseller</p>
+                                    </div>
+                                    <div>
+                                        <h3 class="card__title">D.I.Y Clay Earring Kit</h3>
+                                        <p class="card__price mt-2">£4.99</p>
+                                        <button class="card__action">Add to Basket</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-12">
                         <div class="card card--custom">
                             <div class="card__image-link">
-                                <h3 class="card__title">Personalised Moon Phase</h3>
                                 <div class="card__image-wrapper">
                                     <button class="card__button-icon" onclick="toggleAddWish(this)">
                                         <svg class="card__icon-absolute" xmlns="http://www.w3.org/2000/svg"
@@ -377,15 +386,19 @@
 
                                     <img src="src/images/card-14.jpg" alt="" class="card__image">
                                 </div>
-                                <p class="card__price">£4.99</p>
-                                <button class="card__action">Add to Basket</button>
+                                <div class="card__content">
+                                    <div>
+                                        <h3 class="card__title">Personalised Moon Phase</h3>
+                                        <p class="card__price mt-2">£4.99</p>
+                                        <button class="card__action">Add to Basket</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-12">
                         <div class="card card--custom">
                             <div class="card__image-link">
-                                <h3 class="card__title">Alien Plant Markers</h3>
                                 <div class="card__image-wrapper">
                                     <button class="card__button-icon" onclick="toggleAddWish(this)">
                                         <svg class="card__icon-absolute" xmlns="http://www.w3.org/2000/svg"
@@ -398,15 +411,20 @@
 
                                     <img src="src/images/card-15.jpg" alt="" class="card__image">
                                 </div>
-                                <p class="card__price">£4.99</p>
-                                <button class="card__action">Add to Basket</button>
+
+                                <div class="card__content">
+                                    <div>
+                                        <h3 class="card__title">Alien Plant Markers</h3>
+                                        <p class="card__price mt-2">£4.99</p>
+                                        <button class="card__action">Add to Basket</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-12">
                         <div class="card card--custom">
                             <div class="card__image-link">
-                                <h3 class="card__title">Aura Reading Cards</h3>
                                 <div class="card__image-wrapper">
                                     <button class="card__button-icon" onclick="toggleAddWish(this)">
                                         <svg class="card__icon-absolute" xmlns="http://www.w3.org/2000/svg"
@@ -419,15 +437,19 @@
 
                                     <img src="src/images/card-12.jpg" alt="" class="card__image">
                                 </div>
-                                <p class="card__price">£4.99</p>
-                                <button class="card__action">Add to Basket</button>
+                                <div class="card__content">
+                                    <div>
+                                        <h3 class="card__title">Aura Reading Cards</h3>
+                                        <p class="card__price mt-2">£4.99</p>
+                                        <button class="card__action">Add to Basket</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-12">
                         <div class="card card--custom">
                             <div class="card__image-link">
-                                <h3 class="card__title">D.I.Y Clay Earring Kit</h3>
                                 <div class="card__image-wrapper">
                                     <button class="card__button-icon" onclick="toggleAddWish(this)">
                                         <svg class="card__icon-absolute" xmlns="http://www.w3.org/2000/svg"
@@ -440,15 +462,19 @@
 
                                     <img src="src/images/card-13.jpg" alt="" class="card__image">
                                 </div>
-                                <p class="card__price">£4.99</p>
-                                <button class="card__action">Add to Basket</button>
+                                <div class="card__content">
+                                    <div>
+                                        <h3 class="card__title">D.I.Y Clay Earring Kit</h3>
+                                        <p class="card__price mt-2">£4.99</p>
+                                        <button class="card__action">Add to Basket</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-12">
                         <div class="card card--custom">
                             <div class="card__image-link">
-                                <h3 class="card__title">Personalised Moon Phase</h3>
                                 <div class="card__image-wrapper">
                                     <button class="card__button-icon" onclick="toggleAddWish(this)">
                                         <svg class="card__icon-absolute" xmlns="http://www.w3.org/2000/svg"
@@ -461,15 +487,19 @@
 
                                     <img src="src/images/card-14.jpg" alt="" class="card__image">
                                 </div>
-                                <p class="card__price">£4.99</p>
-                                <button class="card__action">Add to Basket</button>
+                                <div class="card__content">
+                                    <div>
+                                        <h3 class="card__title">Personalised Moon Phase</h3>
+                                        <p class="card__price mt-2">£4.99</p>
+                                        <button class="card__action">Add to Basket</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-12">
                         <div class="card card--custom">
                             <div class="card__image-link">
-                                <h3 class="card__title">Alien Plant Markers</h3>
                                 <div class="card__image-wrapper">
                                     <button class="card__button-icon" onclick="toggleAddWish(this)">
                                         <svg class="card__icon-absolute" xmlns="http://www.w3.org/2000/svg"
@@ -482,15 +512,19 @@
 
                                     <img src="src/images/card-15.jpg" alt="" class="card__image">
                                 </div>
-                                <p class="card__price">£4.99</p>
-                                <button class="card__action">Add to Basket</button>
+                                <div class="card__content">
+                                    <div>
+                                        <h3 class="card__title">Alien Plant Markers</h3>
+                                        <p class="card__price mt-2">£4.99</p>
+                                        <button class="card__action">Add to Basket</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-12">
                         <div class="card card--custom">
                             <div class="card__image-link">
-                                <h3 class="card__title">Aura Reading Cards</h3>
                                 <div class="card__image-wrapper">
                                     <button class="card__button-icon" onclick="toggleAddWish(this)">
                                         <svg class="card__icon-absolute" xmlns="http://www.w3.org/2000/svg"
@@ -503,15 +537,19 @@
 
                                     <img src="src/images/card-12.jpg" alt="" class="card__image">
                                 </div>
-                                <p class="card__price">£4.99</p>
-                                <button class="card__action">Add to Basket</button>
+                                <div class="card__content">
+                                    <div>
+                                        <h3 class="card__title">Aura Reading Cards</h3>
+                                        <p class="card__price mt-2">£4.99</p>
+                                        <button class="card__action">Add to Basket</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-12">
                         <div class="card card--custom">
                             <div class="card__image-link">
-                                <h3 class="card__title">D.I.Y Clay Earring Kit</h3>
                                 <div class="card__image-wrapper">
                                     <button class="card__button-icon" onclick="toggleAddWish(this)">
                                         <svg class="card__icon-absolute" xmlns="http://www.w3.org/2000/svg"
@@ -524,15 +562,19 @@
 
                                     <img src="src/images/card-13.jpg" alt="" class="card__image">
                                 </div>
-                                <p class="card__price">£4.99</p>
-                                <button class="card__action">Add to Basket</button>
+                                <div class="card__content">
+                                    <div>
+                                        <h3 class="card__title">D.I.Y Clay Earring Kit</h3>
+                                        <p class="card__price mt-2">£4.99</p>
+                                        <button class="card__action">Add to Basket</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-12">
                         <div class="card card--custom">
                             <div class="card__image-link">
-                                <h3 class="card__title">Personalised Moon Phase</h3>
                                 <div class="card__image-wrapper">
                                     <button class="card__button-icon" onclick="toggleAddWish(this)">
                                         <svg class="card__icon-absolute" xmlns="http://www.w3.org/2000/svg"
@@ -545,15 +587,19 @@
 
                                     <img src="src/images/card-14.jpg" alt="" class="card__image">
                                 </div>
-                                <p class="card__price">£4.99</p>
-                                <button class="card__action">Add to Basket</button>
+                                <div class="card__content">
+                                    <div>
+                                        <h3 class="card__title">Personalised Moon Phase</h3>
+                                        <p class="card__price mt-2">£4.99</p>
+                                        <button class="card__action">Add to Basket</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-12">
                         <div class="card card--custom">
                             <div class="card__image-link">
-                                <h3 class="card__title">Alien Plant Markers</h3>
                                 <div class="card__image-wrapper">
                                     <button class="card__button-icon" onclick="toggleAddWish(this)">
                                         <svg class="card__icon-absolute" xmlns="http://www.w3.org/2000/svg"
@@ -566,15 +612,19 @@
 
                                     <img src="src/images/card-15.jpg" alt="" class="card__image">
                                 </div>
-                                <p class="card__price">£4.99</p>
-                                <button class="card__action">Add to Basket</button>
+                                <div class="card__content">
+                                    <div>
+                                        <h3 class="card__title">Alien Plant Markers</h3>
+                                        <p class="card__price mt-2">£4.99</p>
+                                        <button class="card__action">Add to Basket</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-12">
                         <div class="card card--custom">
                             <div class="card__image-link">
-                                <h3 class="card__title">Aura Reading Cards</h3>
                                 <div class="card__image-wrapper">
                                     <button class="card__button-icon" onclick="toggleAddWish(this)">
                                         <svg class="card__icon-absolute" xmlns="http://www.w3.org/2000/svg"
@@ -587,15 +637,19 @@
 
                                     <img src="src/images/card-12.jpg" alt="" class="card__image">
                                 </div>
-                                <p class="card__price">£4.99</p>
-                                <button class="card__action">Add to Basket</button>
+                                <div class="card__content">
+                                    <div>
+                                        <h3 class="card__title">Aura Reading Cards</h3>
+                                        <p class="card__price mt-2">£4.99</p>
+                                        <button class="card__action">Add to Basket</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-12">
                         <div class="card card--custom">
                             <div class="card__image-link">
-                                <h3 class="card__title">D.I.Y Clay Earring Kit</h3>
                                 <div class="card__image-wrapper">
                                     <button class="card__button-icon" onclick="toggleAddWish(this)">
                                         <svg class="card__icon-absolute" xmlns="http://www.w3.org/2000/svg"
@@ -608,15 +662,19 @@
 
                                     <img src="src/images/card-13.jpg" alt="" class="card__image">
                                 </div>
-                                <p class="card__price">£4.99</p>
-                                <button class="card__action">Add to Basket</button>
+                                <div class="card__content">
+                                    <div>
+                                        <h3 class="card__title">D.I.Y Clay Earring Kit</h3>
+                                        <p class="card__price mt-2">£4.99</p>
+                                        <button class="card__action">Add to Basket</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-12">
                         <div class="card card--custom">
                             <div class="card__image-link">
-                                <h3 class="card__title">Personalised Moon Phase</h3>
                                 <div class="card__image-wrapper">
                                     <button class="card__button-icon" onclick="toggleAddWish(this)">
                                         <svg class="card__icon-absolute" xmlns="http://www.w3.org/2000/svg"
@@ -629,15 +687,19 @@
 
                                     <img src="src/images/card-14.jpg" alt="" class="card__image">
                                 </div>
-                                <p class="card__price">£4.99</p>
-                                <button class="card__action">Add to Basket</button>
+                                <div class="card__content">
+                                    <div>
+                                        <h3 class="card__title">Personalised Moon Phase</h3>
+                                        <p class="card__price mt-2">£4.99</p>
+                                        <button class="card__action">Add to Basket</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-12">
                         <div class="card card--custom">
                             <div class="card__image-link">
-                                <h3 class="card__title">Alien Plant Markers</h3>
                                 <div class="card__image-wrapper">
                                     <button class="card__button-icon" onclick="toggleAddWish(this)">
                                         <svg class="card__icon-absolute" xmlns="http://www.w3.org/2000/svg"
@@ -650,8 +712,13 @@
 
                                     <img src="src/images/card-15.jpg" alt="" class="card__image">
                                 </div>
-                                <p class="card__price">£4.99</p>
-                                <button class="card__action">Add to Basket</button>
+                                <div class="card__content">
+                                    <div>
+                                        <h3 class="card__title">Alien Plant Markers</h3>
+                                        <p class="card__price mt-2">£4.99</p>
+                                        <button class="card__action">Add to Basket</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

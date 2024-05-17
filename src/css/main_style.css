@@ -1110,18 +1110,28 @@ body .swiper-pagination-bullet-active {
 }
 
 .card--custom .card__content {
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: end; */
     margin-top: 10px;
 }
 
-.card__sale-text {
-    color: white;
+.card__tag {
     height: 100%;
-    background: red;
-    padding: 6px 14px;
+    width: fit-content;
+    padding: 4px 10px;
     margin-bottom: 0;
+    margin-right: 5px;
+}
+
+.card__tag--sale {
+    color: #fff;
+    background-color: red;
+}
+
+.card__tag--hot {
+    color: #000;
+    background-color: #a7e6d9;
 }
 
 .card--custom .card__image-link:hover {
