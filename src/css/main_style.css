@@ -171,7 +171,7 @@ button {
 }
 
 .nav__list-item {
-    padding: 10px 15px 30px;
+    padding: 10px 25px 30px;
 }
 
 .nav__list-link {
@@ -1068,6 +1068,7 @@ body .swiper-pagination-bullet-active {
 
 .card__image-wrapper {
     position: relative;
+    width: 100%;
 }
 
 .card__icon-absolute {
@@ -1344,7 +1345,7 @@ body .swiper-pagination-bullet-active {
     bottom: 0;
     margin: auto;
     padding: 20px 50px;
-    background: #fff;
+    background: #ffffffb8;
     width: fit-content;
     height: fit-content;
     text-align: center;
