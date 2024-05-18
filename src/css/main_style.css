@@ -1064,7 +1064,7 @@ body .swiper-pagination-bullet-active {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 999;
+    z-index: 2;
 }
 
 .card__image-wrapper {
