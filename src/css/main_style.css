@@ -93,6 +93,11 @@ button {
     background-color: #FAEA28;
 }
 
+.button--grey {
+    background-color: #e2e2e2;
+    color: #000;
+}
+
 .button--lg {
     font-size: 22px;
     padding: 6px 40px;
@@ -610,13 +615,13 @@ body .swiper-pagination {
 }
 
 .swiper-pagination .swiper-pagination-bullet {
-    width: 18px;
-    height: 18px;
+    width: 10px;
+    height: 10px;
 }
 
 body .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 0 10px;
+    margin: 0 6px;
 }
 
 body .swiper-pagination-bullet-active {
@@ -662,7 +667,8 @@ body .swiper-pagination-bullet-active {
 
 .product__image {
     width: 100%;
-    height: 530px;
+    height: 630px;
+    object-fit: cover;
 }
 
 .product__title {
@@ -680,10 +686,22 @@ body .swiper-pagination-bullet-active {
     font-size: 16px;
     color: #000;
     margin-bottom: 0;
-    margin-inline-start: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
 }
 
 .product__status::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    border-radius: 50%;
+    background-color: #ff0000;
+    color: #ff0000;
+}
+
+.product__status--low::before {
     content: "";
     display: inline-block;
     width: 10px;
@@ -702,7 +720,7 @@ body .swiper-pagination-bullet-active {
     border-radius: 25px;
     line-height: normal;
     margin-bottom: 0;
-    margin-inline-end: 10px;
+    margin-right: 10px;
 }
 
 .product__description {
@@ -715,7 +733,7 @@ body .swiper-pagination-bullet-active {
 }
 
 .product__list {
-    padding-inline-start: 18px;
+    padding-left: 18px;
 }
 
 .product-swiper .swiper-button-next:after,
@@ -1114,7 +1132,8 @@ body .swiper-pagination-bullet-active {
     margin-top: 0.5rem;
 }
 
-.card__tag {
+.card__tag,
+.product__tag {
     height: 100%;
     width: fit-content;
     padding: 3px 10px;
@@ -1129,7 +1148,17 @@ body .swiper-pagination-bullet-active {
     background-color: red;
 }
 
+.product__tag--sale {
+    color: #fff;
+    background-color: red;
+}
+
 .card__tag--hot {
+    color: #000;
+    background-color: #a7e6d9;
+}
+
+.product__tag--hot {
     color: #000;
     background-color: #a7e6d9;
 }
@@ -1157,7 +1186,7 @@ body .swiper-pagination-bullet-active {
 .product__reviews {
     font-size: 20px;
     margin-bottom: 0;
-    margin-inline-start: 10px;
+    margin-left: 10px;
 }
 
 .product__count {
@@ -1212,7 +1241,7 @@ body .swiper-pagination-bullet-active {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-inline-end: 10px;
+    margin-right: 10px;
 }
 
 .product__icon {
@@ -1236,8 +1265,8 @@ body .swiper-pagination-bullet-active {
     border: none;
     outline: none;
     cursor: pointer;
-    margin-inline-end: 20px;
-    padding-inline-start: 0;
+    margin-right: 20px;
+    padding-left: 0;
     font-size: 16px;
     font-weight: bold;
     text-align: left;
