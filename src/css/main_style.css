@@ -1102,7 +1102,7 @@ body .swiper-pagination-bullet-active {
 }
 
 .card--custom .card__title {
-    margin-bottom: 16px;
+    margin-bottom: 10px;
 }
 
 .card--custom .card__star-rating {
@@ -1110,18 +1110,17 @@ body .swiper-pagination-bullet-active {
 }
 
 .card--custom .card__content {
-    /* display: flex;
-    justify-content: space-between;
-    align-items: end; */
-    margin-top: 10px;
+    margin-top: 0.5rem;
 }
 
 .card__tag {
     height: 100%;
     width: fit-content;
-    padding: 4px 10px;
+    padding: 3px 10px;
+    font-size: 14px;
     margin-bottom: 0;
     margin-right: 5px;
+    border-radius: 6px;
 }
 
 .card__tag--sale {
@@ -2091,4 +2090,39 @@ body .swiper--info .info__item {
     .info {
         display: none;
     }
+}
+
+.filter {
+    position: relative;
+}
+
+.button-sort {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    top: 30px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content--show {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
 }
