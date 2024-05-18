@@ -712,6 +712,17 @@ body .swiper-pagination-bullet-active {
     color: #a7e6d9;
 }
 
+.product__status--high::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    border-radius: 50%;
+    background-color: #16dd31;
+    color: #16dd31;
+}
+
 .product__button {
     background-color: #1d1d1b;
     color: #fff;
