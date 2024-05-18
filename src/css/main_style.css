@@ -483,7 +483,7 @@ button {
     display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991.98px) {
 
     .header,
     .nav--menu {
@@ -2170,4 +2170,14 @@ body .swiper--info .info__item {
     z-index: 1;
     opacity: 1;
     transform: translateX(0);
+}
+
+@media (max-width: 1200px) {
+    .nav__list-item {
+        padding: 10px 10px 30px;
+    }
+
+    .sticky .nav__list-item {
+        padding: 10px;
+    }
 }
