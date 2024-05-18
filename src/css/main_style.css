@@ -1064,6 +1064,7 @@ body .swiper-pagination-bullet-active {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 999;
 }
 
 .card__image-wrapper {
@@ -2125,4 +2126,48 @@ body .swiper--info .info__item {
 
 .dropdown-content a:hover {
     background-color: #f1f1f1;
+}
+
+.card--custom .card__image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+}
+
+.card--custom .card__image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.card--custom .card__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.card--custom .card__image--first {
+    z-index: 1;
+}
+
+.card--custom .card__image--second {
+    z-index: 0;
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+.card--custom .card__image-wrapper:hover .card__image--first {
+    z-index: 0;
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.card--custom .card__image-wrapper:hover .card__image--second {
+    z-index: 1;
+    opacity: 1;
+    transform: translateX(0);
 }
