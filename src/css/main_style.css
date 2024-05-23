@@ -96,6 +96,7 @@ button {
 .button--grey {
     background-color: #e2e2e2;
     color: #000;
+    border: 1px solid #b5b5b5;
 }
 
 .button--lg {
