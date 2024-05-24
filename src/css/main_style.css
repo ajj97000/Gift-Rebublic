@@ -1926,14 +1926,20 @@ body .swiper-pagination-bullet-active {
 }
 
 .form__Label {
-    display: none;
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.form__group--required .form__Label:after {
+    content: "*";
+    color: #a7e6d9;
 }
 
 .form__field {
     width: 100%;
     padding: 12px;
-    border-radius: 6px;
-    border: 1px solid #858585;
+    border-radius: 0;
+    border: 1px solid #000;
 }
 
 .form__group--checkbox {
@@ -1944,8 +1950,7 @@ body .swiper-pagination-bullet-active {
 .form__checkbox-wrapper {
     width: 24px;
     height: 24px;
-    border: 1px solid #858585;
-    border-radius: 3px;
+    border: 1px solid #000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1972,6 +1977,7 @@ input[type="checkbox"]:checked {
     background-color: #a7e6d9;
     border-color: #a7e6d9;
     margin: 0;
+    border-radius: 0;
 }
 
 .card__product {
@@ -2038,7 +2044,7 @@ input[type="checkbox"]:checked {
 
 .content__link {
     display: block;
-    text-decoration: underline;
+    font-size: 18px;
 }
 
 .content__link:hover {
@@ -2268,6 +2274,11 @@ body .swiper--info .info__item {
     margin-bottom: 30px;
 }
 
+.payment {
+    width: 100%;
+    overflow: hidden;
+}
+
 .card--payment {
     background: none;
     text-align: left;
@@ -2315,4 +2326,33 @@ body .swiper--info .info__item {
 
 .payment__image {
     width: 100px;
+}
+
+.content--shipping .content__title {
+    margin-bottom: 0;
+    color: #bebebe;
+    font-weight: normal;
+    margin-right: 30px;
+}
+
+.content--shipping .content__text {
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.content--shipping .content__link {
+    font-size: 12px;
+    text-decoration: underline;
+    text-align: right;
+}
+
+.content--shipping .form__label {
+    font-size: 18px;
+    margin-left: 20px;
+    width: fit-content;
+}
+
+.content--shipping .form__price {
+    font-size: 18px;
+    font-weight: bold;
 }

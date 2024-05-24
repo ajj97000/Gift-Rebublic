@@ -46,10 +46,10 @@
                                     <h2 class="stepper__title">Payment Info</h2>
                                 </button>
                             </div>
-                            <h3 class="form__title">Express Checkout</h3>
-                            <img src="./src/images/paypal.png" alt="" class="payment__image mb-3">
                             <!-- Content for each step -->
                             <div class="content active" id="step1">
+                                <h3 class="form__title">Express Checkout</h3>
+                                <img src="./src/images/paypal.png" alt="" class="payment__image mb-3">
                                 <!-- Customer Info Form -->
                                 <form action="#" method="post" class="form">
                                     <div class="d-flex align-items-center justify-content-between mb-3">
@@ -59,7 +59,7 @@
                                                 in</a>
                                         </div>
                                     </div>
-                                    <div class="form__group">
+                                    <div class="form__group form__group--required">
                                         <label class="form__Label" for="email">Email:</label>
                                         <input class="form__field" type="email" id="email" name="email"
                                             placeholder="Email" required>
@@ -75,14 +75,14 @@
                                     <h3 class="form__title">Shipping Address</h3>
                                     <div class="row">
                                         <div class="col-6">
-                                            <div class="form__group">
+                                            <div class="form__group form__group--required">
                                                 <label class="form__Label" for="firstName">First Name:</label>
                                                 <input class="form__field" type="text" id="firstName"
                                                     placeholder="First Name" name="firstName" required>
                                             </div>
                                         </div>
                                         <div class="col-6">
-                                            <div class="form__group">
+                                            <div class="form__group form__group--required">
                                                 <label class="form__Label" for="lastName">Last Name:</label>
                                                 <input class="form__field" type="text" id="lastName"
                                                     placeholder="Last Name" name="lastName" required>
@@ -94,17 +94,17 @@
                                         <input class="form__field" type="company" id="company"
                                             placeholder="Company (Optional)" name="company" required>
                                     </div>
-                                    <div class="form__group">
-                                        <label class="form__Label" for="address1">Address Line 1:</label>
+                                    <div class="form__group form__group--required">
+                                        <label class="form__Label " for="address1">Address Line 1:</label>
                                         <input class="form__field" type="address1" id="address1"
                                             placeholder="Address Line 1" name="address1" required>
                                     </div>
-                                    <div class="form__group">
+                                    <div class="form__group form__group--required">
                                         <label class="form__Label" for="address2">Address Line 2:</label>
                                         <input class="form__field" type="address2" id="address2"
                                             placeholder="Address Line 2 (Optional)" name="address2" required>
                                     </div>
-                                    <div class="form__group">
+                                    <div class="form__group form__group--required">
                                         <label class="form__Label" for="country">Choose a car:</label>
                                         <select class="form__field" name="country" id="country">
                                             <option value="country" selected hidden>Country</option>
@@ -116,56 +116,86 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-6">
-                                            <div class="form__group">
+                                            <div class="form__group form__group--required">
                                                 <label class="form__Label" for="city">City:</label>
                                                 <input class="form__field" type="text" id="city" placeholder="City"
                                                     name="city" required>
                                             </div>
                                         </div>
                                         <div class="col-6">
-                                            <div class="form__group">
-                                                <label class="form__Label" for="region">Region:</label>
-                                                <input class="form__field" type="text" id="region"
-                                                    placeholder="Region (Optional)" name="region" required>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="form__group">
+                                            <div class="form__group form__group--required">
                                                 <label class="form__Label" for="postalcode">Postal Code:</label>
                                                 <input class="form__field" type="number" id="postalcode"
                                                     placeholder="Postal Code" name="postalcode" required>
                                             </div>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-12">
                                             <div class="form__group">
-                                                <label class="form__Label" for="telephone">Telephone:</label>
+                                                <label class="form__Label" for="telephone">Phone Number:</label>
                                                 <input class="form__field" type="number" id="telephone"
-                                                    placeholder="Telephone" name="telephone" required>
+                                                    placeholder="Phone Number" name="telephone" required>
                                             </div>
                                         </div>
                                     </div>
-                                    <button class="button button--black button--lg mt-3 form__button" type="button"
-                                        onclick="nextStep()">Continue</button>
+                                    <div class="d-flex align-items-center mt-3">
+                                        <a href="basket.html" class="content__link">
+                                            <svg class="icon" viewBox="0 0 8 16">
+                                                <g stroke="none" stroke-width="1" fill-rule="evenodd">
+                                                    <polygon points="5.5 3 7 4.5 3.25 8 7 11.5 5.5 13 0.5 8"></polygon>
+                                                </g>
+                                            </svg>
+                                            Return to Basket</a>
+                                        <button class="button button--black button--rounded button--lg form__button"
+                                            type="button" onclick="nextStep()">Proceed to Shipping</button>
+                                    </div>
                                 </form>
                             </div>
 
-                            <div class="content" id="step2">
+                            <div class="content content--shipping" id="step2">
                                 <!-- Shipping Address -->
-                                <h3 class="content__title">Shipping Address</h3>
-                                <p>Usa</p>
-                                <button onclick="returnToPreviousStep()" class="content__link mb-3">Edit</button>
-                                <h3 class="content__title">Duties and Taxes</h3>
-                                <p><strong>Duties and Taxes Paid:</strong> You will pay duties and taxes with your
-                                    order, if
-                                    applicable. </p>
-                                <button class="mb-3">Edit Duties and Taxes Preferences</button>
-                                <h3 class="content__title">Shipping Method</h3>
-                                <div class="card card--radio-button">
-                                    <div class="d-flex align-items-center">
-                                        <input class="" type="radio" id="age1" name="age" value="30">
-                                        <div>
-                                            <label for="age1" class="font-bold">Express (1-3 Business Days)</label>
-                                            <p class="mb-0">Estimated Delivery: 05/23/24 - 05/27/24</p>
+                                <h3 class="form__title">Delivery Address</h3>
+                                <div class="row align-items-center justify-content-between mb-3">
+                                    <h4 class="content__title col-2">Email:</h4>
+                                    <p class="content__text col-6">XXXXXXXXXX@XXXXXXXX.COM</p>
+                                    <button class="content__link col">Change</button>
+                                </div>
+                                <div class="row align-items-center justify-content-between mb-3">
+                                    <h4 class="content__title col-2">Deliver to:</h4>
+                                    <p class="content__text col-6">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+                                    <button class="content__link col">Change</button>
+                                </div>
+                                <h3 class="form__title">Shipping Methods</h3>
+                                <div class="row justify-content-between mb-3">
+                                    <div class="col-6">
+                                        <div class="form__group form__group--checkbox">
+                                            <div class="form__checkbox-wrapper">
+                                                <input class="form__checkbox" type="checkbox" id="saveInfo"
+                                                    name="saveInfo" value="Bike">
+                                            </div>
+                                            <label class="form__label" for="saveInfo">XXXXXXXXXXXXXXXXXXXXXXXX
+                                                XXXXXXXXXXXXXXXXXXXXXXXX</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="d-flex justify-content-end">
+                                            <p class="form__price">£XXX</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-between mb-3">
+                                    <div class="col-6">
+                                        <div class="form__group form__group--checkbox">
+                                            <div class="form__checkbox-wrapper">
+                                                <input class="form__checkbox" type="checkbox" id="saveInfo"
+                                                    name="saveInfo" value="Bike">
+                                            </div>
+                                            <label class="form__label" for="saveInfo">XXXXXXXXXXXXXXXXXXXXXXXX
+                                                XXXXXXXXXXXXXXXXXXXXXXXX</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="d-flex justify-content-end">
+                                            <p class="form__price">Free</p>
                                         </div>
                                     </div>
                                 </div>
@@ -177,8 +207,8 @@
                                             </g>
                                         </svg>
                                         Return to Customer Information</button>
-                                    <button class="button button--black button--lg mt-3" type="button"
-                                        onclick="nextStep()">Continue</button>
+                                    <button class="button button--black button--rounded button--lg form__button"
+                                        type="button" onclick="nextStep()">Proceed to Payment</button>
                                 </div>
                             </div>
 
