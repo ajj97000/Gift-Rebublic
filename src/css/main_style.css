@@ -1060,6 +1060,10 @@ body .swiper-pagination-bullet-active {
     margin-left: 10px;
 }
 
+.padding-left-m {
+    padding-left: 24px;
+}
+
 .border-radius-none {
     border-radius: 0 !important;
 }
@@ -2321,7 +2325,7 @@ body .swiper--info .info__item {
 }
 
 .payment .form__title {
-    font-size: 30px;
+    font-size: 36px;
 }
 
 .payment__image {
@@ -2341,7 +2345,7 @@ body .swiper--info .info__item {
 }
 
 .content--shipping .content__link {
-    font-size: 12px;
+    font-size: 14px;
     text-decoration: underline;
     text-align: right;
 }
@@ -2355,4 +2359,14 @@ body .swiper--info .info__item {
 .content--shipping .form__price {
     font-size: 18px;
     font-weight: bold;
+}
+
+@media (max-width: 991.98px) {
+    .main--inner {
+        padding-top: 0;
+    }
+
+    .stepper__content {
+        width: 300px;
+    }
 }
