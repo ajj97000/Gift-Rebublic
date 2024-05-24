@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Info Page</title>
+    <!-- bootstrap file css -->
+    <link rel="stylesheet" href="src/css/bootstrap.css">
+    <!-- Material link -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!-- css file -->
+    <link rel="stylesheet" href="src/css/main_style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico?v=2">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <main>
+        <div class="payment">
+            <div class="row">
+                <div class="col-7">
+                    <div class="container">
+                        <div class="pt-4 pb-4">
+                            <h1 class="mb-0">
+                                <a href="./">
+                                    <img src="src/images/logo.svg" title="gift republic logo" alt="gift republic logo"
+                                        class="header__logo">
+                                </a>
+                            </h1>
+                            <div class="stepper">
+                                <button class="stepper__content">
+                                    <span class="stepper__circle active"></span>
+                                    <h2 class="stepper__title">Customer Info</h2>
+                                </button>
+                                <div class="stepper__line"></div>
+                                <button class="stepper__content">
+                                    <span class="stepper__circle"></span>
+                                    <h2 class="stepper__title">Shipping Info</h2>
+                                </button>
+                                <div class="stepper__line"></div>
+                                <button class="stepper__content">
+                                    <span class="stepper__circle"></span>
+                                    <h2 class="stepper__title">Payment Info</h2>
+                                </button>
+                            </div>
+                            <h3 class="form__title">Express Checkout</h3>
+                            <img src="./src/images/paypal.png" alt="" class="payment__image mb-3">
+                            <!-- Content for each step -->
+                            <div class="content active" id="step1">
+                                <!-- Customer Info Form -->
+                                <form action="#" method="post" class="form">
+                                    <div class="d-flex align-items-center justify-content-between mb-3">
+                                        <h3 class="form__title mb-0">Customer Info</h3>
+                                        <div>
+                                            Already have an account? <a href="" class="text-decoration-underline">Log
+                                                in</a>
+                                        </div>
+                                    </div>
+                                    <div class="form__group">
+                                        <label class="form__Label" for="email">Email:</label>
+                                        <input class="form__field" type="email" id="email" name="email"
+                                            placeholder="Email" required>
+                                    </div>
+                                    <div class="form__group form__group--checkbox">
+                                        <div class="form__checkbox-wrapper">
+                                            <input class="form__checkbox" type="checkbox" id="saveInfo" name="saveInfo"
+                                                value="Bike">
+                                        </div>
+                                        <label for="saveInfo">10% off your next order plus all the latest products,
+                                            deals & offers.</label>
+                                    </div>
+                                    <h3 class="form__title">Shipping Address</h3>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="form__group">
+                                                <label class="form__Label" for="firstName">First Name:</label>
+                                                <input class="form__field" type="text" id="firstName"
+                                                    placeholder="First Name" name="firstName" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form__group">
+                                                <label class="form__Label" for="lastName">Last Name:</label>
+                                                <input class="form__field" type="text" id="lastName"
+                                                    placeholder="Last Name" name="lastName" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form__group">
+                                        <label class="form__Label" for="company">Company:</label>
+                                        <input class="form__field" type="company" id="company"
+                                            placeholder="Company (Optional)" name="company" required>
+                                    </div>
+                                    <div class="form__group">
+                                        <label class="form__Label" for="address1">Address Line 1:</label>
+                                        <input class="form__field" type="address1" id="address1"
+                                            placeholder="Address Line 1" name="address1" required>
+                                    </div>
+                                    <div class="form__group">
+                                        <label class="form__Label" for="address2">Address Line 2:</label>
+                                        <input class="form__field" type="address2" id="address2"
+                                            placeholder="Address Line 2 (Optional)" name="address2" required>
+                                    </div>
+                                    <div class="form__group">
+                                        <label class="form__Label" for="country">Choose a car:</label>
+                                        <select class="form__field" name="country" id="country">
+                                            <option value="country" selected hidden>Country</option>
+                                            <option value="usa">Usa</option>
+                                            <option value="uk">Uk</option>
+                                            <option value="france">France</option>
+                                            <option value="Germany">Germany</option>
+                                        </select>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="form__group">
+                                                <label class="form__Label" for="city">City:</label>
+                                                <input class="form__field" type="text" id="city" placeholder="City"
+                                                    name="city" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form__group">
+                                                <label class="form__Label" for="region">Region:</label>
+                                                <input class="form__field" type="text" id="region"
+                                                    placeholder="Region (Optional)" name="region" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form__group">
+                                                <label class="form__Label" for="postalcode">Postal Code:</label>
+                                                <input class="form__field" type="number" id="postalcode"
+                                                    placeholder="Postal Code" name="postalcode" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form__group">
+                                                <label class="form__Label" for="telephone">Telephone:</label>
+                                                <input class="form__field" type="number" id="telephone"
+                                                    placeholder="Telephone" name="telephone" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="button button--black button--lg mt-3 form__button" type="button"
+                                        onclick="nextStep()">Continue</button>
+                                </form>
+                            </div>
+
+                            <div class="content" id="step2">
+                                <!-- Shipping Address -->
+                                <h3 class="content__title">Shipping Address</h3>
+                                <p>Usa</p>
+                                <button onclick="returnToPreviousStep()" class="content__link mb-3">Edit</button>
+                                <h3 class="content__title">Duties and Taxes</h3>
+                                <p><strong>Duties and Taxes Paid:</strong> You will pay duties and taxes with your
+                                    order, if
+                                    applicable. </p>
+                                <button class="mb-3">Edit Duties and Taxes Preferences</button>
+                                <h3 class="content__title">Shipping Method</h3>
+                                <div class="card card--radio-button">
+                                    <div class="d-flex align-items-center">
+                                        <input class="" type="radio" id="age1" name="age" value="30">
+                                        <div>
+                                            <label for="age1" class="font-bold">Express (1-3 Business Days)</label>
+                                            <p class="mb-0">Estimated Delivery: 05/23/24 - 05/27/24</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="align-items-center d-flex justify-content-between">
+                                    <button onclick="returnToPreviousStep()" class="content__link">
+                                        <svg class="icon" viewBox="0 0 8 16">
+                                            <g stroke="none" stroke-width="1" fill-rule="evenodd">
+                                                <polygon points="5.5 3 7 4.5 3.25 8 7 11.5 5.5 13 0.5 8"></polygon>
+                                            </g>
+                                        </svg>
+                                        Return to Customer Information</button>
+                                    <button class="button button--black button--lg mt-3" type="button"
+                                        onclick="nextStep()">Continue</button>
+                                </div>
+                            </div>
+
+                            <div class="content" id="step3">
+                                <!-- Payment Method Form -->
+                                <h3 class="content__title">Payment Method</h3>
+                                <div class="card card--radio-button p-3">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <input class="radio-input" type="radio" id="creditCard" name="paymentMethod"
+                                                value="creditCard" checked>
+                                            <label for="creditCard" class="font-bold">Credit Card</label>
+                                        </div>
+                                        <ul class="payment-list">
+                                            <li class="payment-list__item">
+                                                <img class="payment-list__icon" src="/src/images/visa.svg" alt="VISA">
+                                            </li>
+                                            <li class="payment-list__item">
+                                                <img class="payment-list__icon" src="/src/images/visa.svg" alt="VISA">
+                                            </li>
+                                            <li class="payment-list__item">
+                                                <img class="payment-list__icon" src="/src/images/visa.svg" alt="VISA">
+                                            </li>
+                                            <li class="payment-list__item">
+                                                <img class="payment-list__icon" src="/src/images/visa.svg" alt="VISA">
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <form action="" class="form form--payment form--creditCard">
+                                        <div class="form__group">
+                                            <label class="form__Label" for="cardNumber">Card Number:</label>
+                                            <input class="form__field" type="number" id="cardNumber" name="cardNumber"
+                                                placeholder="Card Number" required>
+                                        </div>
+                                        <div class="form__group">
+                                            <label class="form__Label" for="cardName">Card Holder Name:</label>
+                                            <input class="form__field" type="text" id="cardName" name="cardName"
+                                                placeholder="Card Holder Name" required>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <div class="form__group">
+                                                    <label class="form__Label" for="month">Exp. Month (MM)</label>
+                                                    <input class="form__field" type="number" id="month" name="month"
+                                                        placeholder="Exp. Month (MM)" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="form__group">
+                                                    <label class="form__Label" for="year">Exp. Year (YYYY)</label>
+                                                    <input class="form__field" type="number" id="year" name="year"
+                                                        placeholder="Exp. Year (YYYY)" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="form__group">
+                                                    <label class="form__Label" for="cvv">CVV</label>
+                                                    <input class="form__field" type="number" id="cvv" name="cvv"
+                                                        placeholder="CVV" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="card card--radio-button p-3">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <input class="radio-input" type="radio" id="paypal" name="paymentMethod"
+                                                value="paypal">
+                                            <img src="./src/images/paypal.png" alt="" class="card--radio__image">
+                                        </div>
+                                    </div>
+                                    <form action="" class="form form--payment form--paypal" style="display: none;">
+                                        <div class="form__image-wrapper">
+                                            <svg class="svg-icon payment-browser-icon__window" viewBox="0 0 90 70">
+                                                <path
+                                                    d="M14,6.6 C14,7.4 13.3,8.1 12.5,8.1 C11.7,8.1 11,7.4 11,6.6 C11,5.8 11.7,5.1 12.5,5.1 C13.4,5.1 14,5.8 14,6.6 Z M7.5,5.1 C6.7,5.1 6,5.8 6,6.6 C6,7.4 6.7,8.1 7.5,8.1 C8.3,8.1 9,7.4 9,6.6 C9,5.8 8.4,5.1 7.5,5.1 Z M90,6 L90,64 C90,67.3 87.3,70 84,70 L6,70 C2.7,70 0,67.3 0,64 L0,6 C0,2.7 2.7,0 6,0 L84,0 C87.3,0 90,2.7 90,6 Z M88,13.1 L2,13.1 L2,64 C2,66.2 3.8,68 6,68 L84,68 C86.2,68 88,66.2 88,64 L88,13.1 Z M88,6 C88,3.8 86.2,2 84,2 L6,2 C3.8,2 2,3.8 2,6 L2,11.1 L88,11.1 L88,6 Z M17.5,5.1 C16.7,5.1 16,5.8 16,6.6 C16,7.4 16.7,8.1 17.5,8.1 C18.3,8.1 19,7.4 19,6.6 C19,5.8 18.4,5.1 17.5,5.1 Z">
+                                                </path>
+                                            </svg>
+                                            <img src="./src/images/paypal-2.png" class="form__image" alt="">
+                                        </div>
+                                        <p> Click PayPal Checkout button below to continue.</p>
+                                    </form>
+                                </div>
+                                <h3 class="content__title">Billing Address</h3>
+                                <!-- Checkboxes for Address Options -->
+                                <div class="card card--radio-button p-3">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <input class="radio-input" type="radio" value="sameAddress" id="sameAddress"
+                                                name="addressOption">
+                                            <label for="sameAddress">Use Same Address for Billing and Shipping</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card card--radio-button p-3">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <input class="radio-input" type="radio" value="differentAddress"
+                                                id="differentAddress" name="addressOption">
+                                            <label for="differentAddress">Use Different Address</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Form for different address -->
+                                <div id="differentAddressForm" class="card card--radio-button p-3"
+                                    style="display: none;">
+                                    <form action="" class="form form--addressOptions">
+                                        <!-- Add your form fields here -->
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="form__group">
+                                                    <label class="form__Label" for="firstName">First Name:</label>
+                                                    <input class="form__field" type="text" id="firstName"
+                                                        placeholder="First Name" name="firstName" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form__group">
+                                                    <label class="form__Label" for="lastName">Last Name:</label>
+                                                    <input class="form__field" type="text" id="lastName"
+                                                        placeholder="Last Name" name="lastName" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form__group">
+                                            <label class="form__Label" for="company">Company:</label>
+                                            <input class="form__field" type="company" id="company"
+                                                placeholder="Company (Optional)" name="company" required>
+                                        </div>
+                                        <div class="form__group">
+                                            <label class="form__Label" for="address1">Address Line 1:</label>
+                                            <input class="form__field" type="address1" id="address1"
+                                                placeholder="Address Line 1" name="address1" required>
+                                        </div>
+                                        <div class="form__group">
+                                            <label class="form__Label" for="address2">Address Line 2:</label>
+                                            <input class="form__field" type="address2" id="address2"
+                                                placeholder="Address Line 2 (Optional)" name="address2" required>
+                                        </div>
+                                        <div class="form__group">
+                                            <label class="form__Label" for="country">Choose a car:</label>
+                                            <select class="form__field" name="country" id="country">
+                                                <option value="country" selected hidden>Country</option>
+                                                <option value="usa">Usa</option>
+                                                <option value="uk">Uk</option>
+                                                <option value="france">France</option>
+                                                <option value="Germany">Germany</option>
+                                            </select>
+                                        </div>
+                                        <div class="form__group">
+                                            <label class="form__Label" for="city">City:</label>
+                                            <input class="form__field" type="text" id="city" placeholder="City"
+                                                name="city" required>
+                                        </div>
+                                        <div class="form__group">
+                                            <label class="form__Label" for="postalcode">Postal Code:</label>
+                                            <input class="form__field" type="number" id="postalcode"
+                                                placeholder="Postal Code" name="postalcode" required>
+                                        </div>
+                                        <!-- Other form fields -->
+                                    </form>
+                                </div>
+                                <p>By placing this order, I agree to the <a href=""
+                                        class="card__link card__link--underlink">Flow Privacy Policy</a>
+                                    and <a href="" class="card__link card__link--underlink">Terms
+                                        of Use</a>.
+                                <div class="align-items-center d-flex justify-content-between mt-4">
+                                    <button onclick="returnToPreviousStep()" class="content__link">
+                                        <svg class="icon" viewBox="0 0 8 16">
+                                            <g stroke="none" stroke-width="1" fill-rule="evenodd">
+                                                <polygon points="5.5 3 7 4.5 3.25 8 7 11.5 5.5 13 0.5 8"></polygon>
+                                            </g>
+                                        </svg>
+                                        Return to Shipping Method</button>
+                                    <button class="button button--lg button--primary" type="button"
+                                        onclick="nextStep()">Complete Order</button>
+                                </div>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="payment-card">
+                        <div class="container">
+                            <div class="product product--basket">
+                                <a href="" class="product__link">Edit Your Cart</a>
+                                <h2 class="payment-card__title">Order Summary</h2>
+                                <div class="card card--payment">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex">
+                                            <img src="./src/images/card-10.jpg" alt="" class="card__image">
+                                            <div>
+                                                <h3 class="card__title">Golf Guide Mug</h3>
+                                                <p class="card__qty">Quantity: 1</p>
+                                            </div>
+                                        </div>
+                                        <p class="card__price">£9.99</p>
+                                    </div>
+                                </div>
+                                <div class="card card--payment">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex">
+                                            <img src="./src/images/card-10.jpg" alt="" class="card__image">
+                                            <div>
+                                                <h3 class="card__title">Golf Guide Mug</h3>
+                                                <p class="card__qty">Quantity: 1</p>
+                                            </div>
+                                        </div>
+                                        <p class="card__price">£9.99</p>
+                                    </div>
+                                </div>
+                                <div class="card card--payment">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex">
+                                            <img src="./src/images/card-10.jpg" alt="" class="card__image">
+                                            <div>
+                                                <h3 class="card__title">Golf Guide Mug</h3>
+                                                <p class="card__qty">Quantity: 1</p>
+                                            </div>
+                                        </div>
+                                        <p class="card__price">£9.99</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <h4 class="font-size-s">Discount Code</h4>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                        width="24px" fill="#000">
+                                        <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+                                    </svg>
+                                </div>
+                                <div class="form__group">
+                                    <label class="form__Label" for="vouchers">Discount Code</label>
+                                    <input class="form__field border-radius-none" type="text" id="vouchers"
+                                        name="vouchers" placeholder="Discount Code" required>
+                                </div>
+                                <a href="checkout.html"
+                                    class="button button--center button--black button--rounded button--block button--lg">Apply</a>
+                                <hr>
+                                <div class="card card--time">
+                                    <div class="card__info">
+                                        <span class="font-bold"> Expected delivery:</span>
+                                        <p class="mb-0 card__date"> Mon, 13.05 - Tue, 14.05</p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="d-flex justify-content-between">
+                                    <p class="card__text">Subtotal:</p>
+                                    <p class="card__text">XXXXX</p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <p class="card__text">Shipping:</p>
+                                    <p class="card__text">XXXXX</p>
+                                </div>
+                                <hr>
+                                <div class="d-flex justify-content-between">
+                                    <p class="card__text">Total:</p>
+                                    <p class="card__text">XXXXX</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-0">
+        </div>
+    </main>
+
+    <!-- footer start -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-lg-9 col-12 footer__links">
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="" class="footer__link">
+                                <h2 class="footer__title">Need help?</h2>
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Contact Us</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Gift Registration</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Track your order</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">FAQs</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="" class="footer__link">
+                                <h2 class="footer__title">Information</h2>
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">About Us</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Shipping</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Download Catalogue</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Sitemap</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="" class="footer__link">
+                                <h2 class="footer__title">Shop</h2>
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">New</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Top 50</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Gifts</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Personalised Gifts</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="" class="footer__link">
+                                <h2 class="footer__title">Legal</h2>
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Ethical Statement</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Cookie Policy</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Privacy Policy</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Terms and Conditions</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-12">
+                    <div class="footer__end">
+                        <form class="footer__form">
+                            <h2 class="footer__form-title">Sing up to our newsletter</h2>
+                            <p class="footer__form-description">subscribe to be the first tohear about our latest
+                                collection and exclusive offers.</p>
+                            <div class="row gx-1">
+                                <div class="col-6">
+                                    <input type="text" class="footer__form-input" placeholder="First Name">
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" class="footer__form-input" placeholder="Last Name">
+                                </div>
+                            </div>
+                            <input type="email" class="footer__form-input" placeholder="Email">
+                            <button class="footer__form-button button">Sign me up!</button>
+                            <p class="footer__form-text">By signing up to hear form us. you accept our privacy policy.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="d-flex">
+                    <p class="footer__bottom-text">we accept:</p>
+                    <div class="row">
+                        <div class="col">
+                            <img src="./src/images/visa.svg" alt="">
+                        </div>
+                        <div class="col">
+                            <img src="./src/images/visa.svg" alt="">
+                        </div>
+                        <div class="col">
+                            <img src="./src/images/visa.svg" alt="">
+                        </div>
+                        <div class="col">
+                            <img src="./src/images/visa.svg" alt="">
+                        </div>
+                        <div class="col">
+                            <img src="./src/images/visa.svg" alt="">
+                        </div>
+                        <div class="col">
+                            <img src="./src/images/visa.svg" alt="">
+                        </div>
+                        <div class="col">
+                            <img src="./src/images/visa.svg" alt="">
+                        </div>
+                        <div class="col">
+                            <img src="./src/images/visa.svg" alt="">
+                        </div>
+                        <div class="col">
+                            <img src="./src/images/visa.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                    <p class="footer__bottom-text">Follow us on social media</p>
+                    <div class="d-flex">
+                        <a href="" class="Footer__social-link">
+                            <svg class="Footer__social-icon" viewBox="0 0 16 28" class="main-footer__icon">
+                                <path
+                                    d="M14.984 0.187v4.125h-2.453c-1.922 0-2.281 0.922-2.281 2.25v2.953h4.578l-0.609 4.625h-3.969v11.859h-4.781v-11.859h-3.984v-4.625h3.984v-3.406c0-3.953 2.422-6.109 5.953-6.109 1.687 0 3.141 0.125 3.563 0.187z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="" class="Footer__social-link">
+                            <svg class="Footer__social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                            </svg>
+                        </a>
+                        <a href="" class="Footer__social-link">
+                            <svg class="Footer__social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" />
+                            </svg>
+                        </a>
+                        <a href="" class="Footer__social-link">
+                            <svg viewBox="0 0 24 28" class="Footer__social-icon">
+                                <path
+                                    d="M5.453 9.766v15.484h-5.156v-15.484h5.156zM5.781 4.984c0.016 1.484-1.109 2.672-2.906 2.672v0h-0.031c-1.734 0-2.844-1.188-2.844-2.672 0-1.516 1.156-2.672 2.906-2.672 1.766 0 2.859 1.156 2.875 2.672zM24 16.375v8.875h-5.141v-8.281c0-2.078-0.75-3.5-2.609-3.5-1.422 0-2.266 0.953-2.641 1.875-0.125 0.344-0.172 0.797-0.172 1.266v8.641h-5.141c0.063-14.031 0-15.484 0-15.484h5.141v2.25h-0.031c0.672-1.062 1.891-2.609 4.672-2.609 3.391 0 5.922 2.219 5.922 6.969z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <p class="footer__copyright">@copyright 2024gift republic ltd.</p>
+        </div>
+    </footer>
+    <!-- footer end  -->
+    <script>
+
+        // menu function 
+        $(document).ready(function () {
+            $(".toggle-menu").click(function () {
+                $(".mobile-menu").toggleClass("show-menu");
+            });
+        });
+
+        // Stepper functionality
+        const stepperContent = document.querySelectorAll('.stepper__content');
+        const stepperCircles = document.querySelectorAll('.stepper__circle');
+        const contents = document.querySelectorAll('.content');
+
+        stepperContent.forEach((step, index) => {
+            step.addEventListener('click', () => {
+                updateStepper(index);
+            });
+        });
+
+        function updateStepper(index) {
+            // Remove active classes from circles and contents
+            stepperCircles.forEach(circle => circle.classList.remove('active'));
+            contents.forEach(content => content.classList.remove('active'));
+
+            // Add active classes to selected circle and content
+            stepperCircles[index].classList.add('active');
+            contents[index].classList.add('active');
+
+            // Save active step index to local storage
+            localStorage.setItem('activeStep', index);
+        }
+
+        function nextStep() {
+            const activeIndex = Array.from(contents).findIndex(content => content.classList.contains('active'));
+            updateStepper(activeIndex + 1);
+        }
+
+        function returnToPreviousStep() {
+            const activeIndex = Array.from(contents).findIndex(content => content.classList.contains('active'));
+            updateStepper(activeIndex - 1); // Decrease the index by 1 to go back to the previous step
+        }
+
+        function initializeStepper() {
+            const activeStepIndex = localStorage.getItem('activeStep');
+            if (activeStepIndex !== null) {
+                updateStepper(parseInt(activeStepIndex));
+            }
+        }
+
+        window.addEventListener('load', initializeStepper);
+
+
+        // payment radio button function 
+        document.addEventListener('DOMContentLoaded', function () {
+            const radioInputs = document.querySelectorAll('.radio-input');
+            const formPayments = document.querySelectorAll('.form--payment');
+
+            radioInputs.forEach(function (input) {
+                input.addEventListener('change', function () {
+                    formPayments.forEach(function (form) {
+                        form.style.display = 'none';
+                    });
+
+                    const selectedForm = document.querySelector('.form--' + this.value);
+                    if (selectedForm) {
+                        selectedForm.style.display = 'block';
+                    }
+                });
+            });
+        });
+
+        // address function 
+        const differentAddressRadio = document.getElementById('differentAddress');
+        const differentAddressForm = document.getElementById('differentAddressForm');
+
+        differentAddressRadio.addEventListener('change', () => {
+            if (differentAddressRadio.checked) {
+                differentAddressForm.style.display = 'block';
+            } else {
+                differentAddressForm.style.display = 'none';
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const radioInputs = document.querySelectorAll('.radio-input');
+            const differentAddressForm = document.getElementById('differentAddressForm');
+
+            radioInputs.forEach(function (input) {
+                input.addEventListener('change', function () {
+                    const isDifferentAddress = this.value === 'differentAddress';
+
+                    if (isDifferentAddress) {
+                        differentAddressForm.style.display = 'block';
+                    } else {
+                        differentAddressForm.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+    </script>
+</body>
+
+</html>

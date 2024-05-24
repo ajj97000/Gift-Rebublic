@@ -79,6 +79,15 @@ a:hover {
     padding: 0;
 }
 
+hr {
+    margin: 16px 0;
+    height: 1.5px !important;
+    color: #000;
+    background-color: currentcolor;
+    border: 0px;
+    opacity: 1;
+}
+
 button {
     background: transparent;
     border: none;
@@ -97,6 +106,12 @@ button {
     background-color: #e2e2e2;
     color: #000;
     border: 1px solid #b5b5b5;
+}
+
+.button--rounded {
+    border-radius: 20px;
+    padding: 4px 10px;
+    font-size: 14px;
 }
 
 .button--lg {
@@ -1045,6 +1060,14 @@ body .swiper-pagination-bullet-active {
     margin-left: 10px;
 }
 
+.border-radius-none {
+    border-radius: 0 !important;
+}
+
+.font-size-s {
+    font-size: 18px !important;
+}
+
 .font-size-m {
     font-size: 24px !important;
 }
@@ -1564,12 +1587,6 @@ body .swiper-pagination-bullet-active {
     opacity: .8;
 }
 
-.button--rounded {
-    border-radius: 20px;
-    padding: 4px 10px;
-    font-size: 14px;
-}
-
 .button--link:hover {
     background-color: #a7e6d9;
     transition: .3s all;
@@ -1952,8 +1969,8 @@ input[type="checkbox"] {
 
 /* Style the checkbox when it's checked */
 input[type="checkbox"]:checked {
-    background-color: #6d9e94;
-    border-color: #6d9e94;
+    background-color: #a7e6d9;
+    border-color: #a7e6d9;
     margin: 0;
 }
 
@@ -1972,6 +1989,10 @@ input[type="checkbox"]:checked {
 .card__image-wrapper {
     position: relative;
     margin-right: 20px;
+}
+
+.card__product .card__image-wrapper {
+    width: fit-content;
 }
 
 .card__product .card__title {
@@ -2221,4 +2242,77 @@ body .swiper--info .info__item {
     .sticky .nav__list-item {
         padding: 10px;
     }
+}
+
+
+.payment-card {
+    padding: 40px;
+    position: sticky;
+    text-align: center;
+    background-color: #a7e6d9;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+}
+
+.product--basket .product__link {
+    text-decoration: underline;
+    text-align: right;
+    display: block;
+    margin-bottom: 100px;
+}
+
+.payment-card__title {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.card--payment {
+    background: none;
+    text-align: left;
+    border-bottom: 1px solid #000;
+    padding-bottom: 20px;
+    border-radius: 0;
+}
+
+.card--payment .card__image {
+    width: 80px;
+    height: 80px;
+    margin-right: 16px;
+}
+
+.card--payment .card__title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.card__qty {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.card--payment .card__price {
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card--time {
+    border: 1px solid #000;
+    padding: 16px;
+    border-radius: 0;
+}
+
+.product--basket .card__text {
+    font-size: 18px;
+}
+
+.payment .form__title {
+    font-size: 30px;
+}
+
+.payment__image {
+    width: 100px;
 }
