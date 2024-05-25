@@ -2394,3 +2394,26 @@ body .swiper--info .info__item {
 .dropdown-content--show {
     display: block;
 }
+
+.code {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out, visibility 0.3s;
+}
+
+.code--show {
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+}
+
+.arrow {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.arrow--flip {
+    transform: rotate(180deg);
+}

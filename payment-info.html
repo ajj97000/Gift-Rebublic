@@ -399,20 +399,21 @@
                                         <p class="card__price">£9.99</p>
                                     </div>
                                 </div>
-                                <div class="d-flex justify-content-between">
+                                <button class="button--block d-flex justify-content-between" onclick="toggleCode()">
                                     <h4 class="font-size-s">Discount Code</h4>
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
-                                        width="24px" fill="#000">
+                                    <svg id="arrow" class="arrow" xmlns="http://www.w3.org/2000/svg" height="24px"
+                                        viewBox="0 -960 960 960" width="24px" fill="#000">
                                         <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
                                     </svg>
+                                </button>
+                                <div id="code" class="code">
+                                    <div class="form__group">
+                                        <input class="form__field border-radius-none" type="text" id="vouchers"
+                                            name="vouchers" placeholder="Discount Code" required>
+                                    </div>
+                                    <a href="checkout.html"
+                                        class="button button--center button--black button--rounded button--block button--lg">Apply</a>
                                 </div>
-                                <div class="form__group">
-                                    <label class="form__Label" for="vouchers">Discount Code</label>
-                                    <input class="form__field border-radius-none" type="text" id="vouchers"
-                                        name="vouchers" placeholder="Discount Code" required>
-                                </div>
-                                <a href="checkout.html"
-                                    class="button button--center button--black button--rounded button--block button--lg">Apply</a>
                                 <hr>
                                 <div class="card card--time">
                                     <div class="card__info">
@@ -717,6 +718,14 @@
             });
         });
 
+
+        // discount code function 
+        function toggleCode() {
+            var element = document.getElementById("code");
+            element.classList.toggle("code--show");
+            var element = document.getElementById("arrow");
+            element.classList.toggle("arrow--flip");
+        }
     </script>
 </body>
 
