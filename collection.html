@@ -320,8 +320,7 @@
                     <div class="col-8">
                         <p class="section__description">Insert text here, Insert text here, Insert text here, Insert
                             text here,
-                            Insert text here, Insert text
-                            here,
+                            Insert text here, Insert text here,
                             Insert text here, Insert text here, Insert text here, Insert text here, Insert text here.
                         </p>
                     </div>
@@ -710,7 +709,18 @@
                         </div>
                     </div>
                 </div>
+                <!-- Pagination controls -->
+                <div class="pagination">
+                    <button id="prev-page" onclick="changePage(-1)">
+                        <img src="/src/images/arrow-left.svg" alt="">
+                    </button>
+                    <div id="page-numbers"></div>
+                    <button id="next-page" onclick="changePage(1)">
+                        <img src="/src/images/arrow-right.svg" alt="">
+                    </button>
+                </div>
             </section>
+
         </div>
     </main>
 
@@ -933,6 +943,62 @@
                 container.appendChild(product);
             });
         }
+
+        // pagination 
+        const productsPerPage = 4;
+        let currentPage = 1;
+        const productContainer = document.getElementById('product-container');
+        const pageNumberElement = document.getElementById('page-numbers');
+        const prevPageButton = document.getElementById('prev-page');
+        const nextPageButton = document.getElementById('next-page');
+
+        const products = Array.from(document.querySelectorAll('#product-container .col-lg-3'));
+
+        function displayProducts(page) {
+            const start = (page - 1) * productsPerPage;
+            const end = start + productsPerPage;
+            products.forEach((product, index) => {
+                product.style.display = (index >= start && index < end) ? 'block' : 'none';
+            });
+        }
+
+        function updatePaginationButtons() {
+            const totalPages = Math.ceil(products.length / productsPerPage);
+            prevPageButton.disabled = currentPage === 1;
+            nextPageButton.disabled = currentPage === totalPages;
+            renderPageNumbers(totalPages);
+        }
+
+        function changePage(direction) {
+            currentPage += direction;
+            displayProducts(currentPage);
+            updatePaginationButtons();
+        }
+
+        function goToPage(page) {
+            currentPage = page;
+            displayProducts(currentPage);
+            updatePaginationButtons();
+        }
+
+        function renderPageNumbers(totalPages) {
+            pageNumberElement.innerHTML = '';
+            for (let i = 1; i <= totalPages; i++) {
+                const pageButton = document.createElement('button');
+                pageButton.textContent = i;
+                pageButton.onclick = () => goToPage(i);
+                if (i === currentPage) {
+                    pageButton.classList.add('active');
+                }
+                pageNumberElement.appendChild(pageButton);
+            }
+        }
+
+        // Initial display
+        displayProducts(currentPage);
+        updatePaginationButtons();
+
+
     </script>
 </body>
 

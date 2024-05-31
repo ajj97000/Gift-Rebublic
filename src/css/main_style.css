@@ -2417,3 +2417,41 @@ body .swiper--info .info__item {
 .arrow--flip {
     transform: rotate(180deg);
 }
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin: 0 5px;
+    background-color: #cccccc;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.pagination button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+    opacity: .3;
+}
+
+.pagination #page-numbers button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    background-color: #f0f0f0;
+    color: #333;
+    border: none;
+    cursor: pointer;
+}
+
+.pagination #page-numbers button.active {
+    background-color: #6d9e94;
+    color: white;
+}
