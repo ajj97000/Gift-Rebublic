@@ -656,8 +656,9 @@ body .swiper-pagination-bullet-active {
 }
 
 .breadcrumb__link {
-    font-size: 16px;
+    font-size: 18px;
     line-height: normal;
+    font-weight: bold;
 }
 
 .slash-seperator {
@@ -2430,14 +2431,14 @@ body .swiper--info .info__item {
     height: 40px;
     border-radius: 100%;
     margin: 0 5px;
-    background-color: #cccccc;
+    background-color: #f0f0f0;
     color: white;
     border: none;
     cursor: pointer;
 }
 
 .pagination button:disabled {
-    background-color: #cccccc;
+    background-color: #f0f0f0;
     cursor: not-allowed;
     opacity: .3;
 }
