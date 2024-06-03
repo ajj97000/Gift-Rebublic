@@ -2456,3 +2456,23 @@ body .swiper--info .info__item {
     background-color: #6d9e94;
     color: white;
 }
+
+.category {
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.category__image {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    margin-bottom: 10px;
+}
+
+.category__title {
+    font-size: 13px;
+    font-weight: bold;
+}
