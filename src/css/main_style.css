@@ -1193,6 +1193,15 @@ body .swiper-pagination-bullet-active {
     background-color: red;
 }
 
+.product__tag--sale:hover {
+    color: #fff;
+    background-color: red;
+}
+
+.product__tag:hover {
+    opacity: .8;
+}
+
 .card__tag--hot {
     color: #000;
     background-color: #a7e6d9;
@@ -2475,4 +2484,11 @@ body .swiper--info .info__item {
 .category__title {
     font-size: 13px;
     font-weight: bold;
+}
+
+.button--disabled {
+    background-color: #ccc;
+    /* Grey background for disabled button */
+    cursor: not-allowed;
+    /* Not allowed cursor for disabled button */
 }

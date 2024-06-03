@@ -329,8 +329,8 @@
                         <div class="col-md-6 col-12">
                             <div class="product__content">
                                 <div class="d-flex mb-2">
-                                    <p class="product__tag product__tag--sale">Sale</p>
-                                    <p class="product__tag product__tag--hot">Bestseller</p>
+                                    <a href="collection.html" class="product__tag product__tag--sale">Sale</a>
+                                    <a href="collection.html" class="product__tag product__tag--hot">Bestseller</a>
                                 </div>
                                 <h2 class="product__title">Catastrophe</h2>
                                 <p class="product__description">Have stacks of fun with this game.</p>
@@ -362,15 +362,16 @@
                                         </button>
                                     </div>
                                     <div class="d-flex align-items-center">
-                                        <p class="product__status">Out of Stock</p>
-                                        <button class="button button--grey button--md">Notify Me</button>
+                                        <p id="productStatus" class="product__status">Out of Stock</p>
+                                        <button id="notifyMeButton" class="button button--grey button--md"
+                                            style="display: none;">Notify Me</button>
                                     </div>
                                     <!-- <p class="product__status product__status--low">Low Stock</p> -->
                                     <!-- <p class="product__status product__status--high">In Stock</p> -->
                                 </div>
                                 <div class="d-flex mb-4">
-                                    <button class="button product__button" onclick="toggleSidePopup()">Add to
-                                        Basket</button>
+                                    <button id="addToBasketButton" class="button product__button"
+                                        onclick="toggleSidePopup()">Add to Basket</button>
                                     <button onclick="toggleSidePopup()" class="overlay" id="overlay"></button>
                                     <div class="side-popup" id="side-popup">
                                         <div class="container">
@@ -894,6 +895,21 @@
             overlay.classList.toggle("overlay--show");
             body.classList.toggle("no-scroll");
         }
+
+        // stock condition function 
+        document.addEventListener('DOMContentLoaded', function () {
+            const addToBasketButton = document.getElementById('addToBasketButton');
+            const productStatus = document.getElementById('productStatus');
+            const notifyMeButton = document.getElementById('notifyMeButton');
+
+            if (productStatus.textContent.trim() === 'Out of Stock') {
+                addToBasketButton.disabled = true;
+                addToBasketButton.classList.add('button--disabled'); // Optional: Add a class for disabled styling
+                notifyMeButton.style.display = 'inline-block'; // Show the "Notify Me" button
+            } else {
+                notifyMeButton.style.display = 'none'; // Hide the "Notify Me" button
+            }
+        });
 
     </script>
 </body>
