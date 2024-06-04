@@ -2490,3 +2490,17 @@ body .swiper--info .info__item {
     cursor: not-allowed;
     /* Not allowed cursor for disabled button */
 }
+
+.swiper--category {
+    display: none !important;
+}
+
+@media (max-width: 1024px) {
+    .swiper--category {
+        display: block !important;
+    }
+
+    .category-section {
+        display: none;
+    }
+}
