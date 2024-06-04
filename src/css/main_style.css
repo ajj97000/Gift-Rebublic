@@ -661,8 +661,8 @@ body .swiper-pagination-bullet-active {
     font-weight: bold;
 }
 
-.slash-seperator {
-    margin-right: 5px;
+.breadcrumb__seperator {
+    margin: 0 8px;
     display: block;
     font-size: 16px;
     line-height: normal;
@@ -1771,7 +1771,7 @@ body .swiper-pagination-bullet-active {
     bottom: 0;
     right: 0;
     left: 100%;
-    width: 50%;
+    width: 35%;
     /* Initially off-screen */
     background-color: white;
     padding: 20px;
@@ -1784,17 +1784,15 @@ body .swiper-pagination-bullet-active {
 }
 
 .side-popup--show {
-    left: 50%;
+    left: 65%;
     /* Slide in from the right */
 }
 
 
 .side-popup__content {
-    padding: 50px;
+    padding: 50px 0;
     padding-top: 80px;
     text-align: center;
-    overflow: auto;
-    height: 90vh;
 }
 
 
