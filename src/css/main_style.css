@@ -2504,3 +2504,8 @@ body .swiper--info .info__item {
         display: none;
     }
 }
+
+.swiper--banner__image {
+    width: 100%;
+    height: 400px;
+}
