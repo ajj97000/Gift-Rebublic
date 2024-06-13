@@ -2237,13 +2237,13 @@ body .swiper--info .info__item {
 .card--custom .card__image--second {
     z-index: 0;
     opacity: 0;
-    transform: translateX(100%);
+    transform: translateX(-100%);
 }
 
 .card--custom .card__image-wrapper:hover .card__image--first {
     z-index: 0;
     opacity: 0;
-    transform: translateX(-100%);
+    transform: translateX(100%);
 }
 
 .card--custom .card__image-wrapper:hover .card__image--second {
