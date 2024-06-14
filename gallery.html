@@ -564,7 +564,44 @@
         </div>
     </footer>
     <!-- footer end  -->
-    <script src="src/scripts/scripts.js"></script>
+    <script src="src/scripts/scripts.js">
+
+        // cart function 
+        document.addEventListener("DOMContentLoaded", function () {
+            const deleteButtons = document.querySelectorAll(".delete-btn");
+
+            deleteButtons.forEach(button => {
+                button.addEventListener("click", function () {
+                    const item = this.closest(".d-flex.justify-content-between.align-items-center.mb-3");
+                    item.remove();
+
+                    // Update the total products count if necessary
+                    const totalProductsElement = document.querySelector(".card__text.mb-0");
+                    let totalProducts = parseInt(totalProductsElement.textContent.replace('Total Products ', ''), 10);
+                    totalProductsElement.textContent = `Total Products ${--totalProducts}`;
+
+                    // Check if the cart is empty
+                    checkIfCartIsEmpty();
+                });
+            });
+
+            function checkIfCartIsEmpty() {
+                const cartItems = document.querySelector("#cart-items");
+                const noItemsMessage = document.querySelector("#no-items");
+                const items = cartItems.querySelectorAll(".d-flex.justify-content-between.align-items-center.mb-3");
+
+                if (items.length === 0) {
+                    noItemsMessage.style.display = "block";
+                } else {
+                    noItemsMessage.style.display = "none";
+                }
+            }
+
+            // Initial check in case there are no items to begin with
+            checkIfCartIsEmpty();
+        });
+
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 </body>
 
