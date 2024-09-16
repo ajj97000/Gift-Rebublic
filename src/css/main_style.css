@@ -1961,6 +1961,7 @@ body .swiper-pagination-bullet-active {
 
 .form__checkbox-wrapper {
     width: 24px;
+    min-width: 24px;
     height: 24px;
     border: 1px solid #000;
     display: flex;
@@ -2350,6 +2351,8 @@ body .swiper--info .info__item {
 .content--shipping .content__text {
     font-size: 20px;
     margin-bottom: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .content--shipping .content__link {
@@ -2594,4 +2597,32 @@ body .swiper--info .info__item {
 
 .card__product-title {
     font-size: 14px;
+}
+
+@media (max-width: 575.98px) {
+    .main--inner .padding-left-m {
+        padding-left: 0;
+    }
+
+    .form__button {
+        font-size: 13px;
+        padding: 6px 20px;
+    }
+
+    .content__link {
+        font-size: 13px;
+        display: flex;
+    }
+
+    .payment-card {
+        padding: 40px 0;
+    }
+
+    .product--basket .product__link {
+        margin-bottom: 30px;
+    }
+
+    .content--shipping .form__label {
+        margin-left: 8px;
+    }
 }
